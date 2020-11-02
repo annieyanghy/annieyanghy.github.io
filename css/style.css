@@ -549,6 +549,7 @@ transform-style: preserve-3d; */
             /* ------900px---------*/
             
             @media only screen and (max-width: 900px) {
+                
                 nav {
                     display: flex;
                     position: relative;
