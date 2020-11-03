@@ -30,6 +30,7 @@
     <!-- import the webpage's javascript file -->
     <script src="js/mixitup.min.js"></script>
     <script src="js/script.js" defer></script>
+    <script src="js/hamburger.js" defer></script>
     <script src="https://use.fontawesome.com/d84889ebb7.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -49,6 +50,11 @@
  <!-- main body -->
 <body>
     <header id="top">
+        <div class="menu-btn"> 
+            <div class="btn-line"></div> 
+            <div class="btn-line"></div> 
+            <div class="btn-line"></div> 
+        </div> 
         <nav>
             <div class="nav_logo_container">
 
@@ -63,8 +69,8 @@
 
             </div>
 
-            <div class="nav_list">
-                <ul>
+            <div class="nav_list menu">
+                <ul class="menu-nav">
                     <li class="nav_li nav_underline"><a class=" nav_selected" href="index.html">Work</a></li>
                     <li class="nav_li  nav_underline"><a>Resume</a></li>
                     <li class="nav_li  nav_underline"><a>About</a></li>

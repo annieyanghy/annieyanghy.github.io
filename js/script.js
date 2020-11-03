@@ -20,7 +20,7 @@ $(document).ready(function() {
     // -------- prj modal-----------//
     $(".modal_img").on("click", function() {
 
-        $(this).css({ "width": "70%", "display": "" });
+        $(this).css({ "width": "100%", "display": "" });
         $(this).addClass("modal");
         $("#modal-container").addClass("modal-box");
         $("#modal-container .fa").addClass("close");
@@ -81,7 +81,7 @@ $(document).ready(function() {
     $(document).scroll(function(e) {
 
 
-        if ($(document).scrollTop() > 300) {
+        if ($(document).scrollTop() > 300 && $(window).width() > 900) {
             $(".handy_nav_container").css("display", "flex");
             $(".sticky-toc").css("display", "block");
             console.log(e)
@@ -170,8 +170,5 @@ $(document).ready(function() {
 
 
     });
-
-
-
     var containerEl = document.querySelector('.main_grid');
     var mixer = mixitup(containerEl);

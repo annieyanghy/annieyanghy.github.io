@@ -518,7 +518,7 @@
                 margin: 8px;
                 font-size: var(--size-xx-small);
                 /* transition: transform  0.6s;
-transform-style: preserve-3d; */
+                    transform-style: preserve-3d; */
             }
             
             /* footer .fa:hover {
@@ -602,6 +602,11 @@ transform-style: preserve-3d; */
                     justify-content: center;
                     margin-top: var(--size);
                 }
+                .filter_button{
+                    width: 8rem;
+                    overflow-wrap: normal;
+                }
+                }
                 .red,
                 .black {
                     margin: 24px auto;
@@ -623,8 +628,104 @@ transform-style: preserve-3d; */
                 h3 {
                     font-size: 24px;
                 }
+
+                h4 {
+                    font-size: 20px;
+                }
                 /* ------550px---------*/
                 @media only screen and (max-width: 550px) {
+                    /*hamburger*/
+                    .menu-btn { 
+                        position: fixed; 
+                        z-index: 101; 
+                        right: 35px; 
+                        top: 35px; 
+                        cursor: pointer; 
+                        transition: all 0.5s ease-out; 
+                    } 
+                
+                    /* Styling the hamburger lines */
+                    .menu-btn .btn-line { 
+                        width: 28px; 
+                        height: 3px; 
+                        margin: 0 0 5px 0; 
+                        background: black; 
+                        transition: all 0.5s ease-out; 
+                    } 
+                    /* Adding tranform to the X */
+                    .menu-btn.close { 
+                        transform: rotate(180deg); 
+                    } 
+                
+                    /* Styling the three lines  
+                        to make it an X */
+                    .menu-btn.close .btn-line:nth-child(1) { 
+                        transform: rotate(45deg) translate(5px, 5px); 
+                    } 
+                
+                    .menu-btn.close .btn-line:nth-child(2) { 
+                        opacity: 0; 
+                    } 
+                
+                    .menu-btn.close .btn-line:nth-child(3) { 
+                        transform: rotate(-45deg) translate(7px, -6px); 
+                    } 
+                    .menu { 
+                        position: fixed; 
+                        top: 0; 
+                        width: 100%; 
+                        opacity: 0.9; 
+                        visibility: hidden; 
+                    } 
+
+                    .menu.show { 
+                        visibility: visible; 
+                    } 
+
+                    /* nav */
+
+
+                    nav {
+                        display: flex;
+                        position: relative;
+                        flex-direction: column;
+                        align-items: center;
+                        height:auto;
+                        margin-bottom: var(--margin-medium);
+                    }
+                    .nav_logo_container {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: nowrap;
+                        height: 5rem;
+                        width: 100%;
+                        margin-top: var(--margin-item);
+                    }
+                    .nav_list {
+                        display: flex;
+                        position: fixed;
+                        flex-direction: column;
+                        justify-content: center;
+                        /* height: 5rem; */
+                        height: 100%;
+                        width: 100%;
+                        z-index: 100;
+                        background: rgba(var(--color-white), 1);
+
+                    }
+                    .nav_list ul {
+                        display: flex;
+                        position: relative;
+                        flex-direction: column;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    }
+                    .nav_li {
+                        text-align: center;
+                        margin: var(--margin-small) auto;
+                    }
+                    
                     .prj_grid {
                         display: block;
                     }
@@ -643,11 +744,12 @@ transform-style: preserve-3d; */
                     .footer_right {
                         margin-bottom: 20px;
                     }
-                    .nav_list ul {
+                    /* .nav_list ul {
                         display: flex;
                         position: relative;
                         flex-direction: row;
                         justify-content: center;
                         flex-wrap: wrap;
-                    }
+                    } */
+
                 }}
