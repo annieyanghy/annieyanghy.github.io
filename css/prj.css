@@ -347,16 +347,22 @@ hr {
 /* The Modal  */
 
 .modal {
-    display: block;
+    display: flex;
     position: fixed;
     z-index: 2000;
-    left: 50%;
-    top: 50%;
-    margin-top: -25%;
+    left: 5%;
+    top: 2%; 
+   
     /* Negative half of height. */
-    margin-left: -50%;
-    height: auto;
-    overflow: scroll;
+    margin: 2% auto;
+    /* margin-left: -20vw; 
+    margin-top: -20%; */
+    /* width:90vw;  */
+    height:auto;
+    max-width: 80vw;
+    
+    max-height: 90vh;
+    overflow: hidden;
 }
 /* modal background */
 
@@ -366,9 +372,9 @@ hr {
     z-index: 5;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: scroll;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     background-color: rgba(var(--color-dark), 0.6);
 }
 
@@ -791,12 +797,19 @@ a.toc-link {
     .how_it_works_text h3 {
         font-size: 40px;
     }
-    .how_it_works_gif {
+    .how_it_works_gif{
         position: relative;
         display: flex;
         width: 80%;
         height: auto;
-        margin: 0 auto;
+        margin: 0;
+    }
+    .how_it_works_gif img{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0;
     }
     /* how_it_works */
     .mockups_row_container {
@@ -846,7 +859,7 @@ a.toc-link {
     top: 50%;
     margin-top: -25%;
     /* Negative half of height. */
-    margin-left: -50%;
+    margin-left: -70%;
     height: auto;
     overflow: scroll;
 }
