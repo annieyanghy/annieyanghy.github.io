@@ -44,7 +44,7 @@ body {
 p {
     color: rgba(var(--color-dark), 1);
     font-size: 16px;
-    line-height: 1.5rem;
+    line-height: 2rem;
     margin-bottom: var(--margin-item);
 }
 
@@ -209,12 +209,12 @@ hr {
     flex-wrap: wrap;
     grid-column: 1 / span 8;
     margin: auto 0;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .prj_logistic {
     width: 20%;
-    margin: 0 var(--margin-icon);
+    margin: 0 var(--margin-item);
 }
 
 .prj_logistic h5 {
@@ -222,6 +222,13 @@ hr {
 }
 /* ----------content------------ */
 /* info */
+.prj_highlight{
+    background-color: rgba(var(--color-primary), 0.3);
+    
+}
+.prj_bold{
+    font-weight: 900;
+}
 
 .prj_index {
     position: relative;
@@ -269,6 +276,11 @@ hr {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+}
+.prj_bullet{
+    line-height: 2rem;
+    text-indent:50px;
+    font-weight: 700;
 }
 
 .how_it_works {
@@ -766,11 +778,12 @@ a.toc-link {
     /* ----- */
     .prj_logistic_container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         
         margin: var(--margin-x-small) 0;
-        justify-content: center;
+        justify-content:flex-start;
+        align-items:flex-start;
     }
     .prj_logistic {
         width: 50%;

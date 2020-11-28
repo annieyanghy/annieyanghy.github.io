@@ -11,7 +11,7 @@
                 /* 133,177,173; */
                 --color-tone: 228, 247, 244;
                 --color-tint: 217, 237, 234;
-                --color-dark: 0, 0, 0;
+                --color-dark: 50, 50, 50;
                 --color-white: 255, 255, 255;
                 --color-grey: 204, 204, 204;
                 --color-secondary: 186, 149, 149;
@@ -85,6 +85,8 @@
             
             p {
                 color: rgba(var(--color-dark), 1);
+                line-height: 32px;
+                
             }
             
             a {
@@ -280,15 +282,15 @@
             }
             
             .red {
-            position: relative;
-            display: inline-block;
+                position: relative;
+                display: inline-block;
                 background-color: rgba(var(--color-dark), 0.01);
                 grid-column: 1 / span 3;
                 height: auto;
                 width: auto;
                 
                 overflow: hidden;
-            
+                border:1px solid rgba(var(--color-dark), 0.08);
                 border-radius: var(--radius);
                 padding: var(--size-xx-small);
                 box-shadow: 0 1px 2px rgba(0,0,0,0.15);
@@ -332,6 +334,7 @@
                 position: relative;
                 display: inline-block;
                 overflow: hidden;
+                border:1px solid rgba(var(--color-dark), 0.08);
                 border-radius: var(--radius);
                 padding: var(--size-xx-small);
             }
@@ -344,6 +347,18 @@
             
             }
             /* -------filter -------*/
+
+
+            .divider {
+                display: block;
+                margin: var(--margin-small) auto;
+                max-width: var(--width-max);
+                /* background-color:'red'; */
+                height:1px;
+                border: 0;
+                border-top: 2px solid rgba(var(--color-primary),0.5);
+               
+            }
             
             .button_container {
                 display: flex;
@@ -356,10 +371,10 @@
             
             .filter_button {
                 position: relative;
-                width: 14rem;
-                height: auto;
+                width: 12rem;
+                height: 4rem;
                 font-size: 1rem;
-                margin: 1rem;
+                margin: 0 0.8rem;
                 padding: 1.4rem;
                 background-color: rgba(var(--color-primary-dark), 0);
                 text-decoration: none;
@@ -393,11 +408,13 @@
             .prj_grid {
                 display: grid;
                 grid-template-rows: 1.5fr 0.5fr;
+              
             }
             /* img */
             
             .prj_img_container {
                 grid-row: 1 / span 1;
+                margin:var(--margin-x-small) auto;
             }
             
             .prj_img {
@@ -425,6 +442,7 @@
                 width: 100%;
                 background-color: rgba(var(--color-tint), 0);
                 grid-row: 2 / span 1;
+                border-top: 2px solid rgba(var(--color-dark), 0.08);
             }
             
             .prj_info:hover {
@@ -434,7 +452,18 @@
             
             .prj_title {
                 margin: 10px;
+              
             }
+            .prj_title h2{
+                color:rgba(var(--color-dark), 1)
+                
+            }
+            .prj_title p{
+                font-weight: 600;
+                color:rgba(var(--color-dark), 0.6)
+                
+            }
+           
             /* tags */
             
             .tags_container {
@@ -449,8 +478,10 @@
                 padding: 4px 8px;
                 border-radius: 5px;
                 color: rgba(var(--color-dark), 1);
+                font-size:12px;
                 font-family: var(--typeface-display);
                 font-weight: 600;
+                line-height: 20px;
             }
             
             .tags_ixd {
@@ -600,10 +631,10 @@
                 }
                 .button_container {
                     justify-content: center;
-                    margin-top: var(--size);
+                    margin: var(--margin-primary) auto;
                 }
                 .filter_button{
-                    width: 8rem;
+                    width: 12rem;
                     overflow-wrap: normal;
                 }
                 }
@@ -618,12 +649,14 @@
                 }
                 .prj_title h2 {
                     line-height: normal;
+                    color:rgba(var(--color-dark), 1)
                 }
                 h1 {
                     font-size: 40px;
                 }
                 h2 {
                     font-size: 32px;
+                    
                 }
                 h3 {
                     font-size: 24px;
