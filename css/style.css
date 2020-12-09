@@ -233,7 +233,8 @@
                 position: relative;
                 background-color: rgba(var(--color-dark), 0);
                 width: 100%;
-                height: 500px;
+                height:500px;
+                min-height: 500px;
             }
             
             .sec_1 .fa {
@@ -369,6 +370,84 @@
             transition: box-shadow 0.3s ease-in-out;
             
             }
+
+            /* -------About Page--------- */
+
+            .landing_grid_about_page {
+                display: grid;
+                grid-template-columns: repeat(6, 1fr);
+                /* grid-template-rows: repeat(1fr, 1fr); */
+                grid-column-gap: var(--grid-gap);
+                grid-row-gap: var(--grid-gap);
+                margin: 0 auto;
+                max-width: var(--width-max);
+                
+            }
+            .landing_left_about_page{
+                position: relative;
+                grid-column: 1 / span 3;
+              
+            }
+
+            .landing_right_about_page{
+                position: relative;
+                grid-column: 4 / span 3;
+              
+                display:flex;
+                flex-direction: row;
+
+            }
+
+            .landing_right_about_page img{
+                position: relative;
+                display: inline-block;
+                width: 50%;
+                height:100%;
+                max-width: 50%;
+                padding: 0 4px;
+            }
+            .about_para{
+                position: relative;
+                display:block;
+                grid-column: 1 / span 6;
+                height:200px;
+                background-size: 300px 100px;
+                background-image: url("../img/branding/Branding_Pattern_geo.png");
+                background-repeat: repeat;
+                background-attachment: fixed;
+                background-position: 0;
+                background-size: 20%;
+            }
+
+            /* .hexagon {
+                position: relative;
+                width: 300px; 
+                height: 173.21px;
+                background-color: #64C7CC;
+                margin: 86.60px 0;
+              }
+              
+              .hexagon:before,
+              .hexagon:after {
+                content: "";
+                position: absolute;
+                width: 0;
+                border-left: 150px solid transparent;
+                border-right: 150px solid transparent;
+              }
+              
+              .hexagon:before {
+                bottom: 100%;
+                border-bottom: 86.60px solid #64C7CC;
+              }
+              
+              .hexagon:after {
+                top: 100%;
+                width: 0;
+                border-top: 86.60px solid #64C7CC;
+              } */
+
+
             /* -------filter -------*/
 
 
