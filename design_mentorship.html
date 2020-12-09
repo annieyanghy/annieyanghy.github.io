@@ -24,7 +24,11 @@
 
     <link rel="stylesheet" type="text/css" href="css/tocbot.css" />
     <link rel="stylesheet" type="text/css" href="css/prj.css" />
-
+    <!-- <script
+      src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+      data-auto-a11y="true"
+    ></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
     <!-- import the webpage's javascript file -->
@@ -34,6 +38,7 @@
     <script src="js/hamburger.js" defer></script>
     <script src="js/navbar.js"></script>
     <script src="https://use.fontawesome.com/d84889ebb7.js"></script>
+  
    
 
     <!-- favicon -->
@@ -170,7 +175,7 @@
                 <div class="prj_statement">
                     <h4>An app that connects professional designers and new aspiring designers.</h4>
                 </div>
-                <p>The solution I am proposing is to provide a friendly platform to connect professional UX designers to UX learners so that UX learners can feel comfortable and not disadvantaged to reach out to designers in the industry for guidance or
+                <p>The solution I am proposing is to provide a <span class="prj_highlight prj_bold">friendly platform</span> to connect professional UX designers to UX learners so that UX learners can <span class="prj_highlight prj_bold">feel comfortable and not disadvantaged to reach out</span> to designers in the industry for guidance or
                     work review. It is an app that can provide people with social functions such as adding mentor, chat, and provide internship or apprentice programs that are available to UX learners regardless of their identity as students or not.</p>
 
             </div>
@@ -194,7 +199,7 @@
                             <h6>swipe for designers that inspire you</h6>
                         </div>
                         <div class="how_it_works_gif">
-                            <img src="img/prj_mentor/design_mentorship_card_swiping_v2.gif">
+                            <img  src="img/prj_mentor/design_mentorship_card_swiping_v2.gif">
                         </div>
                     </div>
                     <!-- 2 -->
@@ -309,7 +314,7 @@
             </div>
             <!-- 5 Content -->
             <div class="prj_content_container">
-                <img class="modal_img" src="img/prj_mentor/viz_info/dm_design_process.png" />
+                <img data-aos="fade-up" class="modal_img" src="img/prj_mentor/viz_info/dm_design_process.png" />
                 <p>In the class, we follow the double diamond design process to diverge and converge ideas to find a better solution.</p>
             </div>
 
@@ -325,59 +330,73 @@
             <div class="prj_content_container">
                 <div class="prj_stack_content">
                     <h5>1. Empathy map</h5>
+                    <div class="prj_key_insights">
+                        <h7 class="prj_caption"><i class="fa fa-bolt" aria-hidden="true"></i> Key insights</h7>
+                        <h6>Participants are stressed about learning design as young newbie designers.</h6>
+                    </div>
+                    <img data-aos="fade-up" class="modal_img" src="img/prj_mentor/viz_info/dm_empathy_map.png" />
                     <p>The original problem I am trying to deal with is the stress that graduate students face. Thus, originally I wanted to know how to help them face the pressure, and the target user would be my UMSI classmates since they not only represent
-                        graduate groups, but they are accessible. Then, after initial observance and interview (through random chats), I found that the stress origin of the current students is from job searching and design skill-building because they
+                        graduate groups, but they are accessible. Then, <span class="prj_highlight prj_bold">after initial observance and interview (through random chats)</span>, I found that the stress origin of the current students is from job searching and design skill-building because they
                         mostly come from different academic backgrounds other than UX design. Also, resonating to my own career-switching journey, I recalled it was challenging for me to self-learn UX design. Thus, I then decided to adjust my problem
                         framing to the career switching for becoming designers.</p>
-                    <p>I created this empathy map based on the initial chat with some of my intended users. I wanted to understand how they cope with their stress as graduate students in the beginning. However, I found out their attitude about stress — they
+                    <p>I created this empathy map based on the initial chat with some of my intended users. I wanted  <span class="prj_highlight prj_bold">to understand their emotion as sprouting design learner and graduate students</span> in the beginning. However, I found out their attitude about stress — they
                         are more concerned with how to process it actively, instead of searching for other means to alleviate the stress.</p>
-                    <img class="modal_img" src="img/prj_mentor/viz_info/dm_empathy_map.png" />
                 </div>
                 <br>
                 <div class="prj_stack_content">
                     <h5>2. Competitive analysis</h5>
+                    <div class="prj_key_insights">
+                        <h7 class="prj_caption"><i class="fa fa-bolt" aria-hidden="true"></i> Key insights</h7>
+                        <h6>Design opportunity: a friendly platform for newbie designers.</h6>
+                    </div>
+                    <img data-aos="fade-up" class="modal_img" src="img/prj_mentor/viz_info/dm_comp_analysis.png" />
                     <p>In the competitive analysis, I was researching where design learners can possibly ask for learning tips. So, from my personal experiences and observance, I found there are four platforms where designers or aspiring designers can gather
                         and ask for feedback: Designer News, design groups on Facebook, Dribbble, and Linkedin.</p>
-                    <p>However, none of these platforms can provide a direct, supportive and personal environment for aspiring UX designers. Imagine you reach out to professional designers on Linkedin -- it can be very intimidating and scary for new UX learners
+                    <p>However, <span class="prj_highlight prj_bold">none of these platforms can provide a direct, supportive and personal</span> environment for <span class="prj_highlight prj_bold">aspiring UX designers</span>. Imagine you reach out to professional designers on Linkedin -- <span class="prj_highlight prj_bold">it can be very intimidating and scary</span> for new UX learners
                         when people display the most professional and robust side of themselves on Linkedin. Also, in terms of asking advice on Facebook groups or Dribbble, both of them are still open spaces, which can make it hard to find personalized
                         feedback. </p>
-                    <img class="modal_img" src="img/prj_mentor/viz_info/dm_comp_analysis.png" />
                 </div>
                 <br>
                 <div class="prj_stack_content">
                     <h5>3. Sketches</h5>
+                    <img data-aos="fade-up" class="modal_img" src="img/prj_mentor/viz_info/dm_sketches.png" />
                     <p>The sketching technique I used is similar to the crazy eight but with a longer timeframe. I produced eight design concepts with sketches to quickly ask for feedback later. With the sketch, I am benefited from obtaining feedback from
                         potential users and peers before I delve into design details. Most important of all, I was able to converse my mind to the world with a simple sketch, which is an idea learned from Buxton's The Anatomy of Sketching in Sketching
                         User Experience (Buxton, 2010).</p>
-                    <img class="modal_img" src="img/prj_mentor/viz_info/dm_sketches.png" />
                 </div>
                 <br>
                 <div class="prj_stack_content">
                     <h5>4. Storyboardings</h5>
                     <p>I later developed eight storyboards based on my sketching. With storyboarding, I was able to develop a context where users can use my product or service. This technique helped me better empathize myself with users, and also developed
                         tentative user flow for the product.</p>
-                    <img class="modal_img" src="img/prj_mentor/viz_info/dm_storyboards.png" />
+                    <img  data-aos="fade-up" class="modal_img" src="img/prj_mentor/viz_info/dm_storyboards.png" />
                 </div>
                 <br>
                 <div class="prj_stack_content">
                     <h5>5. User interviews</h5>
-                    <p>I conducted five face-to-face user interviews and an online survey. However, I decided to focus more on the data from the interviews because I obtained whole stories from my users through the interviews. The users I interviewed all
-                        have different backgrounds other than design.</p>
-                    <p>The main takeaway in this stage is that I realized for my intended users: they wished to accumulate more practical experiences and connections when they navigate through their design career. These finding helped me narrow down to the
-                        two top-rated design concepts -- a mentorship platform and apprentice matching mechanism.</p>
-                    <img class="modal_img" src="img/prj_mentor/viz_info/dm_user_finding.png" />
-                    <p>User statement:</p>
-                    <div class="prj_statement">
-                        <h4>There are too many resources without credibility.</h4>
-                        <h4>I need personal mentors for advice on UX design and career choices.</h4>
+                    <!-- <p>User statement:</p> -->
+                    <div class="prj_key_insights">
+                        <h4><i class="fa fa-quote-left" aria-hidden="true"></i> There are too many resources without credibility.</h4>
+                        <h4><i class="fa fa-quote-left" aria-hidden="true"></i> I need personal mentors for advice on UX design and career choices.</h4>
                     </div>
+                    <img data-aos="fade-up" class="modal_img" src="img/prj_mentor/viz_info/dm_user_finding.png" />
+                    <!-- <div class="prj_key_insights">
+                        <h7 class="prj_caption"> Key insights</h7>
+                        <h6>Participants are stressed about learning design as young newbie designers.</h6>
+                    </div> -->
+                    
+                   
+                    <p>I conducted <span class="prj_highlight prj_bold">5 face-to-face user interviews</span> and an online survey. However, I decided to focus more on the data from the interviews because I obtained whole stories from my users through the interviews. The users I interviewed all
+                        have different backgrounds other than design.</p>
+                    <p>The main takeaway in this stage is that I realized for my intended users: <span class="prj_highlight prj_bold">they wished to accumulate more practical experiences and connections</span> when they navigate through their design career. These finding helped me narrow down to the
+                        two top-rated design concepts -- a mentorship platform and apprentice matching mechanism.</p>
                 </div>
                 <br>
                 <div class="prj_stack_content">
                     <h5>6. User persona</h5>
                     <p>I created four user personas, with 3 of which based on user research and a provisional one (anti-persona) based on my assumption.</p>
                     <p>With user persona, I can better empathize myself with their motivation and goal, so that the product can be better tailored for them.</p>
-                    <img class="modal_img" src="img/prj_mentor/viz_info/dm_persona.png" />
+                    <img data-aos="fade-up" class="modal_img" src="img/prj_mentor/viz_info/dm_persona.png" />
                 </div>
             </div>
             <hr>
@@ -405,8 +424,12 @@
                 <br>
                 <div class="prj_stack_content">
                     <h5>2. User Testing + Paper Prototype</h5>
+                    <div class="prj_key_insights">
+                        <h7 class="prj_caption"><i class="fa fa-bolt" aria-hidden="true"></i> Key insights</h7>
+                        <h6>From the in-person interaction with intended-users, I found usability issues and understand more of users' mental model .</h6>
+                    </div>
                     <p>My goal at the stage is to test the tentative product flow. Why did I use paper prototyping in the stage? With the hand-made papers and sketches, users will be willing to provide feedback more than a high-fidelity mockup — the paper
-                        and low-fidelity signify that it is still a work in progress and hence serve the purpose to invite honest feedback.</p>
+                        and low-fidelity signify that it is still a work in progress and hence serve the purpose to <span class="prj_highlight prj_bold">invite honest feedback.</span></p>
                     <img class="modal_img" src="img/prj_mentor/viz_info/dm_paper.jpg" />
                     <iframe class="prj_video" allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen" src="https://youtube.com/embed/NKCWkywvmzw">
                   </iframe>
@@ -439,7 +462,7 @@
                 <div class="prj_statement">
                     <h4> I want to provide a platform where everyone with a dream for a future job can be encouraged and supported by professional peers directly, and UX design is just the first field I have the most access to work on.</h4>
                 </div>
-                <p>I believe my design will have a positive impact on future UX learners who are shifting their careers from other backgrounds. With this app, they can build a professional network with a friendly and supportive community where they don't
+                <p>I believe my design will have a positive impact on future UX learners who are shifting their careers from other backgrounds. With this app, <span class="prj_highlight prj_bold">they can build a professional network with a friendly and supportive community</span> where they don't
                     need to worry about asking for help, nor should they feel embarrassed when they are asking for feedback. I want to provide a platform where everyone with a dream for a future job can be encouraged and supported by professional peers
                     directly, and UX design is just the first field I have the most access to work on. At the same time, I also wish there would be more apprentice or internship opportunities in the industry for non-students or perhaps people taking online
                     courses, which is an ideal scenario that needs mutual effort.</p>
@@ -456,7 +479,7 @@
                 <div class="prj_statement">
                     <h4>How to avoid discrimination</h4>
                 </div>
-                <p>When I was asking feedback from my peers, one of the feedback I got from my peers is the importance to avoid discrimination through the profile picture, so I was seriously considering replacing profile picture with avatars.</p>
+                <p>When I was asking feedback from my peers, one of the feedback I got from my peers is the importance <span class="prj_highlight prj_bold">to avoid discrimination through the profile picture</span>, so I was seriously considering replacing profile picture with avatars.</p>
                 <p>However, there was no sufficient research to support this theory and I faced the difficulty to implement it in the high-fidelity design. One of the problems is due to my lack of ability to visualize the idea in the prototype. Also, the
                     other one is that I started to doubt whether it helps to swap a human-face picture with an avatar, which can be further validated through A/B testing later on, from my point of view. As a result, I decided to adopt a human-face profile
                     picture first and then have the avatar version as A/B testing.</p>
@@ -472,12 +495,10 @@
             <!-- 10 Content -->
             <div class="prj_content_container">
                 <div class="prj_statement">
-                    <h4>How to avoid discrimination</h4>
+                    <h4>Reflective thinking in design</h4>
                 </div>
-                <p>When I was asking feedback from my peers, one of the feedback I got from my peers is the importance to avoid discrimination through the profile picture, so I was seriously considering replacing profile picture with avatars.</p>
-                <p>However, there was no sufficient research to support this theory and I faced the difficulty to implement it in the high-fidelity design. One of the problems is due to my lack of ability to visualize the idea in the prototype. Also, the
-                    other one is that I started to doubt whether it helps to swap a human-face picture with an avatar, which can be further validated through A/B testing later on, from my point of view. As a result, I decided to adopt a human-face profile
-                    picture first and then have the avatar version as A/B testing.</p>
+                <p>During this design process, I grew in a supportive environment of encouraging reflection as a designer, which is a spirit seriously emphasized by our Professor Tawanna. So, at each stage in the design process, I am trained to reflect critically on my own work and adjust my design to match users' needs.</p>
+                <p>What is reflective design? I learned this concept in the Interaction Design class and totally think it represents my design philosophy because I think reflection on self-work is a crucial aspect of a UX designer. In the research paper Reflective design, Senders et al. mentioned, "We define 'reflection' as referring to critical reflection, or bringing unconscious aspects of experience to conscious awareness, thereby making them available for conscious choice." (Sengers et al., 2005)</p>
             </div>
 
             <hr>
@@ -524,16 +545,38 @@
                         </div>
                     </div>
                 </a>
+                <a href="">
+                    <div class="rec_prj">
+                        <div>
+                            <img src="img/prj_thumbnail/Duo_gray.png" />
+                        </div>
+                        <div>
+                            <h4>Duo Security</h4>
+                            <p>May. - Aug. 2020</p>
+                        </div>
+                        <div class="tags_container">
+                            <p class="tags tags_ixd">Interaction Design</p>
+                            <p class="tags tags_proto">Prototyping</p>
+                            <p class="tags tags_pd">Product Design</p>
+                        </div>
+                    </div>
+                </a>
 
                 <a href="">
                     <div class="rec_prj">
                         <div>
-                            <img />
+                            <img src="img/prj_thumbnail/Decanter+AI.png" />
                         </div>
                         <div>
-                            <h3></h3>
-                            <p></p>
+                            <h4>AI Software Redesign</h4>
+                            <p>Jan. - Jul. 2019</p>
                         </div>
+                        <div class="tags_container">
+                            <p class="tags tags_ixd">Interaction Design</p>
+                            <p class="tags tags_proto">Prototyping</p>
+                            <p class="tags tags_pd">Product Design</p>
+                        </div>
+                    </div>
                 </a>
                 </div>
             </div>
@@ -546,7 +589,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
     <script src="js/toc.js"></script>
     <script src="js/tocbot.min.js"></script>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+            AOS.init({
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        });
+    </script>
+   
 
 </body>
 <footer>

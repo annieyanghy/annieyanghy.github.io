@@ -24,6 +24,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/tocbot.css" />
     <link rel="stylesheet" type="text/css" href="css/prj.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
 
@@ -135,24 +136,25 @@
                     <p>Wan-ting Ko (Research report, wireframe)</p>
                     <P>Joseph Henrichs (Literature review, wireframe)</P>
                 </div>
-                <div class="prj_logistic prj_tools">
-                    <h5>Tools</h5>
-                    <p>Figma</p>
-                </div>
+               
                 <div class="prj_logistic prj_status">
                     <h5>Status</h5>
                     <p>Submitting to <a href="https://chi2020.acm.org/authors/student-game-competition/">CHI 2020 Student Game Competition</a></p>
                 </div>
-
+                <div class="prj_logistic prj_tools">
+                    <h5>Tools</h5>
+                    <p>Figma</p>
+                </div>
+          
             </div>
-
+           
             <!-- projects content -->
 
 
             <div id="modal-container">
                 <i class="fa"></i>
             </div>
-
+            <hr>
             <!-- 1 Problem -->
             <div class=" prj_index_container ">
                 <div class="prj_index ">
@@ -219,7 +221,7 @@
                         <div class="how_it_works_text">
                             <h4>2. Community Map</h4>
                             <h6>to connect local users to form a community</h6>
-                            <p>With CHANGE, we build a local map to  <span class="prj_highlight prj_bold">help users to connect to other users</span>, so as to create a sense of belonging. Also, from our user research, we know that users are greatly influenced by the environment and the community, so we try to build this app with a map that can help users to find nearby like-minded people who are also interested in cultivating sustainable habits.</p>
+                            <p>With CHANGE, we build a local map to <span class="prj_highlight prj_bold">help users to connect to other users</span>, so as to create a sense of belonging. Also, from our user research, we know that users are greatly influenced by the environment and the community, so we try to build this app with a map that can help users to find nearby like-minded people who are also interested in cultivating sustainable habits.</p>
                         </div>
                         <div class="how_it_works_gif">
                             <img src="img/prj_change/feature02_map_user.gif">
@@ -250,12 +252,10 @@
             <div class="prj_content_container">
                 <p>In the app, we designed two main features to help users to develop sustainable habits, one is <span class="prj_highlight prj_bold">Map</span> and the other is <span class="prj_highlight prj_bold">Journey</span>.
                 </p>
-                <img class="modal_img" src="img/prj_change/app_feature_journey.gif" />
-                <img class="modal_img" src="img/prj_change/app_feature_map.gif" />
+                <img data-aos="fade-up" class="modal_img" src="img/prj_change/app_feature_journey.gif" />
+                <img data-aos="fade-up" class="modal_img" src="img/prj_change/app_feature_map.gif" />
               
             </div>
-
-            <hr>
 
             <!-- 4 Digital Mockup -->
             <!-- <div class=" prj_index_container_full ">
@@ -344,8 +344,7 @@
             </div>
             <!-- 5 Content -->
             <div class="prj_content_container">
-                <img class="modal_img" src="img/prj_change/change_design_process.png" />
-                <!-- <p>In the class, we follow the double diamond design process to diverge and converge ideas to find a better solution.</p> -->
+                <img data-aos="fade-up" class="modal_img" src="img/prj_change/change_design_process.png" />
             </div>
 
             <hr>
@@ -359,16 +358,17 @@
             <!-- 6 Content -->
             <div class="prj_content_container">
                 <div class="prj_stack_content">
-                    <img class="modal_img" src="img/prj_change/change_user+interview_banner.png" />
+                 
                     <h5>1. Observation & User Interview</h5>
-                    <p>To have a deeper understanding of people’s thoughts on sustainability and their current lifestyles, we interviewed 10 people that represented different stages of life, academic focuses, and cultural backgrounds. The interviewees include 1 Korean, 1 Chinese, 3 Taiwanese, and 5 Americans. All interviewees are between 20-50 years old and are currently living in the USA. However, most of them are young professionals or graduate students, who are a group of people we tried to target because they may still undergo a series of life changes, and might be more willing to develop new habits.</p>
+                    <img data-aos="fade-up" class="modal_img" src="img/prj_change/change_user+interview_banner.png" />
+                    <p>To have a deeper understanding of people’s thoughts on sustainability and their current lifestyles, we <span class="prj_highlight prj_bold">interviewed 10 people</span> that represented different stages of life, academic focuses, and cultural backgrounds. The interviewees include 1 Korean, 1 Chinese, 3 Taiwanese, and 5 Americans. All interviewees are between 20-50 years old and are currently living in the USA. However, most of them are young professionals or graduate students, who are a group of people we tried to target because they may still undergo a series of life changes, and might be more willing to develop new habits.</p>
                     <p>Before conducting the interviews, we developed interview protocols that focused on interviewees’ lunch journeys with three different overarching questions:</p>
                     <ui>
                         <li class="prj_bullet">What is preventing people from developing sustainable habits? (Group A)</li>
                         <li class="prj_bullet">How do people currently practice sustainable habits? (Group B)</li>
                         <li class="prj_bullet">What sustainable habits do you find easy and/or challenging to implement? (Group C)</li>
                     </ui>
-                    <img class="modal_img" src="img/prj_change/change_user+interview_3+groups.png" />
+                    <img data-aos="fade-up" class="modal_img" src="img/prj_change/change_user+interview_3+groups.png" />
                     <p>We started each interview with a set of general questions inquiring the interviewee’s experience in practising sustainable habits. According to the response, we made a quick decision to place our interviewee into one of the following groups: people who are unfamiliar with the concept of sustainability and rarely practice sustainable habits (Group A), people who are fully aware and are actively practising sustainable habits (Group B), and those who are somewhere in-between (GroupC). The result led each interviewee to follow-up questions designed for specific groups.</p>
                     <ui>
                         <li class="prj_bullet">What is preventing people from developing sustainable habits? (Group A)</li>
@@ -379,39 +379,52 @@
                 <br>
                 <div class="prj_stack_content">
                     <h5>2. Affinity Wall</h5>
+                    <div class="prj_key_insights">
+                        <h7 class="prj_caption"><i class="fa fa-bolt" aria-hidden="true"></i> Key insights</h7>
+                        <h6>3 factors to influence sustainable behaviors: Convenience, Reduce living cost & guilt, and Social or environmental support.</h6>
+                    </div>
                     <h6>🛠 Sustainable Tools: Miro</h6>
                     <p>After the user interviews, we collected insights from the notes together and analyzed the qualitative data with affinity wall. During the analysis process, we clustered the raw data with themes, which helped us to analyze the qualitative data more efficiently. One thing worth mentioning is that to make the project process sustainable too, we adopted a digital tool in the affinity wall stage to save the waste of physical post-it notes. We first took notes on the yellow digital notes, found common patterns among different notes, and grouped notes with the same patterns. We repeated the action several times until we reached critical findings.</p>
-                    <img class="modal_img" src="img/prj_change/change_affinity.png" />
+                    <img data-aos="fade-up" class="modal_img" src="img/prj_change/change_affinity.png" />
                     <p>The affinity wall unfolds the following three deciding factors that have a significant influence on people’s behaviors when they are trying to pursue a more sustainable lifestyle.</p>
-                    <h6>Finding 1: Convenience</h6>
-                    <p>People enjoy the convenience of buying takeout food and using disposable tableware, especially when they have busy schedules. According to our interviewees, it is way too convenient to use paper plates, and this is causing environmental problems since the campus produces a significant amount of disposable wastes every day.</p>
-                    <h6>Finding 2: Desire to reduce living costs and a sense of guilt</h6>
-                    <p>We found that some people we talked to are consciously building sustainable habits such as bringing stainless steel straws to office, using energy-efficient lightbulbs, and collecting plastic containers for future use. Among them, some are driven by the desire to reduce living costs. Others, however, are driven by a sense of guilt after realizing that they have been throwing away one-time used containers and sandwich bags more frequently than they had imagined.</p>
-                    <h6>Finding 3: Support from the environment</h6>
-                    <p>Whether the environment provides support plays a crucial role. People care about how others judge them when they are trying to live a more sustainable life and feel more empowered when others around them are also striving to achieve the same goal. Oftentimes, they feel frustrated because they do not believe that individuals have the power to change the system or influence others. Among them, some feel helpless because of the overwhelming but unclear information on the Internet, and some blame themselves for being forgetful. Having little support from the environment, people give up before sustainable habits could be successfully developed.</p>
+                    <div class="prj_finding_indent">
+                        <h6 class="prj_finding_highlight">Finding 1: Convenience</h6>
+                        <p>People enjoy the convenience of buying takeout food and using disposable tableware, especially when they have busy schedules. According to our interviewees, it is way too convenient to use paper plates, and this is causing environmental problems since the campus produces a significant amount of disposable wastes every day.</p>
+                        <h6 class="prj_finding_highlight">Finding 2: Desire to reduce living costs and a sense of guilt</h6>
+                        <p>We found that some people we talked to are consciously building sustainable habits such as bringing stainless steel straws to office, using energy-efficient lightbulbs, and collecting plastic containers for future use. Among them, some are driven by the desire to reduce living costs. Others, however, are driven by a sense of guilt after realizing that they have been throwing away one-time used containers and sandwich bags more frequently than they had imagined.</p>
+                        <h6 class="prj_finding_highlight">Finding 3: Support from the environment</h6>
+                        <p>Whether the environment provides support plays a crucial role. People care about how others judge them when they are trying to live a more sustainable life and feel more empowered when others around them are also striving to achieve the same goal. Oftentimes, they feel frustrated because they do not believe that individuals have the power to change the system or influence others. Among them, some feel helpless because of the overwhelming but unclear information on the Internet, and some blame themselves for being forgetful. Having little support from the environment, people give up before sustainable habits could be successfully developed.</p>
+                    </div>
                 </div>
                 <br>
                 <div class="prj_stack_content">
                     <h5>3. Brainstorming + Synthesis</h5>
-                    <p>I created four user personas, with 3 of which based on user research and a provisional one (anti-persona) based on my assumption.</p>
-                    <p>With user persona, I can better empathize myself with their motivation and goal, so that the product can be better tailored for them.</p>
+                    <p>After the affinity wall, we spent time together to brainstorm for more design solutions and integrate our findings to a solution. </p>
+                    <p class="prj_img_caption">My Sketches</p>
+                    <div class="prj_resp_imagebox"> 
+                        <img class="prj_resp_imageitem_3" data-aos="fade-up" class="modal_img" src="img/prj_change/change_sketch1.jpg" />
+                        <img class="prj_resp_imageitem_3" data-aos="fade-up" class="modal_img" src="img/prj_change/change_sketch2.jpg" />
+                        <img class="prj_resp_imageitem_3" data-aos="fade-up" class="modal_img" src="img/prj_change/change_sketch3.jpg" />
+                    </div>
+                    <p class="prj_img_caption">Our brainstorming whiteboard</p>
                     <img class="modal_img" src="img/prj_change/change_board1.jpg" />
+                    <p class="prj_img_caption">Our voting</p>
                     <img class="modal_img" src="img/prj_change/change_vote1.jpg" />
                 </div>
                 <br>
                 <div class="prj_stack_content">
                     <h5>4. Information Architecture</h5>
                     <!-- <p>After the affinity wall, we spent time together to brainstorm for more design solutions and integrate our findings to a solution.</p> -->
-                    <img class="modal_img" src="img/prj_change/CHANGE_info+architecture.png" />
+                    <img data-aos="fade-up" class="modal_img" src="img/prj_change/CHANGE_info+architecture.png" />
                 </div>
                 <br>
                 <div class="prj_stack_content">
                     <h5>5. Wireframes</h5>
                     <h6>🛠 Tool used: Figma</h6>
-                    <p>We started off by dividing the wireframes of the app to three parts, and each member of the team took a part in the app to develop the wireframes. We split the wireframes because we think it can best help us to focus on the logic and details of each smaller part. And since the process of personal habit formation has been my interest, I was responsible for the Journey part. Then, when the wireframes were reviewed by the team, I went to two more users to ask for their feedback. Since I did different versions in the wireframes, I asked them to vote for the versions I like. Also, for better collaboration, I proposed Figma to design the wireframes so that we can better leave feedback and co-review designs.</p>
-                   
-                    <img class="modal_img" src="img/prj_change/wireframe_my.gif" />
-                    <img class="modal_img" src="img/prj_change/wireframe_wanting.gif" />
+                    <p>We started off by dividing the wireframes of the app to three parts, and each member of the team took a part in the app to develop the wireframes. <span class="prj_highlight prj_bold">We split the wireframes because we think it can best help us to focus on the logic and details of each smaller part.</span> And since the process of personal habit formation has been my interest, I was responsible for the Journey part. Then, when the wireframes were reviewed by the team, I went to two more users to ask for their feedback. Since I did different versions in the wireframes, I asked them to vote for the versions I like. Also, for better collaboration, I proposed Figma to design the wireframes so that we can better leave feedback and co-review designs.</p>
+
+                    <img  data-aos="fade-up" class="modal_img" src="img/prj_change/wireframe_my.gif" />
+                    <img  data-aos="fade-up" class="modal_img" src="img/prj_change/wireframe_wanting.gif" />
                     
                 </div>
                 
@@ -427,14 +440,14 @@
             <div class="prj_content_container">
                 <div class="prj_stack_content">
                     <h5>1. 💪🏼 My solo task: Merge Design</h5>
-                    <p>Then, after the wireframes are reviewed, I was responsible for merging the wireframe and put them into the high-fidelity design. Merging design is a considerable work, considering that everyone makes the design layout different and may use different paddings. As a result, to make the merging process efficient, I started by observing common components to create design components to be used in the whole app. After the design components were created, I could then used them in different app sections and easily edit them if I need a change. By starting off with design components, I can standardize the app design easily, mainly I need to merge design ideas from different people. At this stage, Figma helped greatly because I could take teammates’ work easily — through a shareable link! Also, I intensively used the newest featured released by Figma — Auto Layout, when I was making components, which helped me to quickly take care of paddings and any change in design.
+                    <p>Then, after the wireframes are reviewed, I was responsible for <span class="prj_highlight prj_bold">merging the wireframe and put them into the high-fidelity design.</span> Merging design is a considerable work, considering that everyone makes the design layout different and may use different paddings. As a result, to make the merging process efficient, I <span class="prj_highlight prj_bold">started by observing common components to create design components to be used in the whole app.</span> After the design components were created, I could then used them in different app sections and easily edit them if I need a change. By starting off with design components, I can standardize the app design easily, mainly I need to merge design ideas from different people. At this stage, Figma helped greatly because I could take teammates’ work easily — through a shareable link! Also, I intensively used the newest featured released by Figma — Auto Layout, when I was making components, which helped me to quickly take care of paddings and any change in design.
                     </p>
-                    <img class="modal_img" src="img/prj_change/design_ui.gif" />
+                    <img data-aos="fade-up" class="modal_img" src="img/prj_change/design_ui.gif" />
                 </div>
                 <br>
                 <div class="prj_stack_content">
                     <h5>2. 💪🏼My solo task: Design System</h5>
-                    <p>I used Atomic Design approach when merging the different wireframes. I started by making the smallest components, like texts or icons, and then combine them into larger components such as modals or cards.</p>
+                    <p>I used  <span class="prj_highlight prj_bold">Atomic Design approach</span> when merging the different wireframes. I started by making the smallest components, like texts or icons, and then combine them into larger components such as modals or cards.</p>
                     <p>I used this approach to better systems the whole design styles, which also aids me to update multiple screens efficiently.</p>
                     <img class="modal_img" src="img/prj_change/design_automic.gif" />
                     
@@ -592,12 +605,35 @@
                 <a href="">
                     <div class="rec_prj">
                         <div>
-                            <img />
+                            <img src="img/prj_thumbnail/Duo_gray.png" />
                         </div>
                         <div>
-                            <h3></h3>
-                            <p></p>
+                            <h4>Duo Security</h4>
+                            <p>May. - Aug. 2020</p>
                         </div>
+                        <div class="tags_container">
+                            <p class="tags tags_ixd">Interaction Design</p>
+                            <p class="tags tags_proto">Prototyping</p>
+                            <p class="tags tags_pd">Product Design</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="rec_prj">
+                        <div>
+                            <img src="img/prj_thumbnail/Decanter+AI.png" />
+                        </div>
+                        <div>
+                            <h4>AI Software Redesign</h4>
+                            <p>Jan. - Jul. 2019</p>
+                        </div>
+                        <div class="tags_container">
+                            <p class="tags tags_ixd">Interaction Design</p>
+                            <p class="tags tags_proto">Prototyping</p>
+                            <p class="tags tags_pd">Product Design</p>
+                        </div>
+                    </div>
                 </a>
                 </div>
             </div>
@@ -610,7 +646,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
     <script src="js/toc.js"></script>
     <script src="js/tocbot.min.js"></script>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+            AOS.init({
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        });
+    </script>
 
 </body>
 <footer>

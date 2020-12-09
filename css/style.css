@@ -6,6 +6,7 @@
                 --typeface-text: 'Open Sans', sans-serif;
                 --line-height-title: 4rem;
                 --line-height-subtitle: 3rem;
+                --line-height-header: 2rem;
                 --color-primary: 148, 187, 184;
                 --color-primary-dark: 117, 161, 157;
                 /* 133,177,173; */
@@ -45,13 +46,18 @@
             
             h3,
             h4,
-            h5,
-            h6 {
+            h5{
                 font-family: var(--typeface-text);
                 font-weight: 600;
                 line-height: var(--line-height-subtitle);
             }
             
+            h6{
+                font-family: var(--typeface-text);
+                font-weight: 600;
+                line-height: var(--line-height-header);
+
+            }
             h1 {
                 font-size: 56px;
             }
@@ -249,18 +255,35 @@
                 grid-column-gap: var(--grid-gap);
                 grid-row-gap: var(--grid-gap);
                 margin: 0 auto;
-                max-width: var(--width-max)
+                max-width: var(--width-max);
+                
             }
-            
+            #index_para{
+                height:100%;
+                background-image: url("../img/branding/Branding_Pattern_geo.png");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: 80% 60%;
+                background-size: 20%;
+            }
             .landing_left {
                 position: relative;
                 grid-column: 1 / span 4;
+               
+               
                 /* grid-row: 1/ span 2; */
             }
             
             .landing_right {
                 position: relative;
                 grid-column: 5 / span 2;
+                /* height: 100%;
+                background-color: rosybrown;
+                background-image: url("../img/branding/Branding_Pattern_geo.png");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: right;
+                background-size: 30%; */
                 /* grid-row: 1/ span 2; */
             }
             
@@ -274,7 +297,7 @@
             .main_grid {
                 display: grid;
                 grid-template-columns: repeat(6, 1fr);
-                grid-template-rows: repeat(1, 0.5fr 1fr 1fr 1fr);
+                grid-template-rows: repeat(1, 0.02fr 1fr 1fr 1fr);
                 grid-column-gap: var(--grid-gap);
                 grid-row-gap: var(--grid-gap);
                 margin: 0 auto;
@@ -365,8 +388,10 @@
                 flex-direction: row;
                 flex-wrap: wrap;
                 grid-column: 1 / span 6;
-                margin: auto 0;
+                margin: var(--margin-item) 0;
+                margin-bottom: 0;
                 justify-content: flex-start;
+               
             }
             
             .filter_button {
@@ -374,7 +399,7 @@
                 width: 12rem;
                 height: 4rem;
                 font-size: 1rem;
-                margin: 0 0.8rem;
+                margin:0.8rem;
                 padding: 1.4rem;
                 background-color: rgba(var(--color-primary-dark), 0);
                 text-decoration: none;
@@ -482,6 +507,10 @@
                 font-family: var(--typeface-display);
                 font-weight: 600;
                 line-height: 20px;
+            }
+
+            .tags_research {
+                background-color: rgba(var(--color-tint), 1);
             }
             
             .tags_ixd {
@@ -626,12 +655,12 @@
                     display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
-                    margin: 0 var(--margin-item) auto;
-                    width: 100%;
+                    padding: 0 var(--margin-item);
+                    width: 95%;
                 }
                 .button_container {
                     justify-content: center;
-                    margin: var(--margin-primary) auto;
+                    margin: var(--margin-medium) auto;
                 }
                 .filter_button{
                     width: 12rem;
