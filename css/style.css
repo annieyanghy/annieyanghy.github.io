@@ -452,12 +452,13 @@
                 margin: auto;
                 width:40%;
                 max-width: 600px;
-                height:50px;
+                min-height:50px;
                 padding: var(--margin-small);
                 /* background-color:rgba(var(--color-tone),1); */
                 background-color:rgba(var(--color-white),1);
                 color: rgba(var(--color-dark), 1);
                 border: 5px solid rgba(var(--color-primary),1);
+                overflow-wrap: break-word;
             }
 
             .about_intro_grid{
