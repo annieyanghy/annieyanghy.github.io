@@ -9,6 +9,8 @@
                 --line-height-header: 2rem;
                 --color-primary: 148, 187, 184;
                 --color-primary-dark: 117, 161, 157;
+                --color-primary-mono_dark: 31, 62, 64;
+                --color-complementary: 186, 160,147;
                 /* 133,177,173; */
                 --color-tone: 228, 247, 244;
                 --color-tint: 217, 237, 234;
@@ -121,7 +123,7 @@
                 display: flex;
                 width: auto;
                 flex-wrap: wrap;
-                height: 200px;
+                height: 120px;
                 margin: 0 auto;
                 align-items: flex-start;
                 max-width: var(--width-max);
@@ -228,14 +230,30 @@
             /* reference link 2https://codepen.io/jstn/pen/zuDst */
             /* ----------main -----------*/
             
+            .landing_left a{
+                color: rgba(var(--color-dark), 1);
+                text-decoration: underline;
+                text-underline-offset: 4px;
+
+            }
             .sec_1 {
                 display: block;
                 position: relative;
                 background-color: rgba(var(--color-dark), 0);
                 width: 100%;
-                height:500px;
+                /* height:500px; */
                 min-height: 500px;
             }
+
+            .sec_1 {
+                display: block;
+                position: relative;
+                background-color: rgba(var(--color-dark), 0);
+                width: 100%;
+                /* height:500px; */
+                min-height: 500px;
+            }
+            
             
             .sec_1 .fa {
                 color: rgba(var(--color-primary-dark), 1);
@@ -256,11 +274,13 @@
                 grid-column-gap: var(--grid-gap);
                 grid-row-gap: var(--grid-gap);
                 margin: 0 auto;
+                margin-top: var(--margin-small);
                 max-width: var(--width-max);
                 
             }
             #index_para{
                 height:100%;
+                min-height: 500px;
                 background-image: url("../img/branding/Branding_Pattern_geo.png");
                 background-repeat: no-repeat;
                 background-attachment: fixed;
@@ -376,12 +396,11 @@
             .landing_grid_about_page {
                 display: grid;
                 grid-template-columns: repeat(6, 1fr);
-                /* grid-template-rows: repeat(1fr, 1fr); */
                 grid-column-gap: var(--grid-gap);
                 grid-row-gap: var(--grid-gap);
                 margin: 0 auto;
                 max-width: var(--width-max);
-                
+                margin-top: var(--margin-small);
             }
             .landing_left_about_page{
                 position: relative;
@@ -391,32 +410,99 @@
 
             .landing_right_about_page{
                 position: relative;
+
                 grid-column: 4 / span 3;
-              
+            
                 display:flex;
                 flex-direction: row;
+                object-fit: scale-down;
+                
+               
 
             }
 
             .landing_right_about_page img{
                 position: relative;
-                display: inline-block;
-                width: 50%;
-                height:100%;
-                max-width: 50%;
-                padding: 0 4px;
-            }
+                display: flex;
+                width: 100%;
+                height:80%;
+                max-width: 100%;
+                /* padding: 0 4px; */
+                object-fit: contain;         
+               }
             .about_para{
                 position: relative;
-                display:block;
+                display:flex;
+                position:relative;
+                justify-content: center;
+                align-self: center;
                 grid-column: 1 / span 6;
-                height:200px;
-                background-size: 300px 100px;
-                background-image: url("../img/branding/Branding_Pattern_geo.png");
-                background-repeat: repeat;
+                height:550px;
+                margin-bottom: var(--margin-medium);
+                background-image: url("../img/branding/pattern_bg.png");
+                background-repeat: no-repeat;
                 background-attachment: fixed;
-                background-position: 0;
-                background-size: 20%;
+                background-position: -250px;
+                background-size: cover;
+            }
+            .about_greeting{
+                display:flex;
+                position:relative;
+                justify-content: center;
+                margin: auto;
+                width:40%;
+                max-width: 600px;
+                height:50px;
+                padding: var(--margin-small);
+                /* background-color:rgba(var(--color-tone),1); */
+                background-color:rgba(var(--color-white),1);
+                color: rgba(var(--color-dark), 1);
+                border: 5px solid rgba(var(--color-primary),1);
+            }
+
+            .about_intro_grid{
+                display: grid;
+                grid-template-columns: repeat(8, 1fr);
+                grid-column-gap: var(--grid-gap);
+                grid-row-gap: var(--grid-gap);
+                margin: 0 auto;
+                margin-top: var(--margin-small);
+                max-width: var(--width-max);
+            }
+
+            .about_intro_left{
+                position: relative;
+                grid-column: 1 / span 4;
+              
+            }
+
+            .about_intro_right{
+                position: relative;
+
+                grid-column: 5/ span 4;
+            
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: flex-end;
+                object-fit: scale-down;
+            }
+            .about_intro_right img{
+                position: relative;
+                display: flex;
+                width: 100%;
+                height:80%;
+                max-width: 100%;
+                object-fit: contain;   
+
+            }
+
+            .prj_highlight{
+                background-color: rgba(var(--color-primary), 0.3);
+                
+            }
+            .prj_bold{
+                font-weight: 700;
             }
 
             /* .hexagon {
@@ -522,7 +608,7 @@
             }
             
             .prj_img {
-                width: 22rem;
+                width: 100%;
                 position: relative;
                 display: block;
                 margin: auto;
@@ -753,7 +839,7 @@
                     
                 }
                 .prj_img {
-                    width: 80%;
+                    width: 100%;
                 }
                 .prj_title h2 {
                     line-height: normal;
