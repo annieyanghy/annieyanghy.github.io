@@ -170,5 +170,5 @@ $(document).ready(function() {
 
 
     });
-    var containerEl = document.querySelector('.main_grid');
+    var containerEl = document.querySelector('.project_resp_container');
     var mixer = mixitup(containerEl);

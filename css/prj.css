@@ -104,6 +104,14 @@ hr {
     /* grid-row: 1/ span 2; */
 }
 
+.prj_landing_left h1 {
+    font-size:40px;
+ }
+
+.prj_landing_left h3 {
+   font-size:20px;
+}
+
 .prj_landing_right {
     position: relative;
     grid-column: 5 / span 4;
@@ -117,6 +125,8 @@ hr {
     height: auto;
     margin: auto;
 }
+
+
 
 .prj_main_grid {
     display: grid;
@@ -756,10 +766,10 @@ a.toc-link {
     .nav_logo_container {
         position: relative;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: nowrap;
         height: 5rem;
-        width: 100%;
+        width: 80%;
         margin-top: var(--margin-item);
     }
     .nav_list {
@@ -768,7 +778,7 @@ a.toc-link {
         flex-direction: row;
         justify-content: center;
         height: 5rem;
-        width: 100%;
+        width: 20%;
     }
     .nav_list ul {
         display: flex;
@@ -871,7 +881,7 @@ a.toc-link {
     .nav_logo_container {
         position: relative;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         flex-wrap: nowrap;
         height: 5rem;
         width: 100%;
