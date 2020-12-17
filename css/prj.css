@@ -719,7 +719,7 @@ a.toc-link {
     display: flex;
     position: relative;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     max-width: var(--width-max);
     justify-content: space-between;
 }
@@ -728,11 +728,12 @@ a.toc-link {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 280px;
-    background-color: rgba(var(--color-dark), .05);
+    width: 100%;
+    background-color: rgba(var(--color-dark), .03);
     border-radius: 10px;
     padding: var(--margin-item);
     align-self: stretch;
+    box-sizing: border-box;
 }
 
 .rec_prj img {
@@ -752,6 +753,8 @@ a.toc-link {
 
 .rec_container a {
     color: rgba(var(--color-dark), 1);
+    width:33%;
+    padding:var(--margin-icon)
 }
 /* ------900px---------*/
 
@@ -815,10 +818,18 @@ a.toc-link {
     .rec_section {
         width: 90%;
     }
+    .rec_prj h4{
+        line-height: 24px;
+    }
+
+    .rec_prj p{
+       font-size:  14px;
+    }
+    
 }
 /* ------550px---------*/
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 600px) {
     /*hamburger*/
     .menu-btn { 
         position: fixed; 
@@ -990,6 +1001,61 @@ a.toc-link {
         margin: 0 auto;
         margin-bottom: var(--margin-small);
     }
+    /* other projects rec */
+    .rec_nav {
+        margin: var(--margin-x-small) 0;
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .rec_container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: var(--width-max);
+        justify-content: space-between;
+    }
+    .rec_container a {
+        color: rgba(var(--color-dark), 1);
+        width:100%;
+        height:100%;
+        margin-bottom: var(--margin-item);
+    }
+    .rec_prj {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 95%;
+       /* height:70%; */
+        background-color: rgba(var(--color-dark), .03);
+        border-radius: 10px;
+        padding: var(--margin-item);
+        align-self: stretch;
+        box-sizing: border-box;
+    }
+    
+    .rec_prj img {
+        width: 100%;
+        height:auto
+       
+
+    }
+    
+    .rec_container .tags {
+        margin: 4px;
+        margin-left: 0;
+        padding: 2px 4px;
+        border-radius: 5px;
+        color: rgba(var(--color-dark), 1);
+        font-family: var(--typeface-display);
+        font-weight: 600;
+        font-size: 12px;
+    }
+    
+   
 
     .sticky-toc {
         position: relative;

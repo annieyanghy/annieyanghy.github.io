@@ -1148,6 +1148,23 @@
                         margin: var(--margin-small) auto;
                     }
 
+                    .about_para{
+                        position: relative;
+                        display:flex;
+                        position:relative;
+                        justify-content: center;
+                        align-self: center;
+                        grid-column: 1 / span 6;
+                        height:550px;
+                        margin-bottom: var(--margin-medium);
+                        background-color:rgba(var(--color-tint),1);
+                        background-image: url("../img/branding/pattern_bg.png");
+                        background-repeat: no-repeat;
+                        background-attachment: fixed;
+                        background-position: -250px;
+                        background-size: cover;
+                    }
+
                     .project_resp_container{
                         display:flex;
                         justify-content: flex-start;
