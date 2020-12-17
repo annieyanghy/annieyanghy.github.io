@@ -609,7 +609,6 @@
                 flex-wrap: wrap;
                 grid-column: 1 / span 6;
                 margin: var(--margin-item) 0;
-                margin-bottom: 0;
                 justify-content: flex-start;
             }
             
