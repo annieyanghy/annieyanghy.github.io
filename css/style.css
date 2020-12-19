@@ -18,7 +18,7 @@
                 /* 133,177,173; */
                 --color-tone: 228, 247, 244;
                 --color-tint: 217, 237, 234;
-                --color-dark: 85, 85, 85;
+                --color-dark: 100, 100, 100;
                 --color-white: 255, 255, 255;
                 --color-grey: 204, 204, 204;
                 --color-secondary: 186, 149, 149;
@@ -614,10 +614,12 @@
             
             .filter_button {
                 position: relative;
+                display:flex;
+                justify-content: center;
                 width: 12rem;
-                height: 4rem;
+                /* height: 4rem; */
                 font-size: 1rem;
-                margin:0.8rem;
+                margin: 0  var(--size-half-xxxx-small)  var(--size-xxxx-small) var(--size-half-xxxx-small) ;
                 padding: 1.4rem;
                 background-color: rgba(var(--color-primary-dark), 0);
                 text-decoration: none;
@@ -625,12 +627,15 @@
                 border: solid 5px rgba(var(--color-dark), 0.7);
                 color: rgba(var(--color-dark), 0.7);
                 font-weight: 600;
+                transition: all 0.2s ease-in-out;
+
             }
             
             .filter_button:hover {
                 border: solid 5px rgba(var(--color-primary-dark), 1);
                 color: rgba(var(--color-white), 1);
                 background-color: rgba(var(--color-primary-dark), 1);
+                transition: all 0.2s ease-in-out;
             }
             
             .filter_button:focus {
