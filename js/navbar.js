@@ -1,7 +1,7 @@
 $(document).ready(function() {
   $('#resume_page').click(function(){
     console.log("yo");
-    $('#resume_page').attr("href", "https://drive.google.com/file/d/1V-kcOQOA5KO_JezxzIZ7o68CmXif4x9R/view?usp=sharing");
+    $('#resume_page').attr("href", "Assets/Hsin-yu Yang_Resume 2020_Fall_v1.pdf");
     
   })
   $('#blog_page').click(function(){
