@@ -610,43 +610,49 @@
                 grid-column: 1 / span 6;
                 margin: var(--margin-item) 0;
                 justify-content: flex-start;
+                align-items: flex-start;
                 
             }
             
             .filter_button {
+                /* button */
+                box-sizing: border-box;
                 position: relative;
                 display:flex;
                 justify-content: center;
                 width: 12rem;
-                /* height: 4rem; */
-                font-size: 1rem;
-                margin: 0  var(--size-half-xxxx-small)  var(--size-xxxx-small) var(--size-half-xxxx-small) ;
-                padding: 1.4rem;
+                margin: 0  var(--size-half-xxxx-small) var(--size-xxxx-small) var(--size-half-xxxx-small) ;
+                padding: 1.2rem;
                 background-color: rgba(var(--color-primary-dark), 0);
+                border: solid 3.5px rgba(var(--color-dark), 0.7);
+                /* text */
                 text-decoration: none;
-                cursor: pointer;
-                border: solid 5px rgba(var(--color-dark), 0.7);
+                font-size: 1rem;
                 color: rgba(var(--color-dark), 0.7);
                 font-weight: 600;
-                transition: all 0.2s ease-in-out;
+
+                /* transition */
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+
 
             }
             
             .filter_button:hover {
-                border: solid 5px rgba(var(--color-primary-dark), 1);
+                border: solid 3.5px rgba(var(--color-primary-dark), 1);
                 color: rgba(var(--color-white), 1);
                 background-color: rgba(var(--color-primary-dark), 1);
-                transition: all 0.2s ease-in-out;
+                transition: all 0.3s ease-in-out;
             }
             
             .filter_button:focus {
-                border: solid 5px rgba(var(--color-primary-dark), 1);
+                border: solid 3.5px rgba(var(--color-primary-dark), 1);
                 color: rgba(var(--color-white), 1);
                 background-color: rgba(var(--color-primary-dark), 1);
             }
             
             .filter_button_selected {
-                border: solid 5px rgba(var(--color-primary-dark), 1);
+                border: solid 3.5px rgba(var(--color-primary-dark), 1);
                 color: rgba(var(--color-white), 1);
                 background-color: rgba(var(--color-primary-dark), 1);
             }
@@ -1001,12 +1007,15 @@
                   
                 }
                 .button_container {
-                    justify-content: center;
+                    justify-content: flex-start;
                     margin: var(--margin-medium) auto;
+                    width:95%;
                 }
                 .filter_button{
+                    box-sizing: border-box;
+
                     width: 12rem;
-                    overflow-wrap: normal;
+              
                 }
 
                 .project_resp_container{
@@ -1060,8 +1069,8 @@
                     font-size: 20px;
                 }
 
-                /* ------550px---------*/
-                @media only screen and (max-width: 550px) {
+                /* ------600px---------*/
+                @media only screen and (max-width: 600px) {
                     /*hamburger*/
                     .menu-btn { 
                         position: fixed; 
@@ -1169,6 +1178,16 @@
                         background-attachment: fixed;
                         background-position: -250px;
                         background-size: cover;
+                    }
+                    .button_container {
+                        justify-content: flex-start;
+                        margin: var(--margin-medium) auto;
+                        width:95%;
+                    }
+                    .filter_button{
+                        box-sizing: border-box;
+                        width: auto;
+                  
                     }
 
                     .project_resp_container{

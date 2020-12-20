@@ -244,24 +244,24 @@ hr {
     display:flex;
     width: 8rem;
     font-size: 1rem;
-    padding: 1.4rem;
+    padding: 1rem;
     background-color: rgba(var(--color-primary-dark), 0);
     text-decoration: none;
     cursor: pointer;
-    border: solid 5px rgba(var(--color-dark), 0.7);
+    border: solid 3.5px rgba(var(--color-dark), 0.7);
     color: rgba(var(--color-dark), 0.7);
     font-weight: 600;
     justify-content: center;
-    transition:all 0.2s ease-in-out;
+    transition:all 0.3s ease-in-out;
     margin-top:var(--margin-item)
 
 }
        
 .view_link_button:hover {
-    border: solid 5px rgba(var(--color-primary-dark), 1);
+    border: solid 3.5px rgba(var(--color-primary-dark), 1);
     color: rgba(var(--color-white), 1);
     background-color: rgba(var(--color-primary-dark), 1);
-    transition:all 0.2s ease-in-out;
+    transition:all 0.32s ease-in-out;
 }
 /* ----------content------------ */
 /* info */

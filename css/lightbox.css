@@ -1,4 +1,4 @@
-.lb-disable-scrolling {
+body.lb-disable-scrolling {
   overflow: hidden;
 }
 

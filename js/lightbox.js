@@ -52,7 +52,7 @@
     resizeDuration: 700,
     showImageNumberLabel: true,
     wrapAround: false,
-    disableScrolling: false,
+    disableScrolling: true,
     /*
     Sanitize Title
     If the caption data is trusted, for example you are hardcoding it in, then leave this to false.
@@ -262,8 +262,9 @@
     }).fadeIn(this.options.fadeDuration);
 
     // Disable scrolling of the page while open
-    if (this.options.disableScrolling) {
+    if (this.options.disableScrolling  ) {
       $('body').addClass('lb-disable-scrolling');
+      this.options.disableScrolling
     }
 
     this.changeImage(imageNumber);
@@ -547,6 +548,8 @@
 
     if (this.options.disableScrolling) {
       $('body').removeClass('lb-disable-scrolling');
+      // this.options.disableScrolling =true
+
     }
   };
 
