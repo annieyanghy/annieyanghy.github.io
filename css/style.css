@@ -41,7 +41,7 @@
                 --size-half-xxx-small: 8px;
                 --size-xxxx-small: 12px;
                 --size-half-xxxx-small: 6px;
-                --radius: 20px;
+                --radius: 10px;
             }
             /* ------------body ---------------- */
             
@@ -610,6 +610,7 @@
                 grid-column: 1 / span 6;
                 margin: var(--margin-item) 0;
                 justify-content: flex-start;
+                
             }
             
             .filter_button {
