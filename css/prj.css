@@ -395,8 +395,11 @@ hr {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
     margin-top: var(--margin-item);
+    width:100%;
+
 }
 
 .how_it_works_text {
@@ -405,7 +408,8 @@ hr {
     flex-direction: column;
     flex-wrap: wrap;
     width: 50%;
-    margin: 0 auto;
+    margin: 0 var(--margin-item);
+    float:left;
 }
 
 .how_it_works_text h3 {
@@ -415,8 +419,10 @@ hr {
 .how_it_works_gif {
     position: relative;
     display: flex;
-    width: 40%;
+    width: 36%;
     margin: 0 auto;
+    min-width:250px;
+    height:auto
 }
 /* digital mockups */
 
@@ -462,6 +468,11 @@ hr {
     max-width: 280px;
     max-height: 550px;
     object-fit: contain;
+}
+
+.dev_gif_radius{
+    border-radius: 45px;
+
 }
 /* The Modal  */
 
