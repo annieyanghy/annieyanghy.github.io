@@ -350,32 +350,83 @@ hr {
 }
 
 .prj_key_finding_item{
+    box-sizing:content-box;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width:160px;
+    min-width:160px;
+    max-width:190px;
     padding: var(--margin-x-small);
     background-color: rgba(var(--color-white), 1);
     border-radius: 10px;
-    border: rgba(var(--color-dark), 0.5) solid 1px;
+    border: rgba(var(--color-primary), 1) solid 2px;
+    margin-right: var(--margin-item);
     /* box-shadow: 0 5px 20px 1px rgba(0,0,0,0.1); */
 
 }
 .prj_key_finding_item i{
     font-size:40px;
-    margin: var(--margin-item) auto
+    margin: var(--margin-item) auto;
+    color: rgba(var(--color-primary), 1)
 }
 .prj_finding_title{
     font-size:24px;
     text-align: center;
+    margin: var(--margin-item) 0;
 }
 .prj_key_finding_item p{
     text-align: center;
     line-height: 24px;
     margin: var(--margin-item) auto
 
+}
+
+
+/* vertical */
+.prj_key_finding_container_vertical{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+    margin-bottom: var(--size-medium);
+}
+
+.prj_key_finding_item_vertical{
+    box-sizing:content-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 40%;
+    min-height:150px;
+    padding: var(--margin-x-small);
+    background-color: rgba(var(--color-white), 1);
+    border-radius: 10px;
+    border: rgba(var(--color-primary), 1) solid 2px;
+    margin: 0 var(--margin-item) var(--margin-item) 0;
+    /* box-shadow: 0 5px 20px 1px rgba(0,0,0,0.1); */
+
+}
+.index_container_vertical{
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* width:30%;
+    max-width:160px; */
+    margin-right: var(--margin-item);
+    
+}
+.index_container_vertical .prj_caption{
+    line-height: 16px;
 }
 
 
