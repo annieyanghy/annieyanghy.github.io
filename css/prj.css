@@ -24,7 +24,8 @@
     --color-secondary: 186, 149, 149;
     --color-third: 224, 205, 195;
     --color-fourth: 227, 214, 143;
-    --grid-gap: 100px;
+    --grid-gap: 24px;
+    --grid-gap-row: 80px;
     --margin-primary: 15%;
     --margin-medium: 10%;
     --margin-small: 32px;
