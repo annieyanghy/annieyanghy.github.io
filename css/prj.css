@@ -263,6 +263,21 @@ hr {
     /* background-color: lightblue; */
 }
 
+.prj_logistic_subcate{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.prj_logistic_subcate_item{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.prj_logistic_subcate_item h6{
+    min-width: max-content;
+    margin-right:  var(--margin-item);
+}
+
 .prj_logistic h5 {
     font-size: 16px;
     color: rgba(var(--color-dark), .6);
@@ -409,6 +424,12 @@ hr {
     line-height: 24px;
     margin: var(--margin-item) auto
 
+}
+
+.prj_key_finding_item span{
+    font-size:40px;
+    margin: var(--margin-item) auto;
+    color: rgba(var(--color-primary), 1)
 }
 
 
@@ -786,6 +807,15 @@ hr {
     width:100%;
 }
 
+.prj_resp_imagebox_vertical{
+    display:flex;
+    position:relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width:100%;
+}
+
 /* .prj_resp_imagebox img{
     width:auto;
     display:flex;
@@ -796,8 +826,8 @@ hr {
     display:flex;
     position:relative;
     width:50%;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
     height:auto;
     padding: 0 5px;
 
