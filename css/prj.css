@@ -240,14 +240,14 @@ hr {
 .prj_logistic_container_left{
     display: flex;
     flex-direction: column;
-    /* width: 50%; */
+    width: 50%;
     padding:20px;
 
 }
 .prj_logistic_container_right{
     display: flex;
     flex-direction: column;
-    /* width: 50%; */
+    width: 50%;
     padding:20px;
 }
 
@@ -542,7 +542,7 @@ hr {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 50%;
+    width: 40%;
     margin: 0 var(--margin-item);
     float:left;
 }
@@ -555,9 +555,15 @@ hr {
     position: relative;
     display: flex;
     width: 36%;
-    margin: 0 auto;
+    margin: 0 var(--margin-x-small);
     min-width:250px;
     height:auto
+}
+
+.comic{
+    box-sizing: border-box;
+    border: solid 2px rgba(var(--color-dark), 0.3);
+    width: 50%;
 }
 
 .prj_stack_gif_2{
@@ -834,6 +840,15 @@ hr {
     font-weight:700;
     color: rgba(var(--color-dark), .3);
     margin-top:var(--margin-small);
+}
+.prj_bullet_point_row{
+    display: flex;
+    flex-direction:row;
+}
+
+.prj_bullet_point_row h6{
+    margin-right: 20px;
+    min-width: max-content;
 }
 /* ------handy index ---------*/
 
