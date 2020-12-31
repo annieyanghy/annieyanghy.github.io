@@ -295,6 +295,7 @@ hr {
     position: relative;
     display:flex;
     min-width: 8rem;
+    max-width:10rem;
     font-size: 1rem;
     padding: 1rem;
     background-color: rgba(var(--color-primary-dark), 0);
@@ -698,11 +699,15 @@ hr {
     height: auto;
     max-width: 280px;
     max-height: 550px;
-    object-fit: contain;
+    /* object-fit: contain; */
 }
 
 .dev_gif_radius{
-    border-radius: 45px;
+    /* border-radius: 45px; */
+    /* border: 2px solid red; */
+    border-radius: 13%;
+    width:100%;
+    
 
 }
 /* The Modal  */
@@ -1278,8 +1283,8 @@ a.toc-link {
         height: auto;
         margin: 0 auto;
         max-width: none;
-        max-height: 600px;
-        object-fit: contain;
+        /* max-height: 600px; */
+        /* object-fit: contain; */
     }
     /* how_it_works */
     .mockups_row_container {
@@ -1303,7 +1308,7 @@ a.toc-link {
         height: auto;
         max-width: none;
         max-height: none;
-        object-fit: contain;
+        /* object-fit: contain; */
         margin: 0 auto;
         margin-bottom: var(--margin-small);
     }
