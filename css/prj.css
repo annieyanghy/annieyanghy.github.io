@@ -294,7 +294,7 @@ hr {
 .view_link_button{
     position: relative;
     display:flex;
-    width: 8rem;
+    min-width: 8rem;
     font-size: 1rem;
     padding: 1rem;
     background-color: rgba(var(--color-primary-dark), 0);
@@ -1124,7 +1124,7 @@ a.toc-link {
     }
     
 }
-/* ------550px---------*/
+/* ------6000px---------*/
 
 @media only screen and (max-width: 600px) {
     /*hamburger*/
@@ -1234,6 +1234,15 @@ a.toc-link {
         width: 100%;
         margin: 0 var(--margin-icon);
     }
+
+    .prj_logistic_container_left, .prj_logistic_container_right{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+      
+    
+    }
+    
     /* how_it_works */
     .how_it_works {
         position: relative;
