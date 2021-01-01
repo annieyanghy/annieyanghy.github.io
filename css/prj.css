@@ -839,7 +839,7 @@ hr {
 }
 
 .prj_resp_imagebox .prj_resp_imageitem_3{
-
+    box-sizing: border-box;
     display:flex;
     position:relative;
     width:33%;
@@ -1311,6 +1311,38 @@ a.toc-link {
         /* object-fit: contain; */
         margin: 0 auto;
         margin-bottom: var(--margin-small);
+    }
+
+    .prj_stack_gif_2{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width:100%;
+        margin: var(--margin-item) 0;
+      
+    }
+    .prj_stack_gif_2 img{
+        position: relative;
+        width:50%;
+        height:auto
+    }
+    .prj_key_finding_item_vertical{
+        box-sizing:content-box;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 60%;
+        min-height:150px;
+        padding: var(--margin-x-small);
+        background-color: rgba(var(--color-white), 1);
+        border-radius: 10px;
+        border: rgba(var(--color-primary), 1) solid 2px;
+        margin: 0 var(--margin-item) var(--margin-item) 0;
+        /* box-shadow: 0 5px 20px 1px rgba(0,0,0,0.1); */
+    
     }
 
    
