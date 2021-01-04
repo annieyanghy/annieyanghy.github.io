@@ -100,60 +100,11 @@ $(document).ready(function() {
     })
 
 
-    // // -------- handy index-----------//
-
-    // $(document).scroll(function() {
-
-
-    //     if ($(document).scrollTop() > 300) {
-    //         $(".handy_index_container").css("display", "flex");
-
-    //     } else {
-    //         $(".handy_index_container").css("display", "none");
-    //     }
-
-    //     // var w_offset = $("#HIW").offset().top - $(window).scrollTop();
-    //     // if (w_offset < 0){
-    //     // 	$(document).find().css("font-weight", "600");
-
-    //     // } else{
-    //     // 	$("#HIW h3").css("font-weight", "400");
-    //     // }
-
-    //     var scrollPos = $(window).scrollTop();
-    //     $(".handy_index").each(function() {
-    //         var curTitle = $(this).offset().top - scrollPos;
-    //         var title = $(this).attr("href");
-
-    //         if (title && curTitle <= 0) {
-    //             $(".handy_index_li" + title).addClass("handy_active");
-    //             console.log(event)
-    //         } else {
-    //             $(this).removeClass("handy_active");
-    //         }
-    //     })
-
-    // })
-
-
-
-
-
-    // --------prj sticky title-----------//
-
-    // $(window).scroll(function(){
-
-    // 	if ($(window).scrollTop() >= $(".prj_index_container .prj_index").offset().top){
-    // 		$(".prj_index_container .prj_index").addClass("sticky_title");
-    // 		console.log("sticky")
-    // 	} else{
-    // 		$(this).removeClass("sticky_title");
-    // 	}
-
-
-
-    // })
-
+    // video autoplay//
+    $('video').prop('autoplay', true);
+    $('video').prop('muted', true);
+    $('video').prop('loop', true);
+    $('video').prop('controls', true);
 
 
     // --------filter-----------//
