@@ -582,6 +582,10 @@ hr {
     height:auto
 }
 
+.how_it_works_gif video{
+    width: 100%;
+}
+
 .comic{
     box-sizing: border-box;
     border: solid 2px rgba(var(--color-dark), 0.3);
@@ -693,6 +697,16 @@ hr {
 }
 
 .mockups_gif img {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+    max-height: 550px;
+    /* object-fit: contain; */
+}
+
+.mockups_gif video {
     position: relative;
     display: flex;
     width: 100%;
