@@ -516,7 +516,7 @@ hr {
 .prj_in_text_link{
     color: rgba(var(--color-dark), 1);
     text-decoration: underline;
-    text-decoration-thickness:4px;
+    text-decoration-thickness:2px;
     text-underline-offset: 6px;
     text-decoration-color:rgba(var(--color-primary), 0.5);
     transition: all 0.3s ease-in-out
@@ -525,12 +525,18 @@ hr {
 .prj_in_text_link:hover{
     color: rgba(var(--color-primary), 1);
     text-decoration: underline;
-    text-decoration-thickness:4px;
+    text-decoration-thickness:2px;
     text-underline-offset: 6px;
-    text-decoration-color:rgba(var(--color-primary), 1);
+    text-decoration-color:rgba(var(--color-primary), 0.5);
     transition: all 0.3s ease-in-out
 }
 
+.credits{
+    font-size: 14px;
+    font-weight: 700;
+    color:rgba(var(--color-dark), 0.6);
+    font-style: italic;
+}
 
 /* how it works */
 
@@ -998,7 +1004,7 @@ a.toc-link {
     color: rgba(var(--color-dark), 0.3);
     display: flex;
     position: relative;
-    border: solid 5px rgba(var(--color-dark), 0.3);
+    border: solid 3px rgba(var(--color-dark), 0.3);
     background-color: rgba(var(--color-primary), 0);
     font-size: var(--size-xx-small);
     border-radius: 100px;
@@ -1009,7 +1015,7 @@ a.toc-link {
 .handy_nav_container .fa:hover {
     background-color: rgba(var(--color-primary), 1);
     color: rgba(var(--color-white), 1);
-    border: solid 5px rgba(var(--color-primary), 1);
+    border: solid 3px rgba(var(--color-primary), 1);
     cursor: pointer;
     transform: none;
 }

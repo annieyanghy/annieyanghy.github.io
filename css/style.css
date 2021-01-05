@@ -287,6 +287,18 @@
               
             }
 
+            .sec_3 {
+                display: block;
+                position: relative;
+                /* background-color:rgba(var(--color-gray),1); */
+                width: 100%;
+                min-height: 500px;
+                padding-top: var(--margin-small);
+                padding-bottom: var(--margin-small);
+              
+            }
+
+
             
             .sec_1 .fa {
                 color: rgba(var(--color-primary-dark), 1);
@@ -558,6 +570,12 @@
 
             .about_intro_content div{
                 width:32%;
+                max-height:min-content;
+                /* margin:var(--margin-item); */
+            }
+            .about_intro_content div img{
+                width:100%;
+                max-height:min-content;
                 /* margin:var(--margin-item); */
             }
 
