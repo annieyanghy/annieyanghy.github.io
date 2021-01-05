@@ -584,6 +584,7 @@ hr {
 
 .how_it_works_gif video{
     width: 100%;
+    max-height:610px
 }
 
 .comic{
