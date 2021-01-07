@@ -783,7 +783,14 @@
                 width: 100%;
                 background-color: rgba(var(--color-tint), 0);
                 grid-row: 2 / span 1;
-                border-top: 2px solid rgba(var(--color-dark), 0.08);
+              
+                /* border-image: 2px solid   
+                            linear-gradient(to right,
+                               
+                                rgba(var(--color-dark), 0.08), 
+                                rgba(var(--color-dark), 0)); */
+              
+              
             }
             
             .prj_info:hover {
@@ -792,7 +799,9 @@
             }
             
             .prj_title {
-                margin: 10px;
+                border-top: 2px solid rgba(var(--color-dark), 0.08);
+                padding-top: var(--margin-item);
+                margin: var(--margin-item);
               
             }
             .prj_title h2{
@@ -820,6 +829,7 @@
                 margin: 8px;
                 margin-left: 0;
                 padding: 4px 8px;
+                /* padding: var(--margin-icon); */
                 border-radius: 5px;
                 color: rgba(var(--color-dark), 1);
                 font-size:12px;
