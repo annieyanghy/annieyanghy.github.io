@@ -957,7 +957,7 @@
                     width: 28px; 
                     height: 3px; 
                     margin: 0 0 5px 0; 
-                    background: black; 
+                    background: rgba(var(--color-dark), 0.8); 
                     transition: all 0.5s ease-out; 
                 } 
                 /* Adding tranform to the X */
@@ -1138,7 +1138,7 @@
                         width: 28px; 
                         height: 3px; 
                         margin: 0 0 5px 0; 
-                        background: black; 
+                        background: rgba(var(--color-dark), 0.8); 
                         transition: all 0.5s ease-out; 
                     } 
                     /* Adding tranform to the X */
