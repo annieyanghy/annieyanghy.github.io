@@ -933,8 +933,8 @@ hr {
     display:flex;
     position:relative;
     flex-direction:row;
-   align-items: center;
-   margin-bottom: 0;
+    align-items: center;
+    margin-bottom: 0;
 }
 .TU_container img{
     width:30%;
@@ -947,11 +947,39 @@ hr {
 }
         /* jump to section link */
 .TU_info a{ 
+  
+    position:relative;
+    align-items: center;
     margin-bottom:0;
+    width: max-content;
+    font-weight: 700;
+    color:rgba(var(--color-dark), .7)
+  
 }
 
 .TU_info a span{
-    margin-left: var(--margin-icon)
+    /* margin-left:var(--size-half-xxxx-small); */
+    font-size:var(--size-xx-small);  
+}
+
+.jump_container{
+      display:flex;
+      flex-direction: row;
+      padding: var(--size-xxx-small);
+      align-items: flex-end;
+
+}
+.shimmering{
+      
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: shimmering;
+}
+@keyframes  shimmering{
+    0%, 20%, 80%, 100% {  opacity:0.3;}
+    40% {  opacity:0.8;}
+    60% {  opacity:0.8;}
+  
 }
 
 /* ------handy index ---------*/
