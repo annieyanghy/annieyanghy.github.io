@@ -1494,6 +1494,13 @@ a.toc-link {
         align-items: center;
         margin-bottom: var(--margin-medium);
     }
+    .TU_container:last-child{
+        display:flex;
+        position:relative;
+        flex-direction:column;
+        align-items: center;
+        margin-bottom: 0;
+    }
     .TU_container img {
         width: 50%;
         height: auto;
