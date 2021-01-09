@@ -1499,7 +1499,7 @@ a.toc-link {
         position:relative;
         flex-direction:column;
         align-items: center;
-        margin-bottom: 1px;
+        margin-bottom: 0;
     }
     .TU_container img {
         width: 50%;
