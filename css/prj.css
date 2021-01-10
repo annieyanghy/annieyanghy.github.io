@@ -123,6 +123,9 @@ hr {
 
 .prj_landing_left h3 {
    font-size:20px;
+   line-height: 32px;
+   /* min-height:160px; */
+   margin-bottom: var(--size-small)
 }
 
 .prj_landing_right {
@@ -1493,6 +1496,13 @@ a.toc-link {
         flex-direction: column;
         align-items: center;
         margin-bottom: var(--margin-medium);
+    }
+    .TU_container:last-child{
+        display:flex;
+        position:relative;
+        flex-direction:column;
+        align-items: center;
+        margin-bottom: 0;
     }
     .TU_container img {
         width: 50%;
