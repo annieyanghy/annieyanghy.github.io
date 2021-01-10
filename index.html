@@ -37,7 +37,10 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/script.js" defer></script>
     <script src="js/hamburger.js" defer></script>
+    <!-- Fontawesome Icon -->
     <script src="https://use.fontawesome.com/d84889ebb7.js"></script>
+    <!-- MDI Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
     <script src="https://unpkg.com/enter-view"></script>
     <script src="js/navbar.js"></script>
 
@@ -139,30 +142,36 @@
                 <button class="filter_button " type="button" data-filter=".proto">Prototyping</button>
                 <button class="filter_button " type="button" data-filter=".dev">Coding</button>
                 <button class="filter_button " type="button" data-filter=".research">Research</button>
-                <button class="filter_button " type="button" data-filter=".class">Class project</button>
+                <!-- <button class="filter_button " type="button" data-filter=".class">Class project</button>
                 <button class="filter_button " type="button" data-filter=".profession">Work project</button>
-                <button class="filter_button " type="button" data-filter=".side">Side project</button>
+                <button class="filter_button " type="button" data-filter=".side">Side project</button> -->
+            
                 <!-- <button class="filter_button " type="button" data-toggle=".class">Class project</button>
                 <button class="filter_button " type="button" data-toggle=".profession">Work project</button>
                 <button class="filter_button " type="button" data-toggle=".side">Side project</button> -->
 
                 <!-- <button class="filter_button " type="button" data-filter=".graphic">Graphic Design</button> -->
             </div>
+            <div  class="sorting_container"> 
+                <button id="sort_time_des" class="sorting_button sort_activated " type="button" data-sort="time:desc"><span class="mdi mdi-sort-calendar-descending">  New to old</span></button>
+                <button id="sort_time_asc" class="sorting_button  " type="button" data-sort="time:asc"><span class="mdi mdi-sort-calendar-ascending">  Old to new</span></button>
+
+            </div>
 
             <!-- projects -->
             <ul class="project_resp_container">
   
             <!-- 1 SI 582 Design Mentorship -->
-            <li class="mix flex_item pd proto research class">
+            <li class="mix flex_item pd proto research class" data-time="2021.01">
                 <a class="prj_grid" href="design_mentorship.html">
                     <div class="prj_img_container">
-                        <img class="prj_img img_scale" src="img/prj_thumbnail/header_bulb.png" />
+                        <img class="prj_img img_scale" alt="Thumbnail of Design Mentorship App" src="img/prj_thumbnail/header_bulb.png" />
                     </div>
 
                     <div class="prj_info ">
                         <div class="prj_title">
                             <h2 >Design Mentorship App</h2>
-                            <p>2019 Sep. - Dec.</p>
+                            <p>2019 Sep. - Dec., 2021 Jan.</p>
                         </div>
 
                         <div class="tags_container">
@@ -175,10 +184,10 @@
                 </a>
             </li>
             <!-- 2 Duo -->
-            <li class="mix flex_item pd proto research profession">
+            <li class="mix flex_item pd proto research profession" data-time="2020.08">
                 <a class="prj_grid" href="duo.html">
                     <div class="prj_img_container">
-                        <img class="prj_img img_scale" src="img/prj_thumbnail/Duo_trans.png" />
+                        <img class="prj_img img_scale" alt="Thumbnail of Duo Security Internship Project" src="img/prj_thumbnail/Duo_trans.png" />
                     </div>
 
                     <div class="prj_info ">
@@ -197,10 +206,10 @@
                 </a>
             </li>
             <!-- 3 SI 684 Focus App -->
-            <li class="mix flex_item pd research class">
+            <li class="mix flex_item pd proto research class" data-time="2020.12">
                 <a class="prj_grid" href="focus.html">
                     <div class="prj_img_container">
-                        <img class="prj_img img_scale" src="img/prj_thumbnail/SI684_thumbnail_3.png" />
+                        <img class="prj_img img_scale" alt="Thumbnail of Focus App" src="img/prj_thumbnail/SI684_thumbnail_3.png" />
                     </div>
                     <div class="prj_info ">
                         <div class="prj_title">
@@ -220,10 +229,10 @@
                 </a>
             </li>
             <!-- 4 SI 669 Designer Café -->
-            <li class="mix flex_item pd dev class">
+            <li class="mix flex_item pd dev class " data-time="2020.12">
                 <a class="prj_grid" href="mobdev.html">
                     <div class="prj_img_container">
-                        <img class="prj_img img_scale" src="img/prj_thumbnail/SI669_trans.png" />
+                        <img class="prj_img img_scale" alt="Thumbnail of Designer Café, a self-developed app" src="img/prj_thumbnail/SI669_trans.png" />
                     </div>
                     <div class="prj_info ">
                         <div class="prj_title">
@@ -241,10 +250,10 @@
             </li>
 
             <!-- 2 -->
-            <li class="mix flex_item pd proto research side">
+            <li class="mix flex_item pd proto research side" data-time="2020.01">
                 <a class="prj_grid" href="change.html">
                     <div class="prj_img_container">
-                        <img class="prj_img img_scale" src="img/prj_thumbnail/change_thumbnail_v2_small size.png" />
+                        <img class="prj_img img_scale" alt="Thumbnail of Sustainable Habit App" src="img/prj_thumbnail/change_thumbnail_v2_small size.png" />
                     </div>
                     <div class="prj_info ">
                         <div class="prj_title">
@@ -266,10 +275,10 @@
           
           
             <!-- 5 -->
-            <li class="mix flex_item pd proto research profession">
+            <li class="mix flex_item pd proto research profession" data-time="2019.07">
                 <a class="prj_grid" href="mobagel.html">
                     <div class="prj_img_container">
-                        <img class="prj_img img_scale" src="img/prj_thumbnail/Decanter+AI.png" />
+                        <img class="prj_img img_scale" alt="Thumbnail of AI Data Dashboard" src="img/prj_thumbnail/Decanter+AI.png" />
                     </div>
                     <div class="prj_info ">
                         <div class="prj_title">
@@ -286,10 +295,10 @@
                 </a>
             </li>
             <!-- 6 -->
-            <li class="mix flex_item pd dev class">
+            <li class="mix flex_item pd dev class" data-time="2020.12">
                 <a class="prj_grid" href="datavis.html">
                     <div class="prj_img_container">
-                        <img class="prj_img img_scale" src="img/prj_thumbnail/SI649_Static_Poster_Trans.png" />
+                        <img class="prj_img img_scale" alt="Thumbnail of Data Visualization" src="img/prj_thumbnail/SI649_Static_Poster_Trans.png" />
                     </div>
                     <div class="prj_info ">
                         <div class="prj_title">
@@ -304,10 +313,10 @@
                 </a>
             </li>
             <!-- 10 -->
-            <li class="mix flex_item pd research class">
+            <li class="mix flex_item pd research class" data-time="2020.12">
                 <a class="prj_grid" href="iotdesign.html">
                     <div class="prj_img_container">
-                        <img class="prj_img img_scale" src="img/prj_thumbnail/SI612_trans.png" />
+                        <img class="prj_img img_scale" alt="Thumbnail of Talkiie" src="img/prj_thumbnail/SI612_trans.png" />
                     </div>
                     <div class="prj_info ">
                         <div class="prj_title">
@@ -323,10 +332,10 @@
                 </a>
             </li>
             <!-- 7 -->
-            <li class="mix flex_item pd proto class">
+            <li class="mix flex_item pd proto class" data-time="2020.04">
                 <a class="prj_grid" href="oepledge.html">
                     <div class="prj_img_container">
-                        <img class="prj_img img_scale" src="img/prj_thumbnail/OEPledge_trans.png" />
+                        <img class="prj_img img_scale" alt="Thumbnail of Opportunity Equity Pledge" src="img/prj_thumbnail/OEPledge_trans.png" />
                     </div>
                     <div class="prj_info ">
                         <div class="prj_title">
@@ -343,10 +352,10 @@
                 </a>
             </li>
             <!-- 8 -->
-            <li class="mix flex_item proto dev class">
+            <li class="mix flex_item  dev class" data-time="2020.04">
                 <a class="prj_grid" href="">
                     <div class="prj_img_container">
-                        <img class="prj_img img_scale" src="img/prj_thumbnail/VR Garden_trans.png" />
+                        <img class="prj_img img_scale" alt="Thumbnail of Little Prince's AR Garden" src="img/prj_thumbnail/VR Garden_trans.png" />
                     </div>
                     <div class="prj_info ">
                         <div class="prj_title">
@@ -363,10 +372,10 @@
                 </a>
             </li>
             <!-- 9 -->
-            <li class="mix flex_item pd proto research side">
+            <li class="mix flex_item pd proto research side" data-time="2018.09">
                 <a class="prj_grid" href="yoginie.html">
                     <div class="prj_img_container">
-                        <img class="prj_img img_scale" src="img/prj_thumbnail/Yoginie_thumbnail_new.png" />
+                        <img class="prj_img img_scale" alt="Thumbnail of Yoginie" src="img/prj_thumbnail/Yoginie_thumbnail_new.png" />
                     </div>
                     <div class="prj_info ">
                         <div class="prj_title">
