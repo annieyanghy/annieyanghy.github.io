@@ -109,8 +109,29 @@ $(document).ready(function() {
 
     // --------filter-----------//
 
+    $(document).ready(function() {
+        // $("#sort_time_asc").css("visibiilty", "hidden");
+        $("#sort_time_des").click(function(event){
+           
+              $("#sort_time_des").addClass("sort_activated");
+              $("#sort_time_asc").removeClass("sort_activated");
+         
+            //   $("#sort_time_des").css("display", "none");
+              console.log("New to old")
+    
+        })
+        $("#sort_time_asc").click(function(event){
+            $("#sort_time_asc").addClass("sort_activated");
+            $("#sort_time_des").removeClass("sort_activated");
 
+            console.log("Old to new")
+  
+      })
+    
+       
+      });
 
+    
     $(".button_container button").click(function(event) {
 
 
