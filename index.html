@@ -152,9 +152,10 @@
 
                 <!-- <button class="filter_button " type="button" data-filter=".graphic">Graphic Design</button> -->
             </div>
-            <div  class="sorting_container"> 
-                <button id="sort_time_des" class="sorting_button sort_activated " type="button" data-sort="time:desc"><span class="mdi mdi-sort-calendar-descending">  New to old</span></button>
-                <button id="sort_time_asc" class="sorting_button  " type="button" data-sort="time:asc"><span class="mdi mdi-sort-calendar-ascending">  Old to new</span></button>
+            <div  class="sorting_container">                 
+                <button id="sort_featured" class="sorting_button sort_activated " type="button" data-sort="featured:asc"><span class="mdi mdi-heart">  Featured</span></button>
+                <button id="sort_time_des" class="sorting_button" type="button" data-sort="time:desc"><span class="mdi mdi-sort-calendar-descending">  Newest</span></button>
+                <!-- <button id="sort_time_asc" class="sorting_button  " type="button" data-sort="time:asc"><span class="mdi mdi-sort-calendar-ascending">  Old to new</span></button> -->
 
             </div>
 
@@ -162,7 +163,7 @@
             <ul class="project_resp_container">
   
             <!-- 1 SI 582 Design Mentorship -->
-            <li class="mix flex_item pd proto research class" data-time="2021.01">
+            <li class="mix flex_item pd proto research class" data-time="2021.01" data-featured="1">
                 <a class="prj_grid" href="design_mentorship.html">
                     <div class="prj_img_container">
                         <img class="prj_img img_scale" alt="Thumbnail of Design Mentorship App" src="img/prj_thumbnail/header_bulb.png" />
@@ -184,7 +185,7 @@
                 </a>
             </li>
             <!-- 2 Duo -->
-            <li class="mix flex_item pd proto research profession" data-time="2020.08">
+            <li class="mix flex_item pd proto research profession" data-time="2020.08" data-featured="2">
                 <a class="prj_grid" href="duo.html">
                     <div class="prj_img_container">
                         <img class="prj_img img_scale" alt="Thumbnail of Duo Security Internship Project" src="img/prj_thumbnail/Duo_trans.png" />
@@ -206,7 +207,7 @@
                 </a>
             </li>
             <!-- 3 SI 684 Focus App -->
-            <li class="mix flex_item pd proto research class" data-time="2020.12">
+            <li class="mix flex_item pd proto research class" data-time="2020.12" data-featured="3">
                 <a class="prj_grid" href="focus.html">
                     <div class="prj_img_container">
                         <img class="prj_img img_scale" alt="Thumbnail of Focus App" src="img/prj_thumbnail/SI684_thumbnail_3.png" />
@@ -229,7 +230,7 @@
                 </a>
             </li>
             <!-- 4 SI 669 Designer Café -->
-            <li class="mix flex_item pd dev class " data-time="2020.12">
+            <li class="mix flex_item pd dev class " data-time="2020.12" data-featured="4">
                 <a class="prj_grid" href="mobdev.html">
                     <div class="prj_img_container">
                         <img class="prj_img img_scale" alt="Thumbnail of Designer Café, a self-developed app" src="img/prj_thumbnail/SI669_trans.png" />
@@ -250,7 +251,7 @@
             </li>
 
             <!-- 2 -->
-            <li class="mix flex_item pd proto research side" data-time="2020.01">
+            <li class="mix flex_item pd proto research side" data-time="2020.01" data-featured="5">
                 <a class="prj_grid" href="change.html">
                     <div class="prj_img_container">
                         <img class="prj_img img_scale" alt="Thumbnail of Sustainable Habit App" src="img/prj_thumbnail/change_thumbnail_v2_small size.png" />
@@ -275,7 +276,7 @@
           
           
             <!-- 5 -->
-            <li class="mix flex_item pd proto research profession" data-time="2019.07">
+            <li class="mix flex_item pd proto research profession" data-time="2019.07" data-featured="6">
                 <a class="prj_grid" href="mobagel.html">
                     <div class="prj_img_container">
                         <img class="prj_img img_scale" alt="Thumbnail of AI Data Dashboard" src="img/prj_thumbnail/Decanter+AI.png" />
@@ -295,7 +296,7 @@
                 </a>
             </li>
             <!-- 6 -->
-            <li class="mix flex_item pd dev class" data-time="2020.12">
+            <li class="mix flex_item pd dev class" data-time="2020.12"  data-featured="7">
                 <a class="prj_grid" href="datavis.html">
                     <div class="prj_img_container">
                         <img class="prj_img img_scale" alt="Thumbnail of Data Visualization" src="img/prj_thumbnail/SI649_Static_Poster_Trans.png" />
@@ -313,7 +314,7 @@
                 </a>
             </li>
             <!-- 10 -->
-            <li class="mix flex_item pd research class" data-time="2020.12">
+            <li class="mix flex_item pd research class" data-time="2020.12" data-featured="8">
                 <a class="prj_grid" href="iotdesign.html">
                     <div class="prj_img_container">
                         <img class="prj_img img_scale" alt="Thumbnail of Talkiie" src="img/prj_thumbnail/SI612_trans.png" />
@@ -332,7 +333,7 @@
                 </a>
             </li>
             <!-- 7 -->
-            <li class="mix flex_item pd proto class" data-time="2020.04">
+            <li class="mix flex_item pd proto class" data-time="2020.04" data-featured="9">
                 <a class="prj_grid" href="oepledge.html">
                     <div class="prj_img_container">
                         <img class="prj_img img_scale" alt="Thumbnail of Opportunity Equity Pledge" src="img/prj_thumbnail/OEPledge_trans.png" />
@@ -352,7 +353,7 @@
                 </a>
             </li>
             <!-- 8 -->
-            <li class="mix flex_item  dev class" data-time="2020.04">
+            <li class="mix flex_item  dev class" data-time="2020.04" data-featured="10">
                 <a class="prj_grid" href="">
                     <div class="prj_img_container">
                         <img class="prj_img img_scale" alt="Thumbnail of Little Prince's AR Garden" src="img/prj_thumbnail/VR Garden_trans.png" />
@@ -372,7 +373,7 @@
                 </a>
             </li>
             <!-- 9 -->
-            <li class="mix flex_item pd proto research side" data-time="2018.09">
+            <li class="mix flex_item pd proto research side" data-time="2018.09" data-featured="11">
                 <a class="prj_grid" href="yoginie.html">
                     <div class="prj_img_container">
                         <img class="prj_img img_scale" alt="Thumbnail of Yoginie" src="img/prj_thumbnail/Yoginie_thumbnail_new.png" />

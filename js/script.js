@@ -115,6 +115,7 @@ $(document).ready(function() {
            
               $("#sort_time_des").addClass("sort_activated");
               $("#sort_time_asc").removeClass("sort_activated");
+              $("#sort_featured").removeClass("sort_activated");
          
             //   $("#sort_time_des").css("display", "none");
               console.log("New to old")
@@ -122,11 +123,21 @@ $(document).ready(function() {
         })
         $("#sort_time_asc").click(function(event){
             $("#sort_time_asc").addClass("sort_activated");
-            $("#sort_time_des").removeClass("sort_activated");
+            $("#sort_time_des" ).removeClass("sort_activated");
+            $("#sort_featured").removeClass("sort_activated");
 
             console.log("Old to new")
   
       })
+
+      $("#sort_featured").click(function(event){
+        $("#sort_featured").addClass("sort_activated");
+        $("#sort_time_des").removeClass("sort_activated");
+        $("#sort_time_asc").removeClass("sort_activated");
+
+        console.log("Featured")
+
+  })
     
        
       });
