@@ -13,7 +13,8 @@ $(document).ready(function() {
 
   $('#about_page').click(function(){
 
-    $('#about_page').attr("href", "about.html");    
+    $('#about_page').attr("href", "about.html");
+
   })
 
   });
