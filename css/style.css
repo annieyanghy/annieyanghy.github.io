@@ -7,9 +7,14 @@
                 --line-height-title: 4rem;
                 --line-height-subtitle: 3rem;
                 --line-height-header: 2rem;
-                --color-primary: 148, 187, 184;
+                --color-primary: 229, 247, 244;
+                --color-primary-dark:148, 187, 184;
+                --color-dark: 82,82,82;
+                --color-white: 255, 255, 255;
+
+                /* --color-primary: 148, 187, 184;
                 --color-primary-dark: 117, 161, 157;
-                --color-primary-mono_dark: 110, 133, 132;
+                --color-primary-mono_dark: 110, 133, 132; */
                 --color-complementary: 186, 160,147;
                 --color-gray:247, 247, 247;
                 --color-ivory: 245, 241, 240;
@@ -18,8 +23,7 @@
                 /* 133,177,173; */
                 --color-tone: 228, 247, 244;
                 --color-tint: 217, 237, 234;
-                --color-dark: 100, 100, 100;
-                --color-white: 255, 255, 255;
+               
                 --color-grey: 204, 204, 204;
                 --color-secondary: 186, 149, 149;
                 --color-third: 224, 205, 195;
@@ -49,7 +53,9 @@
             h2 {
                 font-family: var(--typeface-display);
                 line-height: var(--line-height-title);
-                color: rgba(var(--color-primary-dark), 1);
+                /* color: rgba(var(--color-primary-dark), 1); */
+                color: rgba(var(--color-dark), 1);
+
                 text-transform: capitalize;
             }
             
@@ -134,11 +140,14 @@
             /* ----------nav bar -----------*/
             
             header {
-                background-color: rgba(var(--color-dark), 0);
+                background-color: rgba(var(--color-primary), 0);
                 width: 100%;
                 display: block;
 
-                
+            }
+            #index_header{
+                background-color: rgba(var(--color-primary), 1);
+
             }
             
             nav {
@@ -284,7 +293,9 @@
                 width: 100%;
                 /* height:500px; */
                 min-height: 500px;
-                background-color: rgba(var(--color-gray), 0.5)
+                /* background-color: rgba(var(--color-gray), 0.5) */
+                background-color: rgba(var(--color-primary), 1)
+
 
               
             }
@@ -314,7 +325,7 @@
 
             
             .sec_1 .fa {
-                color: rgba(var(--color-primary-dark), 1);
+                color: rgba(var(--color-dark), 1);
                 font-size: var(--size-x-small);
                 padding: var(--margin-icon);
                 border-radius: 10px;
@@ -332,7 +343,7 @@
                 grid-column-gap: var(--grid-gap);
                 grid-row-gap: var(--grid-gap);
                 margin: 0 auto;
-                margin-top: var(--margin-small);
+                padding-top: var(--margin-small);
                 max-width: var(--width-max);
                 padding: var(--margin-small) 0;
                
@@ -357,7 +368,7 @@
             .landing_left h6{
                 font-size:20px;
                 font-weight: 500;
-                background-color: rgba(var(--color-gray), 0.5)
+                /* background-color: rgba(var(--color-gray), 0.5) */
 
             }
             
@@ -691,25 +702,35 @@
             }
             
             .filter_button:hover {
-                border: solid 3.5px rgba(var(--color-primary-dark), 1);
+                /* border: solid 3.5px rgba(var(--color-primary-dark), 1);
                 color: rgba(var(--color-white), 1);
-                background-color: rgba(var(--color-primary-dark), 1);
+                background-color: rgba(var(--color-primary-dark), 1); */
                 transition: all 0.3s ease-in-out;
+                border: solid 3.5px rgba(var(--color-dark), 0.7);
+                color: rgba(var(--color-white), 1);
+                background-color: rgba(var(--color-dark), 0.7);
             }
             
             .filter_button:focus {
-                border: solid 3.5px rgba(var(--color-primary-dark), 1);
+                /* border: solid 3.5px rgba(var(--color-primary-dark), 1);
                 color: rgba(var(--color-white), 1);
-                background-color: rgba(var(--color-primary-dark), 1);
+                background-color: rgba(var(--color-primary-dark), 1); */
+                border: solid 3.5px rgba(var(--color-dark), 0.7);
+                color: rgba(var(--color-white), 1);
+                background-color: rgba(var(--color-dark), 0.7);
             }
             
             .filter_button_selected {
-                border: solid 3.5px rgba(var(--color-primary-dark), 1);
+                /* border: solid 3.5px rgba(var(--color-primary-dark), 1);
                 color: rgba(var(--color-white), 1);
-                background-color: rgba(var(--color-primary-dark), 1);
+                background-color: rgba(var(--color-primary-dark), 1); */
+                border: solid 3.5px rgba(var(--color-dark), 0.7);
+                color: rgba(var(--color-white), 1);
+                background-color: rgba(var(--color-dark), 0.7);
             }
 
             .sorting_container{
+                margin: 0  var(--size-half-xxxx-small) var(--size-xxxx-small) var(--size-half-xxxx-small) ;
                 display:flex;
                 flex-direction: row;
                 justify-content: flex-start;
@@ -925,7 +946,7 @@
             
             footer h6 {
                 align-self: center;
-                color: rgba(var(--color-white), 1);
+                color: rgba(var(--color-dark), 1);
                 line-height: normal;
             }
             
@@ -948,7 +969,7 @@
             }
             
             .footer_right a {
-                color: rgba(var(--color-white), 1);
+                color: rgba(var(--color-dark), 1);
             }
             
             .social_icons {
@@ -958,7 +979,7 @@
             }
             
             footer .fa {
-                color: rgba(var(--color-white), 1);
+                color: rgba(var(--color-dark), 1);
                 margin: 8px;
                 font-size: var(--size-xx-small);
                 /* transition: transform  0.6s;

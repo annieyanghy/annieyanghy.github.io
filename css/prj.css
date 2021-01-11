@@ -8,9 +8,14 @@
     --line-height-subtitle: 3rem;
     --line-height-header: 2rem;
     --line-height-p: 2rem;
-    --color-primary: 148, 187, 184;
+    --color-primary: 229, 247, 244;
+    --color-primary-dark:148, 187, 184;
+    --color-dark: 82,82,82;
+    --color-white: 255, 255, 255;
+
+    /* --color-primary: 148, 187, 184;
     --color-primary-dark: 117, 161, 157;
-    --color-primary-mono_dark: 110, 133, 132;
+    --color-primary-mono_dark: 110, 133, 132; */
     --color-complementary: 186, 160,147;
     --color-gray:247, 247, 247;
     --color-ivory: 245, 241, 240;
@@ -19,8 +24,7 @@
     /* 133,177,173; */
     --color-tone: 228, 247, 244;
     --color-tint: 217, 237, 234;
-    --color-dark: 73, 73, 73;
-    --color-white: 255, 255, 255;
+   
     --color-grey: 204, 204, 204;
     --color-secondary: 186, 149, 149;
     --color-third: 224, 205, 195;
@@ -324,7 +328,7 @@ hr {
 /* ----------content------------ */
 /* info */
 .prj_highlight{
-    background-color: rgba(var(--color-primary), 0.3);
+    background-color: rgba(var(--color-primary), 1);
     
 }
 .prj_bold{
@@ -367,7 +371,7 @@ hr {
      display: inline-block;
     position: relative; 
     margin: var(--margin-small) auto;
-    background-color: rgba(var(--color-primary), 0.2);
+    background-color: rgba(var(--color-primary), 0.8);
     border-radius: 10px;
     padding: var(--margin-x-small);
 
