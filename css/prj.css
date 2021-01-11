@@ -422,7 +422,7 @@ hr {
 .prj_key_finding_item i{
     font-size:40px;
     margin: var(--margin-item) auto;
-    color: rgba(var(--color-primary), 1)
+    color: rgba(var(--color-primary-dark), 1)
 }
 .prj_finding_title{
     font-size:24px;
@@ -439,7 +439,7 @@ hr {
 .prj_key_finding_item span{
     font-size:40px;
     margin: var(--margin-item) auto;
-    color: rgba(var(--color-primary), 1)
+    color: rgba(var(--color-primary-dark), 1)
 }
 
 
