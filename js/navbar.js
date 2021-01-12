@@ -3,7 +3,7 @@
 $(document).ready(function() {
   $('#resume_page').click(function(){
 
-    $('#resume_page').attr("href", "Assets/Hsin-yu Yang_Resume 2020_Fall_V2.2.pdf");
+    $('#resume_page').attr("href", "Assets/Hsin-Yu Yang_Resume_2021 Winter_V1.pdf");
     
   })
   $('#blog_page').click(function(){
