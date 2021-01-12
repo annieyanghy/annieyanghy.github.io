@@ -1068,7 +1068,7 @@
                     position: relative;
                     flex-direction: column;
                     align-items: center;
-                    margin-bottom: var(--margin-medium);
+                    padding-bottom: var(--margin-medium);
                     padding: 0 var(--margin-item);
                 }
                 .nav_logo_container {
@@ -1258,7 +1258,7 @@
                         flex-direction: column;
                         align-items: center;
                         height:auto;
-                        margin-bottom: var(--margin-medium);
+                        padding-bottom: var(--margin-medium);
                     }
                     .nav_logo_container {
                         position: relative;
