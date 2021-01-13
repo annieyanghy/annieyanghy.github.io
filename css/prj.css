@@ -1072,11 +1072,11 @@ a.toc-link {
     left: 0;
     margin-top: -1px;
     position: absolute;
-    width: 2px;
+    width: 3px;
 }
 
 .is-active-link::before {
-    background-color: rgba(var(--color-primary), 1);
+    background-color: rgba(var(--color-primary-dark), 1);
 }
 /* ------handy buttons ---------*/
 
@@ -1103,9 +1103,9 @@ a.toc-link {
 }
 
 .handy_nav_container .fa:hover {
-    background-color: rgba(var(--color-primary), 1);
+    background-color: rgba(var(--color-dark), 1);
     color: rgba(var(--color-white), 1);
-    border: solid 3px rgba(var(--color-primary), 1);
+    border: solid 3px rgba(var(--color-dark), 1);
     cursor: pointer;
     transform: none;
 }

@@ -1,3 +1,9 @@
+:root{
+    --color-primary: 229, 247, 244;
+    --color-primary-dark:148, 187, 184;
+    --color-dark: 82,82,82;
+}
+
 .toc {
     overflow-y: auto
 }
@@ -52,5 +58,5 @@ a.toc-link {
 }
 
 .is-active-link::before {
-    background-color: #54BC4B
+    background-color: rgba(var(--color-primary-dark), 1)
 }
