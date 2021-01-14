@@ -81,6 +81,10 @@ hr {
     grid-column: 1 / span 8;
     border-width: 2px;
 }
+
+header{
+    background-color: rgba(var(--color-grey), 0.1);
+}
 /* ----------main -----------*/
 
 .sec_1 {
@@ -1244,7 +1248,7 @@ a.toc-link {
         position: relative;
         flex-direction: column;
         align-items: center;
-        margin-bottom: var(--margin-medium);
+        padding-bottom: var(--margin-medium);
     }
     .nav_logo_container {
         position: relative;
@@ -1331,7 +1335,7 @@ a.toc-link {
         flex-direction: column;
         align-items: center;
         height:auto;
-        margin-bottom: var(--margin-medium);
+        padding-bottom: var(--margin-medium);
     }
     .nav_logo_container {
         position: relative;
