@@ -46,6 +46,7 @@
                 --size-xxxx-small: 12px;
                 --size-half-xxxx-small: 6px;
                 --radius: 10px;
+                --border-button: solid 3.5px rgba(var(--color-dark), 0.7);
             }
             /* ------------body ---------------- */
             
@@ -690,7 +691,7 @@
                 margin: 0  var(--size-half-xxxx-small) var(--size-xxxx-small) var(--size-half-xxxx-small) ;
                 padding: 1.2rem;
                 background-color: rgba(var(--color-primary-dark), 0);
-                border: solid 3.5px rgba(var(--color-dark), 0.7);
+                border: var(--border-button);
                 /* text */
                 text-decoration: none;
                 font-size: 1rem;
@@ -706,7 +707,7 @@
                 color: rgba(var(--color-white), 1);
                 background-color: rgba(var(--color-primary-dark), 1); */
                 transition: all 0.3s ease-in-out;
-                border: solid 3.5px rgba(var(--color-dark), 0.7);
+                border:  var(--border-button);
                 color: rgba(var(--color-white), 1);
                 background-color: rgba(var(--color-dark), 0.7);
             }
@@ -715,7 +716,7 @@
                 /* border: solid 3.5px rgba(var(--color-primary-dark), 1);
                 color: rgba(var(--color-white), 1);
                 background-color: rgba(var(--color-primary-dark), 1); */
-                border: solid 3.5px rgba(var(--color-dark), 0.7);
+                border:  var(--border-button);
                 color: rgba(var(--color-white), 1);
                 background-color: rgba(var(--color-dark), 0.7);
             }
@@ -724,7 +725,7 @@
                 /* border: solid 3.5px rgba(var(--color-primary-dark), 1);
                 color: rgba(var(--color-white), 1);
                 background-color: rgba(var(--color-primary-dark), 1); */
-                border: solid 3.5px rgba(var(--color-dark), 0.7);
+                border:  var(--border-button);
                 color: rgba(var(--color-white), 1);
                 background-color: rgba(var(--color-dark), 0.7);
             }
@@ -759,7 +760,7 @@
             }
 
             .sort_activated{
-                border: solid 3.5px rgba(var(--color-dark), 0.7);
+                border:  var(--border-button);
                 color: rgba(var(--color-white), 1);
                 font-weight: 700;
                 background-color: rgba(var(--color-dark), 0.7);
@@ -1010,7 +1011,13 @@
             .footer_img img {
                 width: var(--size-medium);
                 height: auto;
-              
+            }
+            
+            .project_collapse_container{
+                height: 800px;
+                overflow: hidden;
+                transition: all 0.3s ease-in-out;
+
             }
             /* drawing gallery */
             .illustration_section{
@@ -1024,6 +1031,8 @@
                 max-width: var(--width-max);
                 padding-top:var(--margin-small)
             }
+
+            
             .collapse_container{
                 height: 400px;
                 overflow: hidden;
@@ -1062,6 +1071,8 @@
                 margin: 0 auto;
                 width:40px;
                 font-size:48px;
+                color:rgba(var(--color-dark), 0.7)
+                /* border:  var(--border-button) */
 
             }
       
