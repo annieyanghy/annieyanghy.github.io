@@ -106,12 +106,32 @@ $(document).ready(function() {
     $('video').prop('loop', true);
     $('video').prop('controls', true);
 
-    //-------- expand collapse toggle---------//
-    let open = false;
+    //-------- project filter expand collapse toggle---------//
+    let expand = false;
+    $(document).ready(function() {
+            $("#load_prj_button").click(function(){
+                expand=!expand;
+                if (expand){
+                    $("#load_prj_button span").removeClass("mdi-chevron-down");
+                    $("#load_prj_button span").addClass("mdi-chevron-up");
+                    $(".project_collapse_container").css("height","100%");
+                    console.log("expand")
+                }else{
+                    $("#load_prj_button span").removeClass("mdi-chevron-up");
+                    $("#load_prj_button span").addClass("mdi-chevron-down");
+                    $(".project_collapse_container").css("height","800px");
+                    console.log("expand")
+                }
+            }
+        );
+    });
+
+    //-------- drawing expand collapse toggle---------//
+    let openDrawing = false;
     $(document).ready(function() {
             $("#drawing_button").click(function(){
-                open=!open;
-                if (open){
+                openDrawing=!openDrawing;
+                if (openDrawing){
                     $("#drawing_button span").removeClass("mdi-chevron-down");
                     $("#drawing_button span").addClass("mdi-chevron-up");
                     $(".collapse_container").css("height","100%");
