@@ -106,6 +106,25 @@ $(document).ready(function() {
     $('video').prop('loop', true);
     $('video').prop('controls', true);
 
+    //-------- expand collapse toggle---------//
+    let open = false;
+    $(document).ready(function() {
+            $("#drawing_button").click(function(){
+                open=!open;
+                if (open){
+                    $("#drawing_button span").removeClass("mdi-chevron-down");
+                    $("#drawing_button span").addClass("mdi-chevron-up");
+                    $(".collapse_container").css("height","100%");
+                    console.log("expand")
+                }else{
+                    $("#drawing_button span").removeClass("mdi-chevron-up");
+                    $("#drawing_button span").addClass("mdi-chevron-down");
+                    $(".collapse_container").css("height","400px");
+                    console.log("expand")
+                }
+            }
+        );
+    });
 
     // --------filter-----------//
 
@@ -137,10 +156,10 @@ $(document).ready(function() {
 
         console.log("Featured")
 
-  })
+        })
     
        
-      });
+    });
 
     
     $(".button_container button").click(function(event) {
