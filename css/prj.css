@@ -414,9 +414,9 @@ header{
     min-width:160px;
     max-width:190px;
     padding: var(--margin-x-small);
-    background-color: rgba(var(--color-white), 1);
+    background-color: rgba(var(--color-grey), 0.1);
     border-radius: 10px;
-    border: rgba(var(--color-dark), 0.2) solid 3px;
+    border: rgba(var(--color-grey), 0.1) solid 3px;
     /* border: rgba(var(--color-primary), 1) solid 2px; */
     margin-right: var(--margin-item);
     margin-bottom: var(--margin-item);
@@ -426,7 +426,7 @@ header{
 .prj_key_finding_item i{
     font-size:40px;
     margin: var(--margin-item) auto;
-    color: rgba(var(--color-primary-dark), 1)
+    color: rgba(var(--color-dark), 0.6)
 }
 .prj_finding_title{
     font-size:24px;
@@ -443,7 +443,7 @@ header{
 .prj_key_finding_item span{
     font-size:40px;
     margin: var(--margin-item) auto;
-    color: rgba(var(--color-primary-dark), 1)
+    color: rgba(var(--color-dark), 0.6)
 }
 
 
@@ -536,7 +536,7 @@ header{
     text-decoration: underline;
     text-decoration-thickness:2px;
     text-underline-offset: 6px;
-    text-decoration-color:rgba(var(--color-primary), 0.5);
+    text-decoration-color:rgba(var(--color-primary), 1);
     transition: all 0.3s ease-in-out
 }
 
@@ -545,7 +545,7 @@ header{
     text-decoration: underline;
     text-decoration-thickness:2px;
     text-underline-offset: 6px;
-    text-decoration-color:rgba(var(--color-primary), 0.5);
+    text-decoration-color:rgba(var(--color-primary), 1);
     transition: all 0.3s ease-in-out
 }
 
