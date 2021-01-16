@@ -115,25 +115,27 @@ $(document).ready(function() {
                     $("#load_prj_button span").removeClass("mdi-chevron-down");
                     $("#load_prj_button span").addClass("mdi-chevron-up");
                     $("#load_prj_button").removeClass("collapse_shadow");
-                    $(".project_collapse_container").css("height","100%");
+                    $(".project_collapse_container").animate({height:"100%"},{
+                        duration: 300, easing:"swing"});
                     console.log("expand")
                 }else{
                     $("#load_prj_button span").removeClass("mdi-chevron-up");
                     $("#load_prj_button span").addClass("mdi-chevron-down");
                     $("#load_prj_button").addClass("collapse_shadow");
-                    $(".project_collapse_container").css("height","900px");
-                    console.log("expand")
+                    $(".project_collapse_container").animate({height: "900px"},{
+                        duration: 300, easing:"swing"});
+                    console.log("collapse")
                 }
             }
         );
     });
 
     //-------- drawing expand collapse toggle---------//
-    let openDrawing = false;
+
     $(document).ready(function() {
             $("#drawing_button").click(function(){
-                openDrawing=!openDrawing;
-                if (openDrawing){
+                expand=!expand;
+                if (expand){
                     $("#drawing_button span").removeClass("mdi-chevron-down");
                     $("#drawing_button span").addClass("mdi-chevron-up");
                     $("#drawing_button").removeClass("collapse_shadow");
@@ -143,8 +145,8 @@ $(document).ready(function() {
                     $("#drawing_button span").removeClass("mdi-chevron-up");
                     $("#drawing_button span").addClass("mdi-chevron-down");
                     $("#drawing_button").addClass("collapse_shadow");
-                    $(".collapse_container").css("height","400px");
-                    console.log("expand")
+                    $(".collapse_container").css("height","500px");
+                    console.log("collapse")
                 }
             }
         );
