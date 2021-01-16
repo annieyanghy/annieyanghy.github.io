@@ -114,12 +114,14 @@ $(document).ready(function() {
                 if (expand){
                     $("#load_prj_button span").removeClass("mdi-chevron-down");
                     $("#load_prj_button span").addClass("mdi-chevron-up");
+                    $("#load_prj_button").removeClass("collapse_shadow");
                     $(".project_collapse_container").css("height","100%");
                     console.log("expand")
                 }else{
                     $("#load_prj_button span").removeClass("mdi-chevron-up");
                     $("#load_prj_button span").addClass("mdi-chevron-down");
-                    $(".project_collapse_container").css("height","800px");
+                    $("#load_prj_button").addClass("collapse_shadow");
+                    $(".project_collapse_container").css("height","900px");
                     console.log("expand")
                 }
             }
@@ -134,11 +136,13 @@ $(document).ready(function() {
                 if (openDrawing){
                     $("#drawing_button span").removeClass("mdi-chevron-down");
                     $("#drawing_button span").addClass("mdi-chevron-up");
+                    $("#drawing_button").removeClass("collapse_shadow");
                     $(".collapse_container").css("height","100%");
                     console.log("expand")
                 }else{
                     $("#drawing_button span").removeClass("mdi-chevron-up");
                     $("#drawing_button span").addClass("mdi-chevron-down");
+                    $("#drawing_button").addClass("collapse_shadow");
                     $(".collapse_container").css("height","400px");
                     console.log("expand")
                 }

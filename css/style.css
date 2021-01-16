@@ -1014,9 +1014,10 @@
             }
             
             .project_collapse_container{
-                height: 800px;
+                height: 900px;
                 overflow: hidden;
                 transition: all 0.3s ease-in-out;
+               
 
             }
             /* drawing gallery */
@@ -1067,13 +1068,23 @@
             .chevron-down{
                 cursor:pointer;
                 position: relative;
-                display:block;
+                display:flex;
+                justify-content: center;
                 margin: 0 auto;
-                width:40px;
+                max-width:var(--width-max);
                 font-size:48px;
-                color:rgba(var(--color-dark), 0.7)
-                /* border:  var(--border-button) */
+                color:rgba(var(--color-dark), 0.7);
+               
 
+            }
+            .chevron-down span{
+                /* border:  var(--border-button); */
+                padding:var(--size-half-xxx-small) var(--size-medium);
+                justify-content: center;
+            }
+
+            .collapse_shadow{
+                box-shadow: 0px -10px 10px -5px rgba(var(--color-dark), .2)
             }
       
             /* ------900px---------*/
