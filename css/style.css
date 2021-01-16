@@ -1035,20 +1035,21 @@
 
             
             .collapse_container{
-                height: 400px;
+                height: 500px;
                 overflow: hidden;
-                transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in;
             }
             .illu_col{
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 flex-wrap: wrap;
-                max-width: 100%;
+                max-width: var(--width-max);
                 /* width:25%; */
                 padding: 0;
             }
             .illu_col a{
+                box-sizing: border-box;
                 display: flex;
                 flex-direction: row;
                 width:24%;
@@ -1074,7 +1075,7 @@
                 max-width:var(--width-max);
                 font-size:48px;
                 color:rgba(var(--color-dark), 0.7);
-               
+                
 
             }
             .chevron-down span{
@@ -1084,9 +1085,9 @@
             }
 
             .collapse_shadow{
-                box-shadow: 0px -10px 10px -5px rgba(var(--color-dark), .2)
+                box-shadow: 0px -10px 10px -5px rgba(var(--color-dark), .2);
+                width:100%
             }
-      
             /* ------900px---------*/
             
             @media only screen and (max-width: 900px) {
@@ -1216,6 +1217,14 @@
 
                     width: 12rem;
               
+                }
+
+                .sorting_container{
+                    margin: var(--margin-medium) auto;                    
+                    display:flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    width:95%
                 }
 
                 .project_resp_container{
@@ -1393,9 +1402,14 @@
                     .filter_button{
                         box-sizing: border-box;
                         width: auto;
-                  
                     }
-
+                    .sorting_container{
+                        margin: var(--margin-medium) auto;                    
+                        display:flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        width:95%
+                    }
                     .project_resp_container{
                         display:flex;
                         justify-content: flex-start;
@@ -1407,6 +1421,18 @@
                     
                     .prj_grid {
                         display: block;
+                    }
+
+
+
+                    .illu_col a {
+                        box-sizing: border-box;
+                        display: flex;
+                        flex-direction: row;
+                        width: 33%;
+                        height: 18em;
+                        padding: 0 4px 8px 4px;
+                        /* vertical-align: middle; */
                     }
                     .footer_container {
                         display: flex;

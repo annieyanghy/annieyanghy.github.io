@@ -520,6 +520,7 @@ header{
 }
 
 
+
 /* .prj_finding_highlight::after{
     content: "";
     position: absolute;
@@ -632,6 +633,14 @@ header{
     height:auto
 }
 
+
+.full_width_img{
+    width:100%;
+}
+
+.full_width_img img{
+    width:100%;
+}
 /* disclaimer */
 
 .row_container_disclaimer{
