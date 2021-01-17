@@ -1014,7 +1014,7 @@
             }
             
             .project_collapse_container{
-                height: 900px;
+                height: 100%;
                 overflow: hidden;
                 transition: all 0.3s ease-in-out;
                
