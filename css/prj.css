@@ -380,6 +380,25 @@ header{
     padding: var(--margin-x-small);
 
 }
+
+.prj_key_insights_quotes {
+    display: inline-block;
+    position: relative; 
+    margin: var(--margin-small) auto;
+    background-color: rgba(var(--color-dark), 1);
+    border-radius: 10px;
+    padding: var(--margin-x-small);
+    /* width:100%; */
+
+}
+.prj_key_insights_quotes .prj_caption{
+    color:rgba(var(--color-primary), 0.7)
+}
+
+.prj_key_insights_quotes h4{
+    color:rgba(var(--color-primary), 1)
+}
+
 .prj_caption{
     text-transform: uppercase;
     font-weight: 900;
@@ -392,6 +411,16 @@ header{
     margin-top: var(--size-medium);
     margin-bottom: var(--size-xx-small);
 }
+
+.finding_section_subtitle{
+    text-align: left;
+    font-size: 18px;
+    margin: var(--size-xx-small) 0;
+    color: rgba(var(--color-dark), 0.6);
+    font-weight: 700;
+    text-indent: 8px;
+}
+
 
 
 .prj_key_finding_container{
