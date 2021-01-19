@@ -1710,7 +1710,17 @@ a.toc-link {
         line-height: 28px;
         display: none;
     }
-
+    .prj_2_divided_container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+    .prj_divided_left_container, .prj_divided_right_container {
+        padding:0;
+        width: 95%;
+        margin: 0 var(--size-xxx-small);
+        box-sizing: border-box;
+    }
 
     /* The Modal  */
 
