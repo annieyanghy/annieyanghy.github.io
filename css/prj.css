@@ -583,14 +583,24 @@ header{
     position:relative;
     flex-direction: row;
 }
+.prj_divided_left_container, .prj_divided_right_container{
+    padding: 0 var(--size-small);
+    width:50%;
+    margin: 0 var(--size-xx-small);
+
+}
 
 .prj_divided_left{
     padding: var(--size-small);
     background-color: rgba(var(--color-dark), 1);
-    width:50%;
+  
 
 }
 .prj_divided_left h4, .prj_divided_left h6, .prj_divided_left p{
+    color: rgba(var(--color-primary), 1);
+}
+
+.prj_divided_left .prj_in_text_link {
     color: rgba(var(--color-primary), 1);
 }
 
@@ -605,17 +615,20 @@ header{
 .prj_divided_right{
     padding: var(--size-small);
     background-color: rgba(var(--color-primary), 1);
-    width:50%;
-
+   
 }
 
 .prj_divided_right .prj_highlight{
     background-color: rgba(var(--color-dark), 1);
   }
 
-  .prj_divided_right .prj_highlight{
-    color: rgba(var(--color-primary), 1);
-  }
+.prj_divided_right .prj_highlight{
+color: rgba(var(--color-primary), 1);
+}
+
+.pri_divided_right .prj_in_text_link{
+    text-decoration-color: rgba(var(--color-dark), 1);
+}
 /* how it works */
 
 .how_it_works_container {
