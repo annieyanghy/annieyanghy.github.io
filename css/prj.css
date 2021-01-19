@@ -550,16 +550,7 @@ header{
 
 
 
-/* .prj_finding_highlight::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    background: orange;
-    left: 0;
-    bottom: 0;
-    height: .6em;
-    z-index: -1;
-} */
+
 
 .prj_in_text_link{
     color: rgba(var(--color-dark), 1);
@@ -586,6 +577,45 @@ header{
     font-style: italic;
 }
 
+/* divided section */
+.prj_2_divided_container{
+    display:flex;
+    position:relative;
+    flex-direction: row;
+}
+
+.prj_divided_left{
+    padding: var(--size-small);
+    background-color: rgba(var(--color-dark), 1);
+    width:50%;
+
+}
+.prj_divided_left h4, .prj_divided_left h6, .prj_divided_left p{
+    color: rgba(var(--color-primary), 1);
+}
+
+.prj_2_divided_container h4{
+    line-height: var(--size-small);
+}
+
+.prj_divided_left .prj_highlight{
+  color: rgba(var(--color-dark), 1);
+}
+
+.prj_divided_right{
+    padding: var(--size-small);
+    background-color: rgba(var(--color-primary), 1);
+    width:50%;
+
+}
+
+.prj_divided_right .prj_highlight{
+    background-color: rgba(var(--color-dark), 1);
+  }
+
+  .prj_divided_right .prj_highlight{
+    color: rgba(var(--color-primary), 1);
+  }
 /* how it works */
 
 .how_it_works_container {
