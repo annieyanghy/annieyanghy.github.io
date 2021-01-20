@@ -723,13 +723,14 @@ color: rgba(var(--color-primary), 1);
     justify-content: space-around;
     align-items: flex-start;
     max-width: var(--width-max-prj);
-    background-color: rgba(var(--color-grey), 0.1);
+    background-color: rgba(var(--color-dark), 1);
     padding: var(--size-medium)
 
 }
 
 .row_container_disclaimer h4{
     font-style: italic;
+    color: rgba(var(--color-primary), 1)
 }
 
 .disclaimer_text{
@@ -737,6 +738,7 @@ color: rgba(var(--color-primary), 1);
     font-style: italic;
     font-weight: 500;
     margin-bottom: 0;
+    color: rgba(var(--color-primary), 1)
 }
 
 /* quick fact */
