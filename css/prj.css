@@ -666,8 +666,12 @@ color: rgba(var(--color-primary), 1);
     float:left;
 }
 
-.how_it_works_text h3 {
-    font-size: 40px;
+.how_it_works_text h4 {
+    font-size: 32px;
+}
+
+.how_it_works_text h6 {
+    font-size: 24px;
 }
 
 .how_it_works_gif {
@@ -1004,6 +1008,11 @@ color: rgba(var(--color-primary), 1);
     font-weight:700;
     color: rgba(var(--color-dark), .3);
     margin-top:var(--margin-small);
+}
+
+.prj_sec_title{
+    font-size:40px;
+    padding-bottom:var(--size-small)
 }
 .prj_bullet_point_row{
     display: flex;
