@@ -7,8 +7,8 @@
                 --line-height-title: 4rem;
                 --line-height-subtitle: 3rem;
                 --line-height-header: 2rem;
-                --color-primary: 229, 247, 244;
-                --color-primary-dark:148, 187, 184;
+                --color-branding-primary: 229, 247, 244;
+                --color-branding-primary-dark:148, 187, 184;
                 --color-dark: 82,82,82;
                 --color-white: 255, 255, 255;
 
@@ -54,7 +54,6 @@
             h2 {
                 font-family: var(--typeface-display);
                 line-height: var(--line-height-title);
-                /* color: rgba(var(--color-primary-dark), 1); */
                 color: rgba(var(--color-dark), 1);
 
                 text-transform: capitalize;
@@ -141,13 +140,13 @@
             /* ----------nav bar -----------*/
             
             header {
-                background-color: rgba(var(--color-primary), 0);
+                background-color: rgba(var(--color-branding-primary), 0);
                 width: 100%;
                 display: block;
 
             }
             #index_header{
-                background-color: rgba(var(--color-primary), 1);
+                background-color: rgba(var(--color-branding-primary), 1);
 
             }
             
@@ -193,7 +192,7 @@
             
             #hyy {
                 display: none;
-                color: rgba(var(--color-primary-dark), 1)
+                color: rgba(var(--color-branding-primary-dark), 1)
             }
             
             .nav_list {
@@ -295,7 +294,7 @@
                 /* height:500px; */
                 min-height: 500px;
                 /* background-color: rgba(var(--color-gray), 0.5) */
-                background-color: rgba(var(--color-primary), 1)
+                background-color: rgba(var(--color-branding-primary), 1)
 
 
               
@@ -563,7 +562,6 @@
                 /* background-color:rgba(var(--color-tone),1); */
                 background-color:rgba(var(--color-white),1);
                 color: rgba(var(--color-dark), 1);
-                /* border: 5px solid rgba(var(--color-primary),1); */
                 overflow-wrap: break-word;
             }
 
@@ -690,7 +688,7 @@
                 width: 12rem;
                 margin: 0  var(--size-half-xxxx-small) var(--size-xxxx-small) var(--size-half-xxxx-small) ;
                 padding: 1.2rem;
-                background-color: rgba(var(--color-primary-dark), 0);
+                background-color: rgba(var(--color-branding-primary-dark), 0);
                 border: var(--border-button);
                 /* text */
                 text-decoration: none;
@@ -703,9 +701,9 @@
             }
             
             .filter_button:hover {
-                /* border: solid 3.5px rgba(var(--color-primary-dark), 1);
+                /* border: solid 3.5px rgba(var(--color-branding-primary-dark), 1);
                 color: rgba(var(--color-white), 1);
-                background-color: rgba(var(--color-primary-dark), 1); */
+                background-color: rgba(var(--color-branding-primary-dark), 1); */
                 transition: all 0.3s ease-in-out;
                 border:  var(--border-button);
                 color: rgba(var(--color-white), 1);
@@ -713,18 +711,18 @@
             }
             
             .filter_button:focus {
-                /* border: solid 3.5px rgba(var(--color-primary-dark), 1);
+                /* border: solid 3.5px rgba(var(--color-branding-primary-dark), 1);
                 color: rgba(var(--color-white), 1);
-                background-color: rgba(var(--color-primary-dark), 1); */
+                background-color: rgba(var(--color-branding-primary-dark), 1); */
                 border:  var(--border-button);
                 color: rgba(var(--color-white), 1);
                 background-color: rgba(var(--color-dark), 0.7);
             }
             
             .filter_button_selected {
-                /* border: solid 3.5px rgba(var(--color-primary-dark), 1);
+                /* border: solid 3.5px rgba(var(--color-branding-primary-dark), 1);
                 color: rgba(var(--color-white), 1);
-                background-color: rgba(var(--color-primary-dark), 1); */
+                background-color: rgba(var(--color-branding-primary-dark), 1); */
                 border:  var(--border-button);
                 color: rgba(var(--color-white), 1);
                 background-color: rgba(var(--color-dark), 0.7);
@@ -746,7 +744,7 @@
                     width: 10em;
                     margin: 0  0 var(--size-xxxx-small) 0 ;
                     padding: 0.4rem;
-                    /* background-color: rgba(var(--color-primary-dark), 0); */
+                    /* background-color: rgba(var(--color-branding-primary-dark), 0); */
                     border: solid 3.5px rgba(var(--color-dark), 0);
                     background-color: rgba(var(--color-gray), 0.8); 
                     /* text */
@@ -766,10 +764,10 @@
                 background-color: rgba(var(--color-dark), 0.7);
             }
             /* .sort_activated{
-                border: solid 3.5px rgba(var(--color-primary-mono_dark), 1);
-                color: rgba(var(--color-primary), 1);
+                border: solid 3.5px rgba(var(--color-branding-primary-mono_dark), 1);
+                color: rgba(var(--color-branding-primary), 1);
                 font-weight: 700;
-                background-color: rgba(var(--color-primary), 0.1);
+                background-color: rgba(var(--color-branding-primary), 0.1);
             } */
             /* ------project description ---------*/
             
@@ -937,7 +935,7 @@
             /* ------footer description ---------*/
             
             footer {
-                background-color: rgba(var(--color-primary), 1);
+                background-color: rgba(var(--color-branding-primary), 1);
                 height: 10rem;
                 width: 100%;
                 margin: var(--size-medium) 0 0 0;
