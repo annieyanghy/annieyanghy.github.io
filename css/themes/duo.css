@@ -5,3 +5,15 @@
     --color-primary-dark:112, 176, 86;
     
 }
+
+#duo .prj_key_finding_container{
+  
+    justify-content: flex-start;
+   
+}
+#duo .color_accent{
+    background-color: rgba(var(--color-dark),1)
+}
+#duo .color_accent h5, #duo .color_accent p{
+    color:rgba(var(--color-primary),1)
+}
