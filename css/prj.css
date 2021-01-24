@@ -529,9 +529,9 @@ header{
     position: relative;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: center;
     
-    width:100%;
+    width:fit-content;
     margin-bottom: var(--size-medium);
 }
 
@@ -1187,7 +1187,9 @@ color: rgba(var(--color-primary), 1);
     flex-direction:column;
     width:80%;
 }
-
+.same_line h5{
+    line-height:28px;
+}
 .same_line .prj_stack_content_right img, .same_line .prj_stack_content_left img, .same_line p {
     width:100%;
     max-width:100%
