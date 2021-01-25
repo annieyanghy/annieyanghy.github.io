@@ -211,7 +211,7 @@ header{
     height: auto;
     width: auto;
     position: relative;
-    display: inline-block;
+    display:block;
     overflow: hidden;
 }
 
@@ -641,6 +641,12 @@ header{
     margin-bottom: var(--size-medium);
 }
 
+.prj_stack_content_right .prj_key_finding_container_vertical p {
+    text-align: center;
+}
+
+
+
 ._left{
 
     justify-content: flex-start;
@@ -785,16 +791,16 @@ _center{
     text-decoration: underline;
     text-decoration-thickness:2px;
     text-underline-offset: 6px;
-    text-decoration-color:rgba(var(--color-primary), 1);
+    text-decoration-color:rgba(var(--color-primary-dark), 1);
     transition: all 0.3s ease-in-out
 }
 
 .prj_in_text_link:hover{
-    color: rgba(var(--color-primary), 1);
+    color: rgba(var(--color-primary-dark), 1);
     text-decoration: underline;
     text-decoration-thickness:2px;
     text-underline-offset: 6px;
-    text-decoration-color:rgba(var(--color-primary), 1);
+    text-decoration-color:rgba(var(--color-primary-dark), 1);
     transition: all 0.3s ease-in-out
 }
 
