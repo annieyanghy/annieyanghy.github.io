@@ -284,7 +284,10 @@ header{
     display: flex;
     flex-wrap: wrap;
     position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
+
 
 .tags {
     margin: 8px;
