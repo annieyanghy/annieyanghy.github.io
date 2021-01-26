@@ -1,8 +1,13 @@
 /* CSS files add styling rules to your content */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
 /* ------------design component---------------- */
 
 :root {
-    --typeface-display: 'Josefin', sans-serif;
+    /* --typeface-display: 'Josefin', sans-serif; */
+    --typeface-display: 'DM Serif Display', serif;
+
     --typeface-text: 'Open Sans', sans-serif;
     --line-height-title: 4rem;
     --line-height-subtitle: 3rem;
@@ -303,7 +308,7 @@ header{
     padding: 4px 8px;
     border-radius: 5px;
     color: rgba(var(--color-dark), 1);
-    font-family: var(--typeface-display);
+    font-family: var(--typeface-text);
     font-weight: 600;
 }
 
@@ -445,6 +450,7 @@ header{
 
 .prj_index h3 {
     color: rgba(var(--color-dark), .6);
+    font-family: var(--typeface-text)
 }
 
 .sticky_title {
