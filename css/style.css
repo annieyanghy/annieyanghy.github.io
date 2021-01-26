@@ -361,10 +361,15 @@
                 min-height: 450px;
                 background-image: url("../img/branding/Portfolio_Graph.gif");
                 background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-position: 75% 30%;
+                background-attachment: scroll;
+                background-position: right;
                 background-size: 25em;
               
+            }
+
+            #index_para h4{
+                position: relative;
+                width: 80%
             }
             .landing_left {
                 position: relative;
@@ -398,6 +403,8 @@
                 height: auto;
                 margin: auto;
             }
+
+          
             
             .main_grid {
                 display: grid;
@@ -426,6 +433,7 @@
                 
             }
 
+            
             /* .red::after {
             content: '';
             position: absolute;
