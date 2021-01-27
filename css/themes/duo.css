@@ -17,3 +17,42 @@
 #duo .color_accent h5, #duo .color_accent p{
     color:rgba(var(--color-primary),1)
 }
+
+
+#duo .prj_landing_right img {
+    position: relative;
+    display: block;
+    width: 110%;
+    height: auto;
+    margin: auto;
+}
+
+#duo .prj_landing_right {
+    position: relative;
+    display: flex;
+   
+}
+
+/* #duo .prj_landing_right {
+    background-image:  url('../img/prj_duo/duo_demo_1.gif');
+    background-repeat: none;
+    background-size: 100% auto;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    /* border-radius: 0 */
+
+
+
+/* .prj_landing_right video {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 0
+} */

@@ -6,7 +6,7 @@
                 /* --typeface-display: 'Josefin', sans-serif; */
                 --typeface-display: 'DM Serif Display', serif;
                 --typeface-text: 'Open Sans', sans-serif;
-                --line-height-title: 4rem;
+                --line-height-title: 5rem;
                 --line-height-subtitle: 3rem;
                 --line-height-header: 2rem;
                 --color-branding-primary: 229, 247, 244;
@@ -57,7 +57,7 @@
                 font-family: var(--typeface-display);
                 line-height: var(--line-height-title);
                 color: rgba(var(--color-dark), 1);
-
+                letter-spacing: 1px;
                 text-transform: capitalize;
             }
             
@@ -169,9 +169,6 @@
                 align-items: flex-start;
                 max-width: var(--width-max);
                 padding-left:0 var(--margin-item);
-
-                
-               
             }
             
             .nav_logo_container {
@@ -615,8 +612,6 @@
 
             }
 
-           
-
             .about_intro_content{
                 display:flex;
                 flex-direction:row;
@@ -912,6 +907,11 @@
                 padding-left: var(--size-half-xxxx-small);
                 justify-content: center;
                 margin-bottom:var(--size-xx-small)
+            }
+
+            .tags_container p{
+                text-align: center;
+                padding: 0 var(--size-small)
             }
             
             .tags {
