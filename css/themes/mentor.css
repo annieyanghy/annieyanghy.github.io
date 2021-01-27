@@ -1,15 +1,20 @@
 .prj_resp_imagebox {
     display: flex;
     position: relative;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
 }
 
 .prj_resp_imagebox div{
+    display: flex;
+    position: relative;
+    flex-direction: column;
     box-sizing: border-box;
-    width: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .prj_resp_imagebox .prj_resp_imageitem{
