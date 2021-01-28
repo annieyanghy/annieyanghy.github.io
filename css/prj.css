@@ -499,6 +499,7 @@ header{
     width:100%;
     padding: var(--margin-small) auto;
     margin: var(--margin-medium) auto;
+    margin-top:0
 
 }
 
