@@ -33,6 +33,10 @@
    
 }
 
+#duo_vid video{
+    width:100%
+}
+
 /* #duo .prj_landing_right {
     background-image:  url('../img/prj_duo/duo_demo_1.gif');
     background-repeat: none;
