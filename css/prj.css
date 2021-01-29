@@ -904,7 +904,7 @@ color: rgba(var(--color-primary), 1);
     /* list-style: square inside; */
     line-height: 2rem;
     text-indent:-2em;
-    font-weight: 700;
+    font-weight: 400;
     padding-left:2em;
     color: rgba(var(--color-dark), 1)
    
@@ -1331,7 +1331,7 @@ color: rgba(var(--color-primary), 1);
 }
 
 .prj_sec_title{
-    font-size:40px;
+    font-size:36px;
     padding-bottom:var(--size-small)
 }
 .prj_sec_title_left{

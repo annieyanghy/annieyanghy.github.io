@@ -32,11 +32,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
-
+    <!-- import Table of Contents TOC -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
     <!-- import the webpage's stylesheet -->
 
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/tocbot.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -102,14 +104,14 @@
             <div class="nav_list menu">
                 <ul class="menu-nav">
                     <li class="nav_li nav_underline"><a class=" nav_selected" href="index.html">Work</a></li>
-                    <li class="nav_li  nav_underline"><a id="resume_page" href="h" target="_blank">Resume</a></li>
+                    <li class="nav_li  nav_underline"><a id="resume_page" href="h">Resume</a></li>
                     <li class="nav_li  nav_underline"><a id="about_page" href="h">About</a></li>
-                    <li class="nav_li  nav_underline"><a id="blog_page" href="h" target="_blank">Blog</a></li>
+                    <li class="nav_li  nav_underline"><a id="blog_page" href="h" target="_blank">Medium</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main>
+    <main class="js-toc-content">
         <!-- landing -->
         <section class="sec_1">
             <div class="landing_grid" id="index_para">
@@ -140,23 +142,21 @@
             </div>
 
         </section>
-
-        <hr class="divider">
         <!-- <div class="main_grid"> -->
         <section class="main_flex">
 
             <!-- filter buttons -->
-            <div class="button_container">
+            <!-- <div class="button_container">
 
                 <button class="filter_button filter_button_selected" type="button" data-filter="all"
                     autofocus>All</button>
-                <button class="filter_button" type="button" data-filter=".class">Class Project</button>
+                <button class="filter_button" type="button" data-filter=".class">Class Project</button> -->
 
                 <!-- <button class="filter_button filter_button_selected" type="button" data-filter=".pd">UX Design</button>
                 <button class="filter_button " type="button" data-filter=".dev">Coding</button> -->
                 <!--<button class="filter_button " type="button" data-filter=".proto">Prototyping</button> -->
                 <!-- <button class="filter_button " type="button" data-filter=".research">Research</button> -->
-                <button class="filter_button " type="button" data-filter=".profession">Work Project</button>
+                <!-- <button class="filter_button " type="button" data-filter=".profession">Work Project</button> -->
 
             </div>
             <!-- <div class="sorting_container">
@@ -169,6 +169,7 @@
             <!-- </div> -->
             <div id="prj_filtering_collapse" class="project_collapse_container">
                 <!-- projects -->
+                <h3 class="toc_sectional_title" id="design">Design</h3>
                 <ul class="project_resp_container">
 
                     <!-- 1 SI 582 Design Mentorship -->
@@ -183,6 +184,7 @@
                                 <div class="prj_title">
                                     <h2>Design Mentorship App</h2>
                                     <p>2019 Sep. - Dec., 2021 Jan.</p>
+                                    <p>Class</p>
                                 </div>
                             <div class="tags_container">
                                 <p> A design community to help newbie designers to transition better.</p>
@@ -206,6 +208,7 @@
                                 <div class="prj_title">
                                     <h2>Duo Security</h2>
                                     <p>2020 May - Aug.</p>
+                                    <p>Internship, B2B</p>
                                 </div>
 
                                 <div class="tags_container">
@@ -230,6 +233,7 @@
                                 <div class="prj_title">
                                     <h2>Focus App</h2>
                                     <p>2020 Sep. - Dec.</p>
+                                    <p>Class</p>
                                 </div>
 
                                 <div class="tags_container">
@@ -238,6 +242,30 @@
                                     <p class="tags tags_research">User Research</p>
                                     <p class="tags tags_proto">Prototyping</p> -->
 
+
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <!-- 5 -->
+                    <li class="mix flex_item pd proto research profession" data-time="2019.07" data-featured="6">
+                        <a class="prj_grid mobagel_thumbnail" href="mobagel.html">
+                            <div class="prj_img_container">
+                                <img class="prj_img img_scale" alt="Thumbnail of AI Data Dashboard"
+                                    src="img/prj_thumbnail/Decanter+AI.png" />
+                            </div>
+                            <div class="prj_info ">
+                                <div class="prj_title">
+                                    <h2>AI Data Dashboard</h2>
+                                    <p>2019 Jan. - Jul.</p>
+                                    <p>Full-time, B2B</p>
+                                </div>
+
+                                <div class="tags_container">
+                                    <p>I redesigned the UI of an AI dashbord to streamline the modeling process.</p>
+                                    <!-- <p class="tags tags_ixd">B2B</p>
+                                    <p class="tags tags_research">User Research</p>
+                                    <p class="tags tags_pd">Product Design</p> -->
 
                                 </div>
                             </div>
@@ -254,6 +282,7 @@
                                 <div class="prj_title">
                                     <h2>Sustainable Habit App</h2>
                                     <p>2019 Oct. - Dec.</p>
+                                    <p>Class</p>
                                 </div>
 
                                 <div class="tags_container">
@@ -267,29 +296,7 @@
                         </a>
                     </li>
 
-                    <!-- 5 -->
-                    <li class="mix flex_item pd proto research profession" data-time="2019.07" data-featured="6">
-                        <a class="prj_grid mobagel_thumbnail" href="mobagel.html">
-                            <div class="prj_img_container">
-                                <img class="prj_img img_scale" alt="Thumbnail of AI Data Dashboard"
-                                    src="img/prj_thumbnail/Decanter+AI.png" />
-                            </div>
-                            <div class="prj_info ">
-                                <div class="prj_title">
-                                    <h2>AI Data Dashboard</h2>
-                                    <p>2019 Jan. - Jul.</p>
-                                </div>
-
-                                <div class="tags_container">
-                                    <p>I redesigned the UI of an AI dashbord to streamline the modeling process.</p>
-                                    <!-- <p class="tags tags_ixd">B2B</p>
-                                    <p class="tags tags_research">User Research</p>
-                                    <p class="tags tags_pd">Product Design</p> -->
-
-                                </div>
-                            </div>
-                        </a>
-                    </li>
+                   
                     <!-- 10 -->
                     <!-- <li class="mix flex_item pd research class" data-time="2020.12" data-featured="8">
                         <a class="prj_grid" href="iotdesign.html">
@@ -382,11 +389,11 @@
 
         </section>
         <!-- end of main_flex -->
-
+        <hr class="divider">
         <!-- start of coding section -->
-        <section class="main_flex">
-            <hr class="divider">
-            <h2>Some coding project</h2>
+        <section class="main_flex main_flex_coding">
+       
+            <h3 class="toc_sectional_title" id="coding">Code</h3>
 
             <ul class="project_resp_container">
                 <!-- 4 SI 669 Designer Café -->
@@ -425,6 +432,8 @@
                                     <p>2020 Nov. - Dec.</p>
                                 </div>
                                 <div class="tags_container">
+                                    <p>Visualizing data with Altair & Vega-lite, storytelling with interactivity.</p>
+
                                     <!-- <p class="tags tags_pd">Product Design</p>
                                     <p class="tags tags_dev">Data Visualization</p> -->
                                 </div>
@@ -439,7 +448,7 @@
         <section class="illustration_section">
 
             <div class="collapse_container">
-                <h2>I also play in the digital frames</h2>
+                <h3 class="toc_sectional_title" id="doodling">Doodle</h3>
                 <!-- fleabag -->
                 <div class="illu_col illu_col_1">
                     <a data-lightbox="Fleabag series" data-title="Fleabag series" href="img/drawing/Fleabag 3.PNG">
@@ -465,7 +474,18 @@
                         <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/Fleabag priest 2.PNG" />
                     </a>
                  
-                   
+                    <a data-lightbox="Fleabag series" data-title="Fleabag series"
+                    href="img/drawing/portrait_Amanda_2.jpg">
+                    <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/portrait_Amanda_2.jpg" />
+                    </a>
+                    <a data-lightbox="Fleabag series" data-title="Fleabag series"
+                        href="img/drawing/portrait_natalie.jpg">
+                        <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/portrait_natalie.jpg" />
+                    </a>
+                    <a data-lightbox="Fleabag series" data-title="Fleabag series"
+                        href="img/drawing/portrait_friend_1.jpg">
+                        <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/portrait_friend_1.jpg" />
+                    </a>
                     <!-- </div> -->
                     <!-- lettering -->
                     <!-- <div class="illu_col illu_col_2"> -->
@@ -501,27 +521,23 @@
                     <!-- </div> -->
                     <!-- portrait -->
                     <!-- <div class="illu_col illu_col_3"> -->
-                    <a data-lightbox="Fleabag series" data-title="Fleabag series"
-                        href="img/drawing/portrait_Amanda_2.jpg">
-                        <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/portrait_Amanda_2.jpg" />
-                    </a>
-                    <a data-lightbox="Fleabag series" data-title="Fleabag series"
-                        href="img/drawing/portrait_natalie.jpg">
-                        <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/portrait_natalie.jpg" />
-                    </a>
-                    <a data-lightbox="Fleabag series" data-title="Fleabag series"
-                        href="img/drawing/portrait_friend_1.jpg">
-                        <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/portrait_friend_1.jpg" />
-                    </a>
+               
                 </div>
             </div>
             <div id="drawing_button" class="chevron-down collapse_shadow"> <span class="mdi mdi-chevron-down"></span>
             </div>
         </section>
-
+        <!-- handy index -->
+        <div class="sticky-toc">
+            <div class="js-toc"></div>
+        </div>
     </main>
     <!-- end of main section -->
     <script src="./js/lightbox.js"></script>
+    <!-- Table of contents -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
+    <script src="js/toc.js"></script>
+    <script src="js/tocbot.min.js"></script>
 </body>
 <footer>
 
