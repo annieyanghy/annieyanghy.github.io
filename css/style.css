@@ -1260,10 +1260,9 @@
                     align-items: flex-start;
     
                 }
-    
-                .about_intro_content div{
-                    width:100%;
-                    /* margin:var(--margin-item); */
+                .about_intro_3_col_container .about_intro_content div {
+                    width:100%;                 
+            
                 }
                 
                 .red,

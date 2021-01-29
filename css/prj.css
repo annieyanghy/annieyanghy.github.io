@@ -493,7 +493,6 @@ header{
 .prj_key_insights_quotes_container {
     display: inline-block;
     position: relative; 
-
     background-color: rgba(var(--color-dark), 1);
     border-radius: 0;
     width:100%;
