@@ -261,39 +261,6 @@ header{
     color: rgba(var(--color-white), 0.8);
 }
 
-#duo_highlight, #duo_nda {
-    background-color: rgba(var(--color-dark), 1);
-    margin-bottom:var(--margin-medium)
-
-}
-
-#duo_highlight .prj_content_container_full{
-    position:relative;
-    display:block;
-    width: var(--width-max);
-    margin: 0 auto;
-    margin-bottom:var(--margin-medium);
-  
-}
-#duo_highlight .prj_content_container_full h6{
-    color: rgba(var(--color-white), 0.7);
-}
-
-#duo_highlight h4{
-   color: rgba(var(--color-primary-dark), 1);
-}
-
-#duo_highlight .prj_index{
-   justify-content: center;
-   margin-top: var(--margin-medium);
-   margin-bottom:var(--size-medium)
-
-}
-
-#duo_highlight .prj_index h3{
-   
-    color: rgba(var(--color-white), 0.5);
- }
 
 
 /* ------project description ---------*/
