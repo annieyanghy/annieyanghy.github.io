@@ -148,6 +148,26 @@
     width: 100%;
 }
 
+.index_container_vertical {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 0
+}
+.prj_key_finding_item_vertical .prj_bullet{
+    padding-left:4em
+}
+.prj_content_container_full p {
+    max-width: 100%;
+}
+
+.prj_full_width_highlight .prj_caption {
+    color: rgba(var(--color-dark), 0.8);
+}
 
 @media only screen and (max-width: 900px){
     #mentor_iteration .prj_stack_content:nth-child(3) {
