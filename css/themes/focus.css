@@ -5,7 +5,9 @@
     
 }
 
-
+p {
+    width:100%
+}
 .prj_landing_right{
     /* perspective: 1800px; */
 
