@@ -4,14 +4,59 @@
     --color-primary-dark:77, 121, 168;
     
 }
+.prj_landing_left{
+    grid-column: 1 /span 3;
+}
+
+.prj_landing_right img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit:cover;
+    /* margin: auto; */
+    /* border-radius: 2.5em; */
+    /* transform: rotate(-15deg) ; */
+ 
+
+}
+#focus_landing{
+    /* position:relative;
+    display:flex;
+    width:400px;
+    margin-bottom:0;
+    min-height:400px;
+    padding:var(--size-small) 0;
+    background-image: url("/img/prj_focus/focus_3.png");
+    background-repeat: repeat;
+    background-size: 100% auto;
+    background-position: top;
+    background-attachment: scroll; */
+    /* height: 100%;
+    display: flex;
+    align-items: center;
+    min-height: 450px;
+    background-image: url("/img/prj_focus/focus_4.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    background-size: 25em; */
+    /* z-index:1000;
+    object-fit: cover; */
+    min-height:800px
+}
+.prj_landing_right{
+    grid-column: 4 /span 5;
+    display:flex;
+    flex-direction:column;
+   justify-content: flex-start;
+   align-items: flex-start;
+}
 
 p {
     width:100%
 }
-.prj_landing_right{
-    /* perspective: 1800px; */
 
-}
 .finding_section_title{
     /* text-align: left; */
     font-size: 20px;
@@ -37,14 +82,26 @@ p {
     margin-bottom: 0;
 }
 
-.prj_landing_right img {
-    position: relative;
-    display: block;
-    width: 50%;
-    height: auto;
-    margin: auto;
-    border-radius: 2.5em;
-    transform: rotate(-15deg) ;
- 
+.quickfact_item .prj_caption{
+    text-align: center;
+}
 
+
+
+
+@media only screen and (max-width: 600px) {
+    .prj_stack_content_row {
+        position: relative;
+        display: flex;
+        margin-bottom: 0;
+        max-width: var(--width-max);
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .prj_stack_content_row p{
+        width:100%
+    }
 }
