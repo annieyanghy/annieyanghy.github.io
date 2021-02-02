@@ -53,6 +53,11 @@
    align-items: flex-start;
 }
 
+.prj_landing_right img{
+    margin:0;
+    top:-5px
+}
+
 p {
     width:100%
 }
