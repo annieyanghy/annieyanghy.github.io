@@ -43,6 +43,7 @@
     background-size: 25em; */
     /* z-index:1000;
     object-fit: cover; */
+    min-height:800px
 }
 .prj_landing_right{
     grid-column: 4 /span 5;
@@ -81,6 +82,9 @@ p {
     margin-bottom: 0;
 }
 
+.quickfact_item .prj_caption{
+    text-align: center;
+}
 
 
 
