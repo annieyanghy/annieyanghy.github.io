@@ -1560,11 +1560,17 @@ a.toc-link {
     background-color: rgba(var(--color-dark), .03);
     border-radius: 10px;
     padding: var(--margin-item);
-    align-self: stretch;
+    align-items: center;
     box-sizing: border-box;
     box-shadow: 0 8px 10px -3px  rgba(var(--color-dark), 0.39);
 }
-
+.rec_prj div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    text-align:center
+}
 
 .rec_prj img {
     width: 100%;
