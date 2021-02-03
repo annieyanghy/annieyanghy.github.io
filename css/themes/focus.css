@@ -96,7 +96,18 @@ p {
     text-align: center;
 }
 
-
+@media only screen and (max-width: 900px) {
+   
+    
+    .prj_key_finding_container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: fit-content;
+        margin-bottom: var(--size-medium);
+    }
+    }
 
 
 @media only screen and (max-width: 600px) {
@@ -114,4 +125,13 @@ p {
     .prj_stack_content_row p{
         width:100%
     }
-}
+    
+    .prj_key_finding_container {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: fit-content;
+        margin-bottom: var(--size-medium);
+    }
+    }
