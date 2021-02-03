@@ -4,6 +4,11 @@
     --color-primary-dark:77, 121, 168;
     
 }
+
+.sec_1{
+    height:620px;
+    overflow:visible
+}
 .prj_landing_left{
     grid-column: 1 /span 3;
 }
@@ -43,7 +48,7 @@
     background-size: 25em; */
     /* z-index:1000;
     object-fit: cover; */
-    min-height:800px
+    
 }
 .prj_landing_right{
     grid-column: 4 /span 5;
