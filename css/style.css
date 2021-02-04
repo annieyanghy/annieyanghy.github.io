@@ -1338,7 +1338,9 @@
                     display:flex;
                     justify-content: flex-start;
                 }
-
+                .main_flex_coding .flex_item {
+                    width: 100%;
+                }
                 .flex_item{
                     width:50%
                 }

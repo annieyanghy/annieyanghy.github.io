@@ -2003,7 +2003,7 @@ a.toc-link {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        width: 60%;
+        width: 100%;
         min-height:150px;
         padding: var(--margin-x-small);
         background-color: rgba(var(--color-white), 1);
@@ -2086,6 +2086,7 @@ a.toc-link {
         font-size: var(--sec_title);
         padding-bottom: var(--size-small);
         width: 100%;
+        text-align: left;
     }
 
     .prj_content_container_full p {
