@@ -2,6 +2,11 @@
     overflow:visible
 }
 
+.prj_landing_right img {
+   
+    top: -70px;
+}
+
 #mentor_problem {
     width:100%;
     background-color: rgba(var(--color-primary), 0.5);
@@ -211,7 +216,7 @@
         box-sizing: border-box;
         width: 100%;
     }
-    .prj_resp_imagebox {
+    .prj_resp_imageitem {
 
         display: flex;
         position: relative;
@@ -219,6 +224,7 @@
         flex-wrap: wrap;
         width: 100%;
         max-width:100%;
+        max-height:400px;
         height: 100%;
     }
     
