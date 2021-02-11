@@ -70,6 +70,36 @@
     color: rgba(var(--color-white), 0.5);
  }
 
+ .prj_key_insights_quotes {
+    display: block;
+    position: relative; 
+    margin: var(--margin-small) auto;
+    padding: var(--margin-x-small);
+    max-width:var(--width-max);
+
+}
+
+.prj_key_insights_quotes .prj_caption{
+    color:rgba(var(--color-primary-dark), 1)
+}
+
+.prj_key_insights_quotes h4{
+    color:rgba(var(--color-primary-dark), 1);
+    font-size:32px;
+    margin-bottom:var(--size-small);
+    
+}
+.prj_key_insights_quotes .quote_name{
+    text-align:right;
+    width:100%;
+    max-width:100%
+}
+
+.prj_caption{
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgba(var(--color-dark), .3)
+}
 
 /* #duo .prj_landing_right {
     background-image:  url('../img/prj_duo/duo_demo_1.gif');
