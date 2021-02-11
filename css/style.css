@@ -517,11 +517,12 @@
                 box-sizing: border-box;
                 position:relative;
                 display:block;
-                width: 33%;
+                width: 50%;
+               
             }
 
            .main_flex_coding .flex_item{
-            width:33%;
+            width:50%;
 
            }
             /* -------About Page--------- */
@@ -811,7 +812,8 @@
 
             }
                 .mentor_thumbnail{
-                    background-color: rgb(218, 240, 240);
+                    /* background-color: rgb(218, 240, 240); */
+                    background-color: rgb(208, 226, 226);
                     
                 }
                 .duo_thumbnail{
@@ -827,7 +829,7 @@
                     background-color: rgb(233, 226, 245)
                 }
                 .mobagel_thumbnail{
-                    background-color: rgb(224, 233, 241)
+                    background-color: rgb(217, 230, 243)
                 }
                 .datavis_thumbnail{
                     background-color: rgb(225, 238, 241)
@@ -919,6 +921,7 @@
                 font-weight: 400;
                 color:rgba(var(--color-dark), 8);
                 line-height: 24px;
+                min-height:48px
             }
             
             .tags {
