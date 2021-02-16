@@ -101,6 +101,10 @@
     color: rgba(var(--color-dark), .3)
 }
 
+.prj_content_container_full p {
+    max-width: 100%;
+}
+
 /* #duo .prj_landing_right {
     background-image:  url('../img/prj_duo/duo_demo_1.gif');
     background-repeat: none;
