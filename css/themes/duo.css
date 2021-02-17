@@ -105,6 +105,10 @@
     max-width: 100%;
 }
 
+#hypothesis{
+    margin-bottom: var(--margin-medium)
+}
+
 /* #duo .prj_landing_right {
     background-image:  url('../img/prj_duo/duo_demo_1.gif');
     background-repeat: none;
