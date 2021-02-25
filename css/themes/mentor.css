@@ -15,7 +15,7 @@
     margin-bottom:0
 }
 #mentor_solution{
-    width:70%;
+    width:var(--width-max);
     margin:0 auto;
     background-color:  rgba(var(--color-white), 1);
     /* padding:var(--size-small) 0;
@@ -226,6 +226,12 @@
         max-width:100%;
         max-height:400px;
         height: 100%;
+    }
+    #mentor_solution {
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgba(var(--color-white), 1);
+        margin-bottom: var(--margin-medium);
     }
     
 }
