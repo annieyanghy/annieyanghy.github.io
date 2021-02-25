@@ -1700,7 +1700,7 @@ a.toc-link {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        width: 90%;
+        width: 100%;
     }
     .prj_main_grid {
         display: flex;
