@@ -2,6 +2,48 @@
 :root {
    
     --color-primary:184, 212, 250;
-    --color-primary-dark:32, 90, 199;
+    --color-primary-dark:56, 101, 186;
     
+}
+.row_container_disclaimer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: var(--width-max);
+    background-color: rgba(var(--color-primary-dark), 1);
+    padding: var(--size-medium)
+
+}
+
+.row_container_disclaimer h4{
+    font-style: italic;
+    color: rgba(var(--color-white), 1)
+}
+
+.disclaimer_text{
+    align-self: center;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: rgba(var(--color-white), 1)
+}
+.prj_in_text_link{
+    color: rgba(var(--color-white), 1);
+    text-decoration: underline;
+    text-decoration-thickness:2px;
+    text-underline-offset: 6px;
+    text-decoration-color:rgba(var(--color-white), 1);
+    transition: all 0.3s ease-in-out
+}
+
+.prj_in_text_link:hover{
+    color: rgba(var(--color-white), 1);
+    text-decoration: underline;
+    text-decoration-thickness:2px;
+    text-underline-offset: 6px;
+    text-decoration-color:rgba(var(--color-white), 1);
+    transition: all 0.3s ease-in-out
 }
