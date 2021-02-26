@@ -946,7 +946,7 @@
             
             .prj_img_container {
                 grid-row: 1 / span 1;
-                margin-top: var(--margin-x-small);
+            
                 overflow:hidden
             }
             
@@ -1011,7 +1011,7 @@
                 position: relative;
                 padding-left: var(--size-half-xxxx-small);
                 justify-content: center;
-                margin-bottom:var(--size-xx-small)
+                padding-bottom:var(--size-xx-small)
             }
 
             .tags_container p{
@@ -1635,8 +1635,24 @@
                     .prj_grid {
                         display: block;
                     }
-
-
+                    .main_flex_medium .flex_item {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .main_flex_medium .prj_grid {
+                        display: flex;
+                        flex-direction: column;
+                        overflow: hidden;
+                        justify-content: center;
+                        object-fit: contain;
+                        border: 2px solid rgba(var(--color-dark), 0.08);
+                        border-radius: var(--radius);
+                        padding: var(--size-half-xx-small) 0;
+                        margin: 0 var(--size-half-xxx-small) var(--size-xxx-small) var(--size-half-xxxx-small);
+                        box-shadow: 0 5px 20px rgba(0,0,0,0,0.2);
+                        transition: box-shadow 0.4s ease-in-out;
+                        background-color: rgba(var(--color-dark),0);
+                    }
 
                     .illu_col a {
                         box-sizing: border-box;
