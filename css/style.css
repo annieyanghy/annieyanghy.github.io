@@ -785,12 +785,12 @@
 
             .divider {
                 display: block;
-                margin: var(--margin-small) auto;
+                margin: var(--size-large) auto var(--margin-small) auto;
                 max-width: var(--width-max);
                 /* background-color:'red'; */
                 height:1px;
                 border: 0;
-                border-top: 2px solid rgba(var(--color-primary),1);
+                border-top: 2px solid rgba(var(--color-dark),0.2);
             }
             
             .button_container {
@@ -1487,6 +1487,8 @@
 
                 h4 {
                     font-size: 20px;
+                    width:95%;
+                    line-height: 36px;;
                 }
 
                 /* ------600px---------*/
