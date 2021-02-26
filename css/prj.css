@@ -967,7 +967,7 @@ color: rgba(var(--color-primary), 1);
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    max-width: var(--width-max-prj);
+    max-width: var(--width-max);
     background-color: rgba(var(--color-dark), 1);
     padding: var(--size-medium)
 
