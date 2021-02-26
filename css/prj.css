@@ -136,7 +136,7 @@ header{
 .prj_landing_left {
     position: relative;
     grid-column: 1 / span 4;
-    height:500px;
+    min-height:500px;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -1700,7 +1700,7 @@ a.toc-link {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        width: 100%;
+        width: 95%;
     }
     .prj_main_grid {
         display: flex;
@@ -1800,8 +1800,9 @@ a.toc-link {
         display: flex;
         flex-direction: column;
         justify-content:  space-around;
-        align-items: center;
-        max-width: var(--width-max-prj);
+        /* align-items: center; */
+        max-width: var(--width-max);
+        width:95%;
         background-color: rgba(var(--color-grey), 0.1);
         padding: var(--size-medium);
     }
@@ -1945,6 +1946,10 @@ a.toc-link {
         display: block;
         height: 400px;
         margin:0 auto;
+    }
+
+    .prj_stack_content_right img, .prj_stack_content_left img {
+        width: 100%;
     }
     /* same line */
     .same_line .__3 {
