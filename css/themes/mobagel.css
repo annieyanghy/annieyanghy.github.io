@@ -5,6 +5,18 @@
     --color-primary-dark:56, 101, 186;
     
 }
+
+.sec_1 {
+    display: block;
+    position: relative;
+    background-color: rgba(var(--color-grey), 0.1);
+    width: 100%;
+    min-height: 500px;
+    overflow: hidden;
+    height:auto
+}
+
+
 .row_container_disclaimer{
     position: relative;
     display: flex;

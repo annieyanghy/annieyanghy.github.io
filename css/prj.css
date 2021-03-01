@@ -12,7 +12,7 @@
     --line-height-subtitle: 3rem;
     --line-height-header: 2rem;
     --line-height-p: 2rem;
-    --sec_title:36px;
+    --sec_title:2rem;
     --color-primary: 229, 247, 244;
     --color-primary-dark:148, 187, 184;
     --color-dark: 82,82,82;
@@ -1792,6 +1792,26 @@ a.toc-link {
         width: 95%;
       
     
+    }
+
+    .prj_landing_left h1 {
+        font-size: 60px;
+    }
+
+    .prj_landing_left {
+        position: relative;
+        grid-column: 1 / span 4;
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+    }
+
+    .prj_sec_title {
+        /* font-size: 28px; */
+        padding-bottom: var(--size-small);
+        /* line-height: 32px; */
     }
     /*quick fact*/
 
