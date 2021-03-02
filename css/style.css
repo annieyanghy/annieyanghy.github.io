@@ -634,7 +634,8 @@
                 grid-row-gap: var(--grid-gap);
                 margin: 0 auto;
                 max-width: var(--width-max);
-                margin-top: var(--margin-small);
+                margin-top: var(--size-medium);
+                padding-bottom: var(--size-large);
             }
             .landing_left_about_page{
                 position: relative;
@@ -668,7 +669,7 @@
                 align-self: center;
                 grid-column: 1 / span 6;
                 height:550px;
-                margin-bottom: var(--margin-medium);
+                margin-bottom: var(--size-large);
                 background-color:rgba(var(--color-tint),1);
                 background-image: url("../img/branding/pattern_bg.png");
                 background-repeat: no-repeat;
