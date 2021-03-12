@@ -193,6 +193,9 @@
 /* ------6000px---------*/
 
 @media only screen and (max-width: 600px) {
+    .prj_landing_right img {
+        top: 0px;
+    }
     #mentor_lofi .prj_stack_content_left {
         padding: var(--size-small);
         background-color: rgba(var(--color-white), 0.8);
@@ -216,6 +219,9 @@
         box-sizing: border-box;
         width: 100%;
     }
+    #mentor_problem .prj_index_container {
+        justify-content: left;
+    }
     .prj_resp_imageitem {
 
         display: flex;
@@ -228,7 +234,7 @@
         height: 100%;
     }
     #mentor_solution {
-        width: 100%;
+        width: 95%;
         margin: 0 auto;
         background-color: rgba(var(--color-white), 1);
         margin-bottom: var(--margin-medium);
