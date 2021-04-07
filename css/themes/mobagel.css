@@ -15,7 +15,11 @@
     overflow: hidden;
     height:auto
 }
+.prj_landing_right img{
+    width:120%;
+    left:-15%;
 
+}
 
 .row_container_disclaimer{
     position: relative;
@@ -58,4 +62,14 @@
     text-underline-offset: 6px;
     text-decoration-color:rgba(var(--color-white), 1);
     transition: all 0.3s ease-in-out
+}
+
+@media only screen and (max-width: 900px) {
+
+    .prj_landing_right img{
+        width:100%;
+        left:0;
+    
+    }
+
 }
