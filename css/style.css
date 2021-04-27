@@ -22,7 +22,6 @@
                 --color-ivory: 245, 241, 240;
                 --color-camel: 224, 209,180;
                 --color-camel-dark: 164, 152,133;
-                /* 133,177,173; */
                 --color-tone: 228, 247, 244;
                 --color-tint: 217, 237, 234;
                
@@ -31,26 +30,78 @@
                 --color-third: 224, 205, 195;
                 --color-fourth: 227, 214, 143;
                 --grid-gap: 100px;
-                --margin-primary: 15%;
-                --margin-medium: 10%;
-                --margin-small: 32px;
+                
+                --width-max: 1200px;
+
+                --vDistance: 2rem;
+                
+                --radius: 10px;
+                --border-button: solid 3.5px rgba(var(--color-dark), 0.7);
+
+                /* font size */
+                --h1Size:2.5rem;
+                --h2Size:2.3rem;
+                --h3Size: 2rem;
+                --h4Size:1.8rem;
+                --h5Size:1.6rem;
+                --h6Size:1.4rem;
+                --h7Size:1.2rem;
+                --pSize:1rem;
+
+                /* for margin and padding */
+                --margin-primary: calc(1.8 * var(--vDistance));
+                --margin-medium: calc(1.5 * var(--vDistance));
+                --margin-small:  calc(1 * var(--vDistance));
                 --margin-x-small: 24px;
                 --margin-item: 16px;
                 --margin-icon: 8px;
-                --width-max: 1120px;
-                --size-large: 60px;
-                --size-medium: 48px;
-                --size-small: 32px;
-                --size-x-small: 24px;
-                --size-xx-small: 20px;
-                --size-xxx-small: 16px;
+               
+                --size-large: calc(1.8 * var(--vDistance));
+                --size-medium: calc(1.5 * var(--vDistance));
+                --size-small:  calc(1 * var(--vDistance));
+                --size-x-small:  calc(0.8 * var(--vDistance));
+                --size-xx-small: calc(0.6 * var(--vDistance));
+                --size-xxx-small: calc(0.5 * var(--vDistance));
                 --size-half-xxx-small: 8px;
                 --size-xxxx-small: 12px;
                 --size-half-xxxx-small: 6px;
-                --radius: 10px;
-                --border-button: solid 3.5px rgba(var(--color-dark), 0.7);
             }
+
+            
             /* ------------body ---------------- */
+
+            h1 {
+                font-size: var(--h1Size);
+                
+            }
+            
+            h2 {
+                font-size: var(--h2Size);
+            }
+            
+            h3 {
+                font-size: var(--h3Size);
+            }
+            
+            h4 {
+                font-size: var(--h4Size);
+            }
+            
+            h5 {
+                font-size: var(--h5Size);
+                text-transform: uppercase;
+            }
+            
+            h6 {
+                font-size: var(--h6Size);
+                font-weight: 700;
+            }
+
+            h7 {
+                font-size: var(--h7Size);
+                font-weight: 600;
+              
+            }
             
             h1,
             h2 {
@@ -61,54 +112,28 @@
                 text-transform: capitalize;
             }
             
-            h3,
-            h4,
-            h5{
+            h3{
                 font-family: var(--typeface-display);
                 font-weight: 700;
                 line-height: var(--line-height-subtitle);
                 color: rgba(var(--color-dark), 1);
             }
+
+            h4,
+            h5{
+                font-family: var(--typeface-text);
+                line-height: var(--line-height-subtitle);
+                color: rgba(var(--color-dark), 1);
+
+            }
             
             h6,h7{
                 font-family: var(--typeface-text);
-               
                 line-height: var(--line-height-header);
                 color: rgba(var(--color-dark), 1);
 
             }
-            h1 {
-                font-size: 40px;
-                
-            }
             
-            h2 {
-                font-size: 32px;
-            }
-            
-            h3 {
-                font-size: 24px;
-            }
-            
-            h4 {
-                font-size: 20px;
-            }
-            
-            h5 {
-                font-size: 20px;
-                text-transform: uppercase;
-            }
-            
-            h6 {
-                font-size: 16px;
-                font-weight: 700;
-            }
-
-            h7 {
-                font-size: 15px;
-                font-weight: 600;
-              
-            }
 
             .caption{
                 font-size: 14px;
@@ -377,7 +402,8 @@
 
             #index_para h4{
                 position: relative;
-                width: 100%
+                width: 100%;
+                font-size:20px;
             }
             .landing_left {
                 position: relative;
@@ -388,21 +414,13 @@
             .landing_left h6{
                 font-size:16px;
                 font-weight: 500;
-                /* background-color: rgba(var(--color-gray), 0.5) */
 
             }
             
             .landing_right {
                 position: relative;
                 grid-column: 5 / span 2;
-                /* height: 100%;
-                background-color: rosybrown;
-                background-image: url("../img/branding/Branding_Pattern_geo.png");
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-position: right;
-                background-size: 30%; */
-                /* grid-row: 1/ span 2; */
+              
             }
             
             .landing_right img {
@@ -423,76 +441,7 @@
                 margin: 0 auto;
                 max-width: var(--width-max);
             }
-            
-            .red {
-                position: relative;
-                display: inline-block;
-                background-color: rgba(var(--color-dark), 0.01);
-                grid-column: 1 / span 3;
-                height: auto;
-                width: auto;
-                
-                overflow: hidden;
-                border:1px solid rgba(var(--color-dark), 0.08);
-                border-radius: var(--radius);
-                padding: var(--size-xx-small);
-                box-shadow: 0 1px 2px rgba(0,0,0,0.15);
-                transition: all 0.3s ease-in-out;
-                
-            }
-
-            
-            /* .red::after {
-            content: '';
-            position: absolute;
-            grid-column: 1 / span 3;
-            z-index: -1;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            border-radius:30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            transition: opacity 0.3s ease-in-out;
-            
-        }
-        .red:hover::after{
-            opacity:1;
-            
-
-            } */
-            .red:hover{
-            position: relative;
-            top: -5px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            transition: box-shadow 0.3s ease-in-out;
-            
-            }
-
-        
-            
-            .black {
-                background-color: rgba(var(--color-dark), 0.01);
-                grid-column: 4 / span 3;
-                height: auto;
-                width: auto;
-                position: relative;
-                display: inline-block;
-                overflow: hidden;
-                border:1px solid rgba(var(--color-dark), 0.08);
-                border-radius: var(--radius);
-                padding: var(--size-xx-small);
-            }
-
-            .black:hover{
-            position: relative;
-            top: -5px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-            transition: box-shadow 0.3s ease-in-out;
-            
-            }
-
-
-
+      
 
             /* flex trial */
 
@@ -791,7 +740,7 @@
                 /* background-color:'red'; */
                 height:1px;
                 border: 0;
-                border-top: 2px solid rgba(var(--color-dark),0.2);
+                border-top: 2px solid rgba(var(--color-dark),0);
             }
             
             .button_container {
@@ -1160,6 +1109,7 @@
                 align-self: center;
                 color: rgba(var(--color-dark), 1);
                 line-height: normal;
+                font-size: calc( 0.7 * var(--h6Size))
             }
             
             .footer_container {
