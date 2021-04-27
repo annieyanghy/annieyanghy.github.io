@@ -97,11 +97,7 @@
     max-width:100%
 }
 
-.prj_caption{
-    text-transform: uppercase;
-    font-weight: 900;
-    color: rgba(var(--color-dark), .3)
-}
+
 
 .prj_content_container_full .prj_divided_left_container  p,  .prj_content_container_full .prj_divided_right_container p {
     max-width: 100%;
