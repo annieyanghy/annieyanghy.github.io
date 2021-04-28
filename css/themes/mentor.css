@@ -227,6 +227,14 @@
 /* ------6000px---------*/
 
 @media only screen and (max-width: 600px) {
+    .how_it_works_container .how_it_works:nth-child(1), 
+    .how_it_works_container .how_it_works:nth-child(3) {
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+    }
     .prj_landing_right img {
         top: 0px;
     }
@@ -238,6 +246,11 @@
     }
     #mentor_lofi .prj_stack_content_left .prj_sec_title {
         width: 100%
+    }
+    #mentor_lofi_vid {
+      
+        min-height: auto;
+       
     }
     #mentor_problem h4, #mentor_solution h4 {
         color: rgba(var(--color-dark), 1);
