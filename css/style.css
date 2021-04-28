@@ -395,7 +395,7 @@
             }
 
             #index_para h1{
-                font-size:80px;
+                font-size:5rem;
                 position: relative;
                 width: 100%
             }
@@ -1369,6 +1369,15 @@
                     background-position: 90% 90%;
                     background-size: 60%;
                   
+                }
+                #index_para h1{
+                    font-size:3rem;
+                    
+                }
+                #index_para h4{
+                    
+                    margin-bottom: calc(1 * var(--h4Size));
+                    
                 }
                 .button_container {
                     justify-content: flex-start;

@@ -68,8 +68,11 @@
 body {
     margin: 0;
     font-family: var(--typeface-text);
+   
 }
-
+main{
+    overflow:hidden;
+}
 
 p {
     color: rgba(var(--color-dark), 1);
@@ -1837,6 +1840,10 @@ a.toc-link {
 /* ------6000px---------*/
 
 @media only screen and (max-width: 600px) {
+
+    .grid_divider_block {
+        height: calc(0.5 * var(--grid-gap-row));
+    }
     /*hamburger*/
     .menu-btn { 
         position: fixed; 
@@ -2096,7 +2103,7 @@ a.toc-link {
         flex-wrap: wrap;
         justify-content:center;
         align-items:center;
-        width: 80%;
+        width: 100%;
         margin:0 auto;
          margin-bottom: var(--margin-item);
     }
