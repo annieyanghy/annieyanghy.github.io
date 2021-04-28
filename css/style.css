@@ -181,7 +181,7 @@
 
             }
             #index_header{
-                background-color: rgba(var(--color-branding-primary), 1);
+                background-color: rgba(var(--color-branding-primary), 0);
 
             }
             
@@ -326,7 +326,7 @@
                 /* height:500px; */
                 min-height: 400px;
                 /* background-color: rgba(var(--color-gray), 0.5) */
-                background-color: rgba(var(--color-branding-primary), 1)
+                background-color: rgba(var(--color-branding-primary), 0)
 
 
               
