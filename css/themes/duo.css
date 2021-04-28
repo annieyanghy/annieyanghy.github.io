@@ -1,10 +1,12 @@
 
 :root {
    
-    --color-primary: 157, 208, 138 ;
+    --color-primary: 185, 224, 171 ;
     --color-primary-dark:112, 176, 86;
     
 }
+
+
 
 #duo .prj_key_finding_container{
   
@@ -21,9 +23,9 @@
 
 #duo .prj_landing_right img {
     position: relative;
-    display: block;
-    width: 200%;
-  
+    display: flex;
+    width: 110%;
+    top:-100px;
     height: auto;
     margin: auto;
 }
@@ -46,7 +48,8 @@
 #duo_highlight .prj_content_container_full{
     position:relative;
     display:block;
-    width: var(--width-max);
+    max-width: var(--width-max);
+    width:100%;
     margin: 0 auto;
     margin-bottom:var(--size-medium);
 }
@@ -70,6 +73,8 @@
 #duo_highlight .prj_index h3{
    
     color: rgba(var(--color-white), 0.5);
+    text-align: center;
+   
  }
 
  .prj_key_insights_quotes {

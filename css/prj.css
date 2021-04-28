@@ -149,8 +149,15 @@ header{
         color: rgba(var(--color-white), .6);
        
     }
+    .full_bg_highlight .quote_name {
+        color: rgba(var(--color-white), .6);
+       
+    }
 
-
+    /* dark mode highlight, placed after full_bg_highlight */
+.full_bg_highlight_dark{
+    background-color:  rgba(var(--color-dark), 1);
+}
 
 .grid_divider_block{
     height: calc(2.5 * var(--grid-gap-row))
@@ -217,6 +224,7 @@ header{
     position: relative;
     grid-column: 1 / span 5;
     min-height:400px;
+     height:400px; /*fix the height */
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -552,6 +560,7 @@ header{
         color: rgba(var(--color-dark), 0.8);
         font-family: var(--typeface-display);
         font-size: 2.2rem;
+        margin-bottom: var(--indexBottomMargin);
     }
 
 .sticky_title {
@@ -1088,7 +1097,7 @@ color: rgba(var(--color-primary), 1);
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    
+    width:100%;
     max-width: var(--width-max);
     background-color: rgba(var(--color-grey), 0.1);
     padding: var(--size-medium);
@@ -1915,11 +1924,11 @@ a.toc-link {
         display: flex;
         flex-direction: column;
         justify-content:  space-around;
-        /* align-items: center; */
+        align-items: center;
         max-width: var(--width-max);
-        width:95%;
+        width:100%;
         background-color: rgba(var(--color-grey), 0.1);
-        padding: var(--size-medium);
+        padding: 0;
     }
 
     .quickfact_item {
