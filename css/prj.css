@@ -298,7 +298,7 @@ header{
 
 .prj_content_container {
     background-color: rgba(var(--color-white), 0);
-    grid-column: 5/ span 7;
+    grid-column: 5/ span 8;
     height: auto;
     width: auto;
     position: relative;
@@ -322,7 +322,7 @@ header{
 
 .prj_right_insights_container{
     background-color: rgba(var(--color-white), 0);
-    grid-column: 5/ span 7;
+    grid-column: 5/ span 8;
     height: auto;
     width: auto;
     position: relative;
@@ -790,15 +790,16 @@ _center{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: wrap;
     align-items: center;
-    width: 40%;
+    width: 20%;
     min-height:min-content;
     padding: var(--margin-item);
     background-color: rgba(var(--color-white), 1);
     border-radius: 10px;
     border: rgba(var(--color-dark), 0.2) solid 3px;
     margin: 0 var(--margin-item) var(--margin-item) 0;
-    /* box-shadow: 0 5px 20px 1px rgba(0,0,0,0.1); */
+    box-shadow: 0 5px 20px 1px rgba(0,0,0,0.1);
 
 }
 
@@ -814,18 +815,16 @@ _center{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    /* width:30%;
-    max-width:160px; */
-    margin-right: var(--margin-item);
+
     
 }
 .index_container_vertical .prj_caption{
-    line-height: 16px;
+  
     width:100%
 }
 
 .index_container_vertical p {
-    max-width:80%;
+
     width:75%
 }
 
@@ -2132,22 +2131,39 @@ a.toc-link {
         text-align: center;
         margin-right:0;
     }
+
     .prj_key_finding_item_vertical{
-        box-sizing:content-box;
+       
         position: relative;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+        flex-wrap: wrap;
         align-items: center;
-        width: 100%;
-        min-height:150px;
-        padding: var(--margin-x-small);
+        width: auto;
+        min-height:min-content;
+        padding: var(--margin-item);
         background-color: rgba(var(--color-white), 1);
         border-radius: 10px;
-        border: rgba(var(--color-primary), 1) solid 2px;
+        border: rgba(var(--color-dark), 0.2) solid 3px;
         margin: 0 var(--margin-item) var(--margin-item) 0;
+        box-shadow: 0 5px 20px 1px rgba(0,0,0,0.1);
     
     }
+    
+   
+    .index_container_vertical{
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    
+        
+    }
+
     .prj_stack_finding_center {
         width: 100%;
         align-items: center;
