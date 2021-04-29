@@ -52,9 +52,9 @@
      --h7BottomMargin:calc(5 * var(--vDistance));
 
      /* font size */
-     --h1Size:2.5rem;
-     --h2Size:2.3rem;
-     --h3Size: 2rem;
+     --h1Size:3rem;
+     --h2Size:2.5rem;
+     --h3Size:2.2rem;
      --h4Size:1.8rem;
      --h5Size:1.5rem;
      --h6Size:1.3rem;
@@ -63,7 +63,7 @@
 }
 
 
-/* ------------body ---------------- */
+/* ------------ body, general ---------------- */
 
 body {
     margin: 0;
@@ -74,6 +74,7 @@ main{
     overflow:hidden;
 }
 
+/* typeface */
 p {
     color: rgba(var(--color-dark), 1);
     font-size: var(--pSize);
@@ -81,6 +82,19 @@ p {
     margin-bottom: var(--pMargin);
 }
 
+.prj_caption{
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgba(var(--color-primary-dark), 1);
+    margin-bottom: var(--sectionCaptionBottomMargin);
+    font-size: 1.1rem;
+    font-family: var(--typeface-text);
+    letter-spacing: calc( 0.2* var(--h6Size));
+    
+}
+
+
+/* link icon */
 
 a {
     text-decoration: none;
@@ -104,6 +118,8 @@ hr {
 header{
     background-color: rgba(var(--color-grey), 0.1);
 }
+
+/* layout */
 
 .full_bg{
     grid-column: 1/ span 12;
@@ -177,20 +193,12 @@ header{
     height: calc(1 * var(--grid-gap-row));
 }
 
-.prj_caption{
-    text-transform: uppercase;
-    font-weight: 900;
-    color: rgba(var(--color-primary-dark), 1);
-    margin-bottom: var(--sectionCaptionBottomMargin);
-    font-size: 1.1rem;
-    font-family: var(--typeface-text);
-    letter-spacing: calc( 0.2* var(--h6Size));
-    
-}
 
 
-/* ----------main -----------*/
 
+/* ---------- structure -----------*/
+
+/* container of landing page, 1st section of the website */
 .sec_1 {
     display: block;
     position: relative;
@@ -212,6 +220,8 @@ header{
 .sec_1 .fa:hover {
     transform: rotateY(180deg);
 }
+
+/* container of landing content */
 
 .landing_grid {
     display: grid;
@@ -634,7 +644,7 @@ header{
 .finding_section_title{
    /* using h6 */
     font-size: 1rem;
-    margin: var(--contentCaptiongBottomMargin) 0;
+    margin-bottom:var(--contentCaptiongBottomMargin);
     color: rgba(var(--color-dark), 0.6);
    
 }
