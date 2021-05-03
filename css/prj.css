@@ -759,7 +759,7 @@ header{
     position: relative;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     width:100%;
     margin-bottom: var(--size-medium);
@@ -2141,7 +2141,9 @@ a.toc-link {
         text-align: center;
         margin-right:0;
     }
-
+    .prj_key_finding_container_vertical{
+        flex-wrap: wrap;
+    }
     .prj_key_finding_item_vertical{
        
         position: relative;
