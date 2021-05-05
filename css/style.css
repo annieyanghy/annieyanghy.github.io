@@ -1091,9 +1091,9 @@
                 display: flex;
                 flex-wrap: wrap;
                 position: relative;
-                padding-left: var(--size-half-xxxx-small);
+              
                 justify-content: center;
-                padding-bottom:var(--size-xx-small)
+               
             }
 
                 .tags_container p{
@@ -1193,9 +1193,7 @@
                     footer .fa {
                         color: rgba(var(--color-dark), 1);
                         margin: 8px;
-                        font-size: var(--size-xx-small);
-                        /* transition: transform  0.6s;
-                            transform-style: preserve-3d; */
+                     
                     }
             
             
