@@ -1675,10 +1675,10 @@ a.toc-link {
     width: 100%;
     background-color: rgba(var(--color-dark), .03);
     border-radius: 10px;
-    padding: var(--margin-item);
+    padding: calc(0.5* var(--vDistance));
     align-items: center;
     box-sizing: border-box;
-    box-shadow: 0 8px 10px -3px  rgba(var(--color-dark), 0.39);
+    box-shadow: 0 8px 10px -3px  rgba(var(--color-dark), 0.15);
 }
 .rec_prj div{
     display: flex;
