@@ -32,6 +32,8 @@
 
     <link rel="stylesheet" type="text/css" href="css/tocbot.css" />
     <link rel="stylesheet" type="text/css" href="css/prj.css" />
+    <!-- themes color -->
+    <link rel="stylesheet" type="text/css" href="css/themes/mentor.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- lightbox -->
     <link href="./css/lightbox.css" rel="stylesheet" />
@@ -102,7 +104,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="js-toc-content">
         <!-- landing + prj info -->
         <section class="sec_1">
             <div class="landing_grid">
@@ -129,7 +131,7 @@
         </section>
 
         <!-- prj contents -->
-        <div class="prj_main_grid js-toc-content">
+        <div class="prj_main_grid ">
             <div class="prj_logistic_container">
                 <div class="prj_logistic_container_left">
                    
@@ -158,15 +160,15 @@
                         <div class="prj_logistic_subcate">
                             <div class="prj_logistic_subcate_item">
                                 <!-- <h6>Front-end:</h6> -->
-                                <p>React Native, Expo</p>
+                                <p>Front-end: React Native, Expo</p>
                             </div>
                             <div class="prj_logistic_subcate_item">
                                 <!-- <h6>Database:</h6> -->
-                                <p>Firebase</p>
+                                <p>Database: Firebase</p>
                             </div>
                             <div class="prj_logistic_subcate_item">
                                 <!-- <h6>Libraries:</h6> -->
-                                <p>
+                                <p>Libraries: 
                                     <a class="prj_in_text_link" href="https://reactnativeelements.com/">React Native
                                         Elements</a>,
                                     <a class="prj_in_text_link" href="https://callstack.github.io/react-native-paper/">
@@ -221,7 +223,12 @@
                 </div>
             </div>
 
-            <hr>
+          </div>
+
+          <div class="innerSection_divider_block"></div>
+
+          <div class="full_bg full_bg_highlight_light" >
+            <div class="prj_main_grid">
 
             <!-- 2 Solution -->
             <div class=" prj_index_container ">
@@ -240,128 +247,68 @@
 
             </div>
 
-            <hr>
-            <!-- 3 How it works -->
-            <div class=" prj_index_container ">
-                <div class="prj_index ">
-                    <h3 id="HIW">How It Works</h3>
-                </div>
-            </div>
 
+            <!-- 3 How it works -->
             <!-- 3 Content -->
-            <div class="prj_content_container">
+            <div class="prj_content_container_full">
                 <div class="how_it_works_container">
                     <!-- 1 -->
                     <div class="how_it_works">
                         <div class="how_it_works_text">
                             <h4>1. Create profile and portfolio</h4>
-                            <!-- <h6>swipe for designers that inspire you</h6> -->
+                            <ui class="prj_bullet_container">
+                                <li class="prj_bullet">create personal profile and choose whether to become a mentor by toggling</li>
+                                <li class="prj_bullet">attach portfolio link on the profile page so other designers can see</li>
+                            </ui>
                         </div>
                         <div data-aos="fade-up" class="how_it_works_gif">
-                            <img class="dev_gif_radius" src="img/prj_mobdev/gif/Profile_edit-info.gif">
+                            <video controls loop autoplay muted>
+                                <source src="img/prj_mobdev/profile & portfolio.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                     <!-- 2 -->
                     <div class="how_it_works">
                         <div class="how_it_works_text">
                             <h4>2. Connect to other designers</h4>
-                            <!-- <h6>to connect to your mentor</h6> -->
+                            <ui class="prj_bullet_container">
+                                <li class="prj_bullet">browse other fellow designers by filtering or directly searching for names or companies</li>
+                                <li class="prj_bullet">toggle to browse designer list with different views</li>
+                                <li class="prj_bullet">follow fellow designers to connect</li>
+                            </ui>
                         </div>
                         <div data-aos="fade-up" class="how_it_works_gif">
-                            <img class="dev_gif_radius" src="img/prj_mobdev/gif/Designer_follow.gif">
+                            <video controls loop autoplay muted>
+                                <source src="img/prj_mobdev/connect.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                     <!-- 3 -->
                     <div class="how_it_works">
                         <div class="how_it_works_text">
                             <h4>3. Send portfolio and chat</h4>
-                            <!-- <h6>get professional feedback</h6> -->
+                            <ui class="prj_bullet_container">
+                                <li class="prj_bullet">once connected, users can chat with that designer</li>
+                                <li class="prj_bullet">user can also share portfolio that they are uploaded to their profile page</li>
+                            </ui>
                         </div>
                         <div data-aos="fade-up" class="how_it_works_gif">
-                            <img class="dev_gif_radius" src="img/prj_mobdev/gif/chat_send-speed-up.gif">
-                        </div>
+                            <video controls loop autoplay muted>
+                                <source src="img/prj_mobdev/share.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>                        </div>
                     </div>
                 </div>
             </div>
-            <hr>
+                </div> <!-- end of main_grid -->
+            </div>  <!-- end of full_bg -->
 
-            <!-- 4 App Feature -->
-            <div class=" prj_index_container ">
-                <div class="prj_index ">
-                    <h3 id="App Feature">Demo</h3>
-                </div>
-            </div>
-            <!-- 4 Content -->
-            <div class="prj_content_container_full">
-                <div class="mockups_row_container">
-                    <!-- 4.1 -->
-                    <div class="mockups_column">
-                        <div class="mockups_text">
-                            <h6>Create a profile</h6>
-                        </div>
-                        <div class="mockups_gif">
-                            <img class="dev_gif_radius" src="img/prj_mobdev/gif/Profile_edit-profilePic-uploading.gif">
-                        </div>
-                    </div>
-                    <!-- 4.2 -->
-                    <div class="mockups_column">
-                        <div class="mockups_text">
-                            <h6>Create portfolio</h3>
+            <div class="innerSection_divider_block"></div>
 
-                        </div>
-                        <div class="mockups_gif">
-                            <img class="dev_gif_radius" src="img/prj_mobdev/gif/Portfolio_add_2(mockup).gif">
-                        </div>
-                    </div>
-                    <!-- 4.3 -->
-                    <div class="mockups_column">
-                        <div class="mockups_text">
-                            <h6>Search</h3>
-
-                        </div>
-                        <div class="mockups_gif">
-                            <img class="dev_gif_radius" src="img/prj_mobdev/gif/Designer_search.gif">
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="mockups_row_container">
-                    <!-- 4.4 -->
-                    <div class="mockups_column">
-                        <div class="mockups_text">
-                            <h6>Follow and unfollow</h6>
-                        </div>
-                        <div class="mockups_gif">
-                            <img class="dev_gif_radius" src="img/prj_mobdev/gif/Designer_follow.gif">
-                        </div>
-                    </div>
-                    <!-- 4.5 -->
-                    <div class="mockups_column">
-                        <div class="mockups_text">
-                            <h6>Filter</h3>
-
-                        </div>
-                        <div class="mockups_gif">
-                            <img class="dev_gif_radius" src="img/prj_mobdev/gif/Designers_filter-mentor.gif">
-                        </div>
-                    </div>
-                    <!-- 4.6 -->
-                    <div class="mockups_column">
-                        <div class="mockups_text">
-                            <h6>Send portfolio</h3>
-
-                        </div>
-                        <div class="mockups_gif">
-                            <img class="dev_gif_radius" src="img/prj_mobdev/gif/chat_send-speed-up.gif">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <hr>
+            <!-- <div class="full_bg full_bg_highlight" > -->
+                <div class="prj_main_grid">
             <!-- 5 Target Users -->
             <div class=" prj_index_container ">
                 <div class="prj_index ">
@@ -409,17 +356,22 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <hr>
+            </div> <!-- end of main_grid -->
+        </div>  <!-- end of full_bg -->
+
+            <div class="innerSection_divider_block"></div>
+
+          <div class="full_bg full_bg_highlight_light" >
+            <div class="prj_main_grid">
             <!-- 5 Inspiration -->
             <div class=" prj_index_container ">
                 <div class="prj_index ">
-                    <h3 id="ValueProposition">Value Proposition</h3>
+                    <h3 id="Value Proposition">Value Proposition</h3>
                 </div>
             </div>
             <!-- 5 Content -->
             <div class="prj_content_container">
-                <img data-aos="fade-up" alt="Inspiration of the app"
+                <img data-aos="" alt="Inspiration of the app"
                     src="img/prj_mobdev/Inspiration/Competitor_Venn_Diagram.jpg" />
                 <p>To develop the app, I drew inspirations from other products. Behance provided inspirations for a
                     clean layout for Profile and Search page. Dribbble provides me with inspirations to design displayed
@@ -427,7 +379,12 @@
                 </p>
             </div>
 
-            <hr>
+            </div> <!-- end of main_grid -->
+           </div>  <!-- end of full_bg -->
+
+           <div class="innerSection_divider_block"></div>
+
+            <div class="prj_main_grid">
             <!-- 6 Development -->
             <div class=" prj_index_container ">
                 <div class="prj_index ">
@@ -444,7 +401,7 @@
                     </div> -->
                     <p class="prj_img_caption">Sketches</p>
                     <a data-lightbox="Sketches" data-title="Sketches" href="img/prj_mobdev/Sketch.jpg">
-                        <img data-aos="fade-up" alt="Sketches" src="img/prj_mobdev/Sketch.jpg" />
+                        <img data-aos="" alt="Sketches" src="img/prj_mobdev/Sketch.jpg" />
                     </a>
                 </div>
                 <br>
@@ -457,7 +414,7 @@
                     <p class="prj_img_caption">Wireframes</p>
                     <a data-lightbox="Wireframes" data-title="Wireframes"
                         href="img/prj_mobdev/wireframes/wireframe.png">
-                        <img data-aos="fade-up" alt="Wireframes" src="img/prj_mobdev/wireframes/wireframe.png" />
+                        <img data-aos="" alt="Wireframes" src="img/prj_mobdev/wireframes/wireframe.png" />
                     </a>
                     <!-- <div class="prj_resp_imagebox"> 
                         <img class="prj_resp_imageitem_4" data-aos="fade-up" class="modal_img" src="img/prj_mobdev/wireframes/profile_1.png" />
@@ -483,7 +440,7 @@
                         flow chart serves as <span class="prj_highlight prj_bold">a clarification tool for
                             myself.</span></p>
 
-                    <img data-aos="fade-up" src="img/prj_mobdev/SI669_flow_chart.png" />
+                    <img data-aos="" src="img/prj_mobdev/SI669_flow_chart.png" />
                 </div>
                 <br>
                 <div class="prj_stack_content">
@@ -494,12 +451,12 @@
                         through functions I need to program to connect to Firebase.</p>
                     <p class="prj_img_caption">Data Model</p>
                     <a data-lightbox="Data Model" data-title="Data Model" href="img/prj_mobdev//SI669_data_model.png">
-                        <img data-aos="fade-up" alt="Data Model" src="img/prj_mobdev/SI669_data_model.png" />
+                        <img data-aos="" alt="Data Model" src="img/prj_mobdev/SI669_data_model.png" />
                     </a>
                     <p class="prj_img_caption">Firebase Screenshot</p>
                     <a data-lightbox="Firebase Screenshot" data-title="Firebase Screenshot"
                         href="img/prj_mobdev/Firebase.png">
-                        <img data-aos="fade-up" alt="Firebase Screenshot" src="img/prj_mobdev/Firebase.png" />
+                        <img data-aos="" alt="Firebase Screenshot" src="img/prj_mobdev/Firebase.png" />
                     </a>
                 </div>
                 <br>
@@ -510,7 +467,7 @@
                         proposition.</p>
                     <p class="prj_img_caption">Feature List</p>
                     <a data-lightbox="Feature List" data-title="Feature List" href="img/prj_mobdev/feature_list.png">
-                        <img data-aos="fade-up" alt="Feature List" src="img/prj_mobdev/feature_list.png" />
+                        <img data-aos="" alt="Feature List" src="img/prj_mobdev/feature_list.png" />
                     </a>
                 </div>
                 <br>
@@ -519,12 +476,12 @@
                     <p class="prj_img_caption">Project timeline</p>
                     <a data-lightbox="Project timeline" data-title="Project timeline"
                         href="img/prj_mobdev/feature_list.png">
-                        <img data-aos="fade-up" alt="Project timeline" src="img/prj_mobdev/Project_management_1.png" />
+                        <img data-aos="" alt="Project timeline" src="img/prj_mobdev/Project_management_1.png" />
                     </a>
                     <p class="prj_img_caption">Progress board</p>
                     <a data-lightbox="Progress board" data-title="Progress board"
                         href="img/prj_mobdev/feature_list.png">
-                        <img data-aos="fade-up" alt="Progress board" src="img/prj_mobdev/Project_management_2.png" />
+                        <img data-aos="" alt="Progress board" src="img/prj_mobdev/Project_management_2.png" />
                     </a>
                 </div>
             </div>
@@ -545,7 +502,7 @@
                     <h4>A new mindset to solve problems.</h4>
                 </div>
                 <div class="prj_stack_content">
-                    <h5>Habits to solve problems</h5>
+                    <h6>Habits to solve problems</h6>
                     <p>Debugging for me is painstaking while satisfying because every bug solved means I learn to solve
                         a new problem. In the process of debugging, I gained new habits to solve problems -- I will
                         <span class="prj_highlight prj_bold">break big tasks into smaller steps and debug piece by
@@ -554,13 +511,13 @@
                     </p>
                 </div>
                 <div class="prj_stack_content">
-                    <h5>Patience & calm</h5>
+                    <h6>Patience & calm</h6>
                     <p>Throughout the process of debugging and learning programming logic, I gradually <span
                             class="prj_highlight prj_bold">grew more patience and calm in the face of difficult
                             issues</span> , which I lacked previously.</p>
                 </div>
                 <div class="prj_stack_content">
-                    <h5>Confidence to solve technical problems</h5>
+                    <h6>Confidence to solve technical problems</h6>
                     <p>I gained more confidence and techniques in understanding technical problems. I have always
                         regarded myself not material for coding, but this project not only boosted my coding skills but
                         also increased my confidence in solving technical problems.</p>
