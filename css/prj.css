@@ -178,6 +178,11 @@ header{
     background-color:  rgba(var(--color-dark), 1);
 }
 
+    /* dark mode highlight, placed after full_bg_highlight */
+    .full_bg_highlight_light{
+        background-color:  #eaeaea
+    }
+
 .grid_divider_block{
     height: calc(2.5 * var(--grid-gap-row))
 }
@@ -396,7 +401,6 @@ header{
     .prj_full_width_highlight .prj_caption{
         color: rgba(var(--color-white), 0.8);
     }
-
 
 
 /* ------project description ---------*/
