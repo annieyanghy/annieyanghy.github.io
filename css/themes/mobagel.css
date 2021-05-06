@@ -28,9 +28,11 @@
 
 .row_container_disclaimer{
     position: relative;
+    grid-column: 1 / span 12;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  
     justify-content: space-around;
     align-items: flex-start;
     max-width: var(--width-max);
@@ -52,7 +54,7 @@
     color: rgba(var(--color-white), 1)
 }
 .prj_in_text_link{
-    color: rgba(var(--color-white), 1);
+    /* color: rgba(var(--color-white), 1); */
     text-decoration: underline;
     text-decoration-thickness:2px;
     text-underline-offset: 6px;
