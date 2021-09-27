@@ -995,28 +995,42 @@
                 background-color: rgba(var(--color-dark),0.1);
 
             }
-                .mentor_thumbnail{
-                    /* background-color: rgb(218, 240, 240); */
-                    background-color: rgb(208, 226, 226);
+                .ecom_thumbnail{
+                    /* background-color: rgb(208, 226, 226); */
+                    /* background-color: rgba(63,63,63,0.1); */
+                    background-color: rgb(240,240,240);
                     
                 }
                 .duo_thumbnail{
                     background-color: rgb(229, 243, 245)
+                    /* background-color: rgba(63,63,63,0.1); */
+                    /* background-color: rgb(39,178,227) */
+
                 }
                 .focus_thumbnail{
                     background-color: rgb(208, 222, 238)
+                    /* background-color: rgb(86, 119, 209) */
+                    /* background-color: rgba(63,63,63,0.1); */
+
                 }
-                .mob669_thumbnail{
-                    background-color: rgb(220, 238, 230)
-                }
-                .change_thumbnail{
-                    background-color: rgb(233, 226, 245)
-                }
+            
                 .mobagel_thumbnail{
                     background-color: rgb(217, 230, 243)
+                    /* background-color: rgb(62,95,184) */
+                    /* background-color: rgba(63,63,63,0.1); */
+
+                }
+                .mob669_thumbnail{
+                    /* background-color: rgb(220, 238, 230) */
+
+                    background-color: rgb(192, 226, 221);
                 }
                 .datavis_thumbnail{
-                    background-color: rgb(225, 238, 241)
+                    /* background-color: rgb(186, 221, 221) */
+
+                    /* background-color: rgb(102, 151, 144); */
+                    background-color: rgb(210, 221, 219);
+
                 }
 
             
