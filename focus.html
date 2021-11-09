@@ -47,6 +47,11 @@
     <script src="js/hamburger.js" defer></script>
     <script src="js/navbar.js"></script>
     <script src="https://use.fontawesome.com/d84889ebb7.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/focusChart.js"></script>
+    <script type="text/javascript" src="js/focusChart2.js"></script>
+
+
 
 
 
@@ -64,7 +69,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BM66HGNXK"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-6BM66HGNXK');
@@ -113,9 +121,9 @@
                 <div class="prj_landing_left">
                     <h1>Focus Miles</h1>
                     <br>
-                    <h4>
+                    <p>
                         Using behavioral economics to nudge users to to get things done.
-                    </h4>
+                    </p>
                     <!-- <div class="tags_container">
                         <p class="tags tags_proto">Prototyping</p>
                         <p class="tags tags_pd">Product Design</p>
@@ -139,15 +147,15 @@
                 <div class="prj_logistic_container_left">
 
                     <div class="prj_logistic prj_time">
-                        <h5>Time</h5>
-                        <p>Sep. - Dec. 2020</p>
+                        <p class="prj_caption">Time</p>
+                        <p>Sep - Dec 2020</p>
                     </div>
                     <div class="prj_logistic prj_role">
-                        <h5>Role</h5>
+                        <p class="prj_caption">Role</p>
                         <p>Solo Product Designer</p>
                     </div>
                     <div class="prj_logistic prj_role">
-                        <h5>Type</h5>
+                        <p class="prj_caption">Type</p>
                         <p>Class project</p>
                     </div>
 
@@ -155,17 +163,16 @@
                 <div class="prj_logistic_container_right">
 
                     <div class="prj_logistic prj_tools">
-                        <h5>Methods</h5>
+                        <p class="prj_caption">Methods</p>
                         <p>User Interview, Card Sorting, High-fidelity prototyping & design, Low-fidelity wireframes &
-                            prototyping,
-                            Remote usability testing</p>
+                            prototyping, Remote usability testing</p>
                     </div>
                     <div class="prj_logistic prj_tools">
-                        <h5>Tools</h5>
+                        <p class="prj_caption">Tools</p>
                         <p>Figma, Marvel, Pen & paper, Zoom</p>
                     </div>
                     <div class="prj_logistic prj_tools">
-                        <h5>Behavior theories</h5>
+                        <p class="prj_caption">Behavior theories</pp class="prj_caption">
                         <p>Goal setting, Priming, Default bias, Framing</p>
                     </div>
                 </div>
@@ -180,57 +187,57 @@
                 <!-- 1 Problem -->
                 <div class=" prj_index_container ">
                     <div class="prj_index ">
-                        <h3 id="Problem">Problem</h3>
+                        <h2 id="Problem">Problem</h2>
                     </div>
                 </div>
                 <!-- 1 Content -->
-                <div class="prj_content_container">
-                    <h4 class="prj_sec_title">People are constantly distracted from important tasks or moments,
-                        especially when working from home. So, tasks are not accomplished in time.</h4>
+                <div class="prj_left_title_container">
+                    <h3 class="prj_sec_title">People are constantly distracted from important tasks or moments when
+                        working from home. So, tasks are not accomplished in time.</h3>
 
                 </div>
                 <div class=" prj_left_insights_container ">
                     <div class="prj_index ">
                         <p>According to <a class="prj_in_text_link"
                                 href="https://www.statista.com/statistics/1139757/us-distractions-while-working-from-home-during-coronavirus/">a
-                                survey based on over 2300 respondents</a>
-                            in 2020 June, using social media (61%) and smartphones (53%) are ranked as two of the
-                            highest
-                            distractions for working-from-home professionals. Binge-watching is reported as the third,
-                            with 42%
-                            of respondents.
-                            A <a class="prj_in_text_link"
+                                survey based on over 2300 respondents</a> in 2020 June, using social media (61%) and
+                            smartphones (53%) are ranked as two of the highest distractions for working-from-home
+                            professionals. Binge-watching is reported as the
+                            third, with 42% of respondents.
+                            <!-- A <a class="prj_in_text_link"
                                 href="https://www.glassdoor.com/blog/new-survey-covid-19/">survey from
-                                Glassdoor</a> also indicates similar concerns for distractions from TV.</p>
+                                Glassdoor</a> also indicates similar concerns for distractions from TV.</p> -->
                     </div>
                 </div>
                 <div class=" prj_right_insights_container ">
                     <div class="prj_key_finding_container">
                         <div class="prj_key_finding_item">
                             <i class="fa  fa-facebook" aria-hidden="true"></i>
-                            <h7 class="prj_finding_title">61%</h7>
-                            <p>reported social media is the greatest distractions.</p>
-                            <p class="credits">Resource: <a class="prj_in_text_link"
+                            <h3 class="prj_finding_title">61%</h3>
+                            <p>Reported social media is the greatest distractions.</p>
+                            <p class="credits">Credit: <a class="prj_in_text_link"
                                     href="https://www.statista.com/statistics/1139757/us-distractions-while-working-from-home-during-coronavirus/">Statista</a>
                             </p>
                         </div>
                         <div class="prj_key_finding_item">
                             <span class="mdi mdi-cellphone-sound"></span>
-                            <h7 class="prj_finding_title">53%</h7>
-                            <p>are most influenced by smartphones.</p>
-                            <p class="credits">Resource: <a class="prj_in_text_link"
+                            <h3 class="prj_finding_title">53%</h3>
+                            <p>Are most influenced by smartphones.</p>
+                            <p class="credits">Credit: <a class="prj_in_text_link"
                                     href="https://www.statista.com/statistics/1139757/us-distractions-while-working-from-home-during-coronavirus/">Statista</a>
                             </p>
                         </div>
                         <div class="prj_key_finding_item">
                             <span class="mdi mdi-television"></span>
-                            <h7 class="prj_finding_title">TV</h7>
-                            <p>or binge-watching is one of the main distractions for many WFH people.</p>
-                            <p class="credits">Resource: <a class="prj_in_text_link"
+                            <h3 class="prj_finding_title">40%</h3>
+                            <p>WFH people is distraced by binging TV shows.</p>
+                            <p class="credits">Credit: <a class="prj_in_text_link"
                                     href="https://www.statista.com/statistics/1139757/us-distractions-while-working-from-home-during-coronavirus/">Statista
-                                    (42%)</a>
-                                ,<a class="prj_in_text_link"
-                                    href="https://www.glassdoor.com/blog/new-survey-covid-19/">Glassdoor (32%)</a></p>
+                                </a> ,
+                                <a class="prj_in_text_link"
+                                    href="https://www.glassdoor.com/blog/new-survey-covid-19/">Glassdoor</a>
+                            </p>
+                            <!-- 42% for Statista, 32% for Glassdoor -->
                         </div>
 
                     </div>
@@ -244,15 +251,16 @@
                 <!-- 2 Solution -->
                 <div class=" prj_index_container ">
                     <div class="prj_index ">
-                        <h3 id="Solution">Solution</h3>
+                        <h2 id="Solution">Solution</h2>
                     </div>
                 </div>
 
                 <!-- 2 Content -->
-                <div class="prj_content_container">
+                <div class="prj_left_title_container">
 
-                    <h4 class="prj_sec_title">An app that nudges people to maintain and start to focus on getting things
-                        done.</h4>
+                    <h3 class="prj_sec_title">An app that nudges people to maintain and start to focus on getting things
+                        done.
+                    </h3>
 
                     <!-- <p>Useing the following psychological constructs and behavior economic theories to
                     nudge users to perform the ideal behaviour.</p> -->
@@ -295,7 +303,7 @@
                         <!-- 1 -->
                         <div class="how_it_works">
                             <div class="how_it_works_text">
-                                <h4>1. Turn calendar events into a focus timer to easily stick to the schedule</h4>
+                                <h3>1. Turn calendar events into a focus timer to easily stick to the schedule</h3>
                                 <p class="prj_caption">Behaviorial economics</p>
 
                                 <ui class="prj_bullet_container">
@@ -309,7 +317,9 @@
                             </div>
                             <div data-aos="fade-left" class="how_it_works_gif">
                                 <video controls loop autoplay muted>
-                                    <source src="img/prj_focus/2021_v3/SI684_2021_v3_Feature_3_Event Calendar+Notification.mov" type="video/mp4">
+                                    <source
+                                        src="img/prj_focus/2021_v3/SI684_2021_v3_Feature_3_Event Calendar+Notification.mov"
+                                        type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
@@ -318,12 +328,13 @@
                         <div class="how_it_works">
                             <div data-aos="fade-right" class="how_it_works_gif">
                                 <video controls loop autoplay muted>
-                                    <source src="img/prj_focus/2021_v3/SI684_2021_v3_Feature 5_Task breaker.mov" type="video/mp4">
+                                    <source src="img/prj_focus/2021_v3/SI684_2021_v3_Feature 5_Task breaker.mov"
+                                        type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
                             <div class="how_it_works_text">
-                                <h4>2. Break difficult tasks into smaller tasks</h4>
+                                <h3>2. Break difficult tasks into smaller tasks</h3>
                                 <p class="prj_caption">Goal setting theory</p>
                                 <ui class="prj_bullet_container">
                                     <li class="prj_bullet">Small wins and short-term goals are easier to focus on.</li>
@@ -334,7 +345,7 @@
                         <!-- 3 -->
                         <div class="how_it_works">
                             <div class="how_it_works_text">
-                                <h4>3. Create a calendar event</h4>
+                                <h3>3. Create a calendar event</h3>
                                 <p class="prj_caption">Behaviorial economics</p>
                                 <ui class="prj_bullet_container">
                                     <li class="prj_bullet">An all-in-one place to schedule.</li>
@@ -344,7 +355,8 @@
                             </div>
                             <div data-aos="fade-left" class="how_it_works_gif">
                                 <video controls loop autoplay muted>
-                                    <source src="img/prj_focus/2021_v3/SI684_2021_v3_Feature_6_Schedule Events.mov" type="video/mp4">
+                                    <source src="img/prj_focus/2021_v3/SI684_2021_v3_Feature_6_Schedule Events.mov"
+                                        type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
@@ -353,13 +365,14 @@
                         <div class="how_it_works">
                             <div data-aos="fade-right" class="how_it_works_gif">
                                 <video controls loop autoplay muted>
-                                    <source src="img/prj_focus/2021_v3/SI684_2021_v3_Feature_2_Focus Timer.mov" type="video/mp4">
+                                    <source src="img/prj_focus/2021_v3/SI684_2021_v3_Feature_2_Focus Timer.mov"
+                                        type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
-                                
+
                             </div>
                             <div class="how_it_works_text">
-                                <h4>4. Start a focus timer any time and block the phone</h4>
+                                <h3>4. Start a focus timer any time and block the phone</h3>
                                 <p class="prj_caption">Behaviorial economics</p>
                                 <ui class="prj_bullet_container">
                                     <li class="prj_bullet">Decrease the efforts needed to enter a focusing space.</li>
@@ -377,12 +390,12 @@
                         </div>
                     </div>
                 </div>
-              
 
+                <div class="grid_divider_block"></div>
                 <!-- 4 Digital Mockup -->
                 <div class=" prj_index_container_full ">
                     <div class="prj_index ">
-                        <h3 id="Mockup">Key features</h3>
+                        <h3 id="Mockup">Other features</h3>
                     </div>
                 </div>
                 <!-- 4 Content -->
@@ -391,7 +404,7 @@
                         <!-- 4.1 -->
                         <div class="mockups_column">
                             <div class="mockups_text">
-                                <h6>Check stats and progress</h6>
+                                <p>Check stats and progress</p>
                             </div>
                             <div class="mockups_gif">
                                 <video controls loop autoplay muted>
@@ -403,12 +416,13 @@
                         <!-- 4.2 -->
                         <div class="mockups_column">
                             <div class="mockups_text">
-                                <h6>Focus on any Calendar event</h3>
+                                <p>Focus Toggle any Calendar event</p>
 
                             </div>
                             <div class="mockups_gif">
                                 <video controls loop autoplay muted>
-                                    <source src="img/prj_focus/2021_v3/SI684_2021_v3_Feature_4_Event Calendar.mov" type="video/mp4">
+                                    <source src="img/prj_focus/2021_v3/SI684_2021_v3_Feature_4_Event Calendar.mov"
+                                        type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                             </div>
@@ -418,7 +432,7 @@
                         <!-- 4.3 -->
                         <div class="mockups_column">
                             <div class="mockups_text">
-                                <h6>Gentle nudge</h3>
+                                <p>Flexible Breaks</p>
 
                             </div>
                             <div class="mockups_gif">
@@ -496,45 +510,27 @@
                 </a>
             </div>
             <hr> -->
+            </div>
+        </div>
+        <div class="grid_divider_block"></div>
 
+        <div class="full_bg full_bg_highlight">
+            <div class="prj_main_grid">
 
-                <div class="grid_divider_block"></div>
                 <!-- 6 Research -->
                 <div class=" prj_index_container ">
                     <div class="prj_index ">
-                        <h3 id="Research">Research</h3>
+                        <h2 id="Research">Research</h2>
                     </div>
                 </div>
                 <!-- 6 Content -->
-                <div class="prj_content_container">
 
-                    <h4 class="prj_sec_title">Despite the habit of scheduling to stay productive, users can't stick to
-                        their schedule due to stress,
-                        external distraction, or boredom.</h4>
-
-                    <p class="prj_caption">Primary research</p>
-                    <p>Literature review / User interview / Competitive analysis</p>
-                    <!-- <div class="prj_stack_content">
-                        <h5>1. Literature review</h5>
-                        <div class="prj_key_insights">
-                            <h7 class="prj_caption"><i class="fa fa-bolt" aria-hidden="true"></i> Key insights</h7>
-                            <h6>Distraction is driven internally and externally.</h6>
-                        </div> -->
-                    <!-- <a data-lightbox="Storyboarding" data-title="8 Storyboards" href="img/prj_mentor/viz_info/dm_empathy_map.png">
-                            <img data-aos="fade-up"  src="img/prj_mentor/viz_info/dm_empathy_map.png" />
-                        </a> -->
-                    <!-- <p>Hypothesis formed: if I can minimize external distraction and strengthen the drive to stay
-                            focused, then it will be easier for people to stay on their tasks.</p>
-                    </div>
-                    <br> -->
-                </div>
                 <div class="prj_left_insights_container">
                     <p class="prj_caption">User interview</p>
-                   
-                    <p>I reached out to 4 ideal
-                        participants for a formative user interview. The goal of the interview is to <span
-                        class="prj_highlight prj_bold">understand people's usual
-                        focus habits, when or why they found they are most focused/unfocused.</span></p>
+
+                    <p>I reached out to 4 ideal participants for a formative user interview. The goal is to <span
+                            class="prj_bold">understand people's usual
+                            focus habits, when or why they found they are most focused/unfocused.</span></p>
 
                 </div>
                 <div class="prj_right_insights_container">
@@ -558,26 +554,92 @@
                         </div>
                     </div> -->
                     <div class="image_100">
+                        <img data-aos="" alt="Interview Finding" src="img/prj_focus/interview_finding_2.png" />
+
+                    </div>
+
+
+
+                </div>
+                <div class="prj_content_container_full">
+                    <div class="image_100">
                         <p class="prj_img_caption">Affinity map</p>
-                        <!-- <a data-lightbox="Affinity map" data-title="Affinity map"
-                        href="img/prj_focus/SI 684_Affitiny_Notes.png">
-                            <img data-aos="fade-up" alt="Affinity map" src="img/prj_focus/SI 684_Affitiny_Notes.png" />
-                        </a> -->
+
                         <a data-lightbox="Affinity map" data-title="Affinity map"
                             href="img/prj_focus/SI 684_affinity_map.png">
                             <img data-aos="" alt="Affinity map" src="img/prj_focus/SI 684_affinity_map.png" />
                         </a>
                     </div>
                 </div>
-                
                 <div class="innerTopic_divider_block"></div>
 
                 <div class="prj_left_insights_container">
-                    
-                   
-                    <p class="h7">Why / When are they <span
-                        class="prj_highlight prj_bold">focused?</span></p>
-                  
+                    <p class="prj_caption">Competitive analysis</p>
+                    <p>A gap between the user behavior and the focus apps on the market: none connects the digital
+                        Calendar, which already haves users' schedules.</p>
+                    <!-- <p>A gap: none of the app connects the digital Calendar, which we may
+                        already
+                        have put our schedules on.</p> -->
+                </div>
+                <div class="prj_right_insights_container">
+                    <div class="image_100">
+                        <img data-aos="" alt="Interview Finding" src="img/prj_focus/Comp_finding_2.png" />
+                    </div>
+                </div>
+                <div class="prj_right_insights_container">
+
+                    <div class="image_100">
+                        <p class="prj_img_caption">Cpmpetitor Chart</p>
+
+                        <a data-lightbox="Competitive analysis" data-title="Competitive analysis"
+                            href="img/prj_focus/comp analysis.jpg">
+                            <img data-aos="" src="img/prj_focus/comp analysis.jpg" />
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="grid_divider_block"></div>
+
+        <div class="full_bg ">
+            <div class="prj_main_grid">
+                <!-- 7 Insights -->
+                <div class=" prj_index_container ">
+                    <div class="prj_index ">
+                        <h2 id="Insights">Insights</h2>
+                    </div>
+                </div>
+                <!-- 7 Content -->
+                <div class="prj_left_title_container">
+
+                    <h3 class="prj_sec_title">Despite the habit of scheduling to stay productive, users can't stick to
+                        their schedule due to stress, external distraction, or boredom.</h3>
+
+                    <!-- <p class="prj_caption">Primary research</p>
+                    <p>Literature review / User interview / Competitive analysis</p> -->
+                    <!-- <div class="prj_stack_content">
+                        <h5>1. Literature review</h5>
+                        <div class="prj_key_insights">
+                            <h7 class="prj_caption"><i class="fa fa-bolt" aria-hidden="true"></i> Key insights</h7>
+                            <h6>Distraction is driven internally and externally.</h6>
+                        </div> -->
+                    <!-- <a data-lightbox="Storyboarding" data-title="8 Storyboards" href="img/prj_mentor/viz_info/dm_empathy_map.png">
+                            <img data-aos="fade-up"  src="img/prj_mentor/viz_info/dm_empathy_map.png" />
+                        </a> -->
+                    <!-- <p>Hypothesis formed: if I can minimize external distraction and strengthen the drive to stay
+                            focused, then it will be easier for people to stay on their tasks.</p>
+                    </div>
+                    <br> -->
+                </div>
+
+
+                <div class="prj_left_insights_container">
+
+                    <p class="prj_caption">Why focused?</p>
+
+
 
                 </div>
                 <div class="prj_right_insights_container">
@@ -585,74 +647,77 @@
                         <div class="prj_key_finding_container">
                             <div class="prj_key_finding_item">
                                 <i class="fa fa-heart" aria-hidden="true"></i>
-                                <h7 class="prj_finding_title">Interesting tasks</h7>
+                                <h4 class="prj_finding_title">Interesting tasks</h4>
                                 <p>"For projects I like, I have no problems focusing."</p>
                             </div>
                             <div class="prj_key_finding_item">
                                 <i class="fa  fa-calendar-times-o" aria-hidden="true"></i>
-                                <h7 class="prj_finding_title">Deadlines</h7>
+                                <h4 class="prj_finding_title">Deadlines</h4>
                                 <p>“When there’s a deadline, I can focus on getting tasks done.”</p>
                             </div>
                             <div class="prj_key_finding_item">
                                 <i class="fa  fa-pencil" aria-hidden="true"></i>
-                                <h7 class="prj_finding_title">Plan ahead</h7>
+                                <h4 class="prj_finding_title">Plan ahead</h4>
                                 <p>“If I analyze and write done things to do, I feel better and can focus.”</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                    <div class="prj_left_insights_container">
-                   
-                        <p class="h7">Why / When are they <span
-                            class="prj_highlight prj_bold">unfocused?</span></p>
-                      
-    
-                    </div>
-                    <div class="prj_right_insights_container">
-                        <div class="prj_stack_content">
-                            <div class="prj_key_finding_container">
-                                <div class="prj_key_finding_item">
-                                    <i class="fa fa-frown-o" aria-hidden="true"></i>
-                                    <h7 class="prj_finding_title">Feeling stressed</h7>
-                                    <p>“If I feel the task is very difficult, I can’t bring myself to accomplish it.”</p>
-                                </div>
-                                <div class="prj_key_finding_item">
-                                    <i class="fa  fa-thumbs-o-down" aria-hidden="true"></i>
-                                    <h7 class="prj_finding_title">Less self-efficacy</h7>
-                                    <p>“I just want to delay the feeling of bad performance a bit.”</p>
-                                </div>
-                                <div class="prj_key_finding_item">
-                                    <i class="fa  fa-bell-o" aria-hidden="true"></i>
-                                    <h7 class="prj_finding_title">Distraction</h7>
-                                    <p>“Sometimes I received texts from friends……”</p>
-                                </div>
+                <div class="prj_left_insights_container">
+                    <p class="prj_caption">Why <span class="prj_highlight prj_bold">un</span>focused?</p>
+
+                </div>
+                <div class="prj_right_insights_container">
+                    <div class="prj_stack_content">
+                        <div class="prj_key_finding_container">
+                            <div class="prj_key_finding_item">
+                                <i class="fa fa-frown-o" aria-hidden="true"></i>
+                                <h4 class="prj_finding_title">Feeling stressed</h4>
+                                <p>“If I feel the task is very difficult, I can’t bring myself to accomplish it.”</p>
+                            </div>
+                            <div class="prj_key_finding_item">
+                                <i class="fa  fa-thumbs-o-down" aria-hidden="true"></i>
+                                <h4 class="prj_finding_title">Low self-efficacy</h4>
+                                <p>“I just want to delay the feeling of bad performance a bit.”</p>
+                            </div>
+                            <div class="prj_key_finding_item">
+                                <i class="fa  fa-bell-o" aria-hidden="true"></i>
+                                <h4 class="prj_finding_title">Distraction</h4>
+                                <p>“Sometimes I received texts from friends……”</p>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- <div class="innerSection_divider_block"></div> -->
+                <!-- <div class="innerSection_divider_block"></div> -->
 
-                    <div class="prj_left_insights_container">
-                        <p class="h7">User journey</p>
-                        
+                <div class="prj_left_insights_container">
+                    <p class="prj_caption">User Journey</p>
+
+                </div>
+                <div class="prj_content_container_full">
+                    <div class="image_100">
+
+                        <img data-aos="" src="img/prj_focus/Focus_User journey.png" />
+
                     </div>
-                    <div class="prj_content_container_full">
-                        <div class="image_100">
-                           
-                                <img data-aos="" src="img/prj_focus/Focus_User journey.png" />
-                          
-                        </div>
-                    </div>
+                </div>
 
-                    <div class="innerSection_divider_block"></div>
+                <div class="innerSection_divider_block"></div>
 
-                    <div class="prj_left_insights_container">
-                        <p class="h7">Key pain points</p>
-                        
-                    </div>
-                    <div class="prj_right_insights_container">
-                        <div class="prj_stack_content">
+                <div class="prj_left_insights_container">
+                    <p class="prj_caption">Key Pain Points</p>
+
+                </div>
+                <div class="prj_content_container_full">
+                    <img src="img/prj_focus/Key Pain Points.png" />
+                    <!-- <h4>1. Plan & Schedule: When tasks are overwheming, participants feel paralyzed to even start planning.</h4>
+                        <h4>2. Happening soon: Participants’ emotion and determination fluctuate a lot.</h4>
+                        <h4>3. Happening: If it’s not a interesting task, participants are easily distracted by external factors.</h4> -->
+
+
+                    <!-- <div class="prj_stack_content">
                             <div class="prj_key_finding_container">
                                 <div class="prj_key_finding_item">
                                     <span class="mdi mdi-emoticon-cry-outline"></span>
@@ -669,8 +734,8 @@
                                     <p>If it’s not a favored task, users are easily tempted by social media and stray from their focus mode.</p>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </div> -->
+                </div>
 
                 <!-- <div class="prj_left_insights_container">
                     
@@ -701,24 +766,7 @@
                     </div>
                 </div> -->
 
-                <div class="innerSection_divider_block"></div>
 
-                <div class="prj_left_insights_container">
-                    <p class="prj_caption">Competitive analysis</p>
-                    <p class="h7">A gap: none of the app connects the digital Calendar, which already
-                        haves our schedules.</p>
-                    <!-- <p>A gap: none of the app connects the digital Calendar, which we may
-                        already
-                        have put our schedules on.</p> -->
-                </div>
-                <div class="prj_right_insights_container">
-                    <div class="image_100">
-                        <a data-lightbox="Competitive analysis" data-title="Competitive analysis"
-                            href="img/prj_focus/comp analysis.jpg">
-                            <img data-aos="" src="img/prj_focus/comp analysis.jpg" />
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -729,51 +777,52 @@
                 <!-- 7 Define and Ideate -->
                 <div class=" prj_index_container ">
                     <div class="prj_index ">
-                        <h3 id="Define">Define & Ideate</h3>
+                        <h2 id="Define">Ideate</h2>
                     </div>
                 </div>
                 <!-- 7 Content -->
                 <div class=" prj_left_insights_container ">
-                    <div class="prj_stack_content">
-                        <p class="prj_caption">Design requirement</p>
-                        <p>Based on the key pain points, I developed the 3 design requirements that can help users stay focused throughout the journey.</p>
-                    </div>
+                    <p class="prj_caption">Design requirement</p>
+                    <p>Based on the key pain points, I developed the 3 design requirements that can help users stay
+                        focused throughout the journey.</p>
                 </div>
-                <div class=" prj_right_insights_container ">
-                    <div class="prj_right_insights_container">
+                <div class=" prj_content_container_full ">
+                    <img src="img/prj_focus/Design Requirements.png" />
+                    <!-- <div class="prj_right_insights_container">
                         <div class="prj_stack_content">
                             <div class="prj_key_finding_container">
                                 <div class="prj_key_finding_item">
                                     <span class="mdi mdi-file-tree"></span>
-                                    <h7 class="prj_finding_title">Preparing</h7> 
+                                    <h4 class="prj_finding_title">Preparing</h4> 
                                     <p>The design needs to help users get prepared to plan for and break down difficult tasks.</p>
-                                    <!-- <i class="fa fa-arrow-down" aria-hidden="true"></i> -->
+                        
 
                                 </div>
                                 <div class="prj_key_finding_item">
                                     <span class="mdi mdi-calendar-outline"></span>
-                                    <h7 class="prj_finding_title">Bridging gaps</h7> 
+                                    <h4 class="prj_finding_title">Bridging gaps</h4> 
                                     <p>The design needs to bridge the gap between digital calendar and focus mode.</p>
-                                    <!-- <i class="fa fa-arrow-down" aria-hidden="true"></i> -->
 
                                 </div>
                                 <div class="prj_key_finding_item">
                                     <span class="mdi mdi-cellphone-lock"></span>
-                                    <h7 class="prj_finding_title">Sustaining</h7> 
+                                    <h4 class="prj_finding_title">Sustaining</h4> 
                                     <p>The design needs to help users to sustain their focus span as long as possible.</p>
-                                    <!-- <i class="fa fa-arrow-down" aria-hidden="true"></i> -->
 
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
+
+                <div class="innerSection_divider_block"></div>
+
                 <div class=" prj_left_insights_container ">
-                    <div class="prj_stack_content">
-                        <p class="prj_caption">Brainstorming</p>
-                    </div>
+
+                    <p class="prj_caption">Brainstorming</p>
                 </div>
-                <div class=" prj_right_insights_container ">
+
+                <!-- <div class=" prj_right_insights_container ">
                     <div class="image_100">
                         <p class="prj_img_caption">Component Brainstorming</p>
                         <a data-lightbox="Brainstorming ideas" data-title="Brainstorming ideas"
@@ -782,10 +831,16 @@
                                 src="img/prj_focus/SI 684_painpoint_finding.png" />
                         </a>
                     </div>
-                </div>
+                </div> -->
                 <div class=" prj_content_container_full ">
                     <div class="image_100">
-                        <p class="prj_img_caption">Ideation Storyboards</p>
+                        <p class="prj_img_caption">Brainstorming based on different phases</p>
+                        <img data-aos="" alt="Ideation sketches" src="img/prj_focus/Brainstorming.jpeg" />
+                    </div>
+                    <div class="innerTopic_divider_block"></div>
+
+                    <div class="image_100">
+                        <p class="prj_img_caption">Selected storyboards</p>
                         <a data-lightbox="Ideation sketches" data-title="Ideation sketches"
                             href="img/prj_focus/Sketches.jpg">
                             <img data-aos="" alt="Ideation sketches" src="img/prj_focus/Sketches.jpg" />
@@ -797,50 +852,44 @@
 
                 <div class="prj_left_insights_container">
                     <p class="prj_caption">Intervention Diagram</p>
-                    <p>Brainstorming with intervention model to conceptualize best
-                        option.
-                    </p>
+
                 </div>
-                <div class="prj_content_container_full">
+                <!-- <div class="prj_content_container_full">
                     <div class="prj_key_finding_container_vertical">
                         <div class="prj_key_finding_item_vertical">
                             <div class="index_container_vertical">
-                                <h7 class="prj_finding_title"># 0</h7>
+                                <p class="prj_finding_title"># 0</p>
                                 <p class="prj_caption">Precondition</p>
                             </div>
-                            <p>Users are willing to integrate the app to their Google Calendar and remember
-                                to use
-                                the
-                                app when they need to focus.</p>
+                            <p>Users are willing to integrate the app to their Google Calendar and remember to use the app when they need to focus.</p>
                         </div>
                         <div class="prj_key_finding_item_vertical">
                             <div class="index_container_vertical">
-                                <h7 class="prj_finding_title"># 1</h7>
+                                <p class="prj_finding_title"># 1</p>
                                 <p class="prj_caption">Intervention</p>
                             </div>
-                            <p>Using a focus app to calculate their focused time, which can also connect to
-                                Google
-                                Calendar.</p>
+                            <p>Using a focus app to calculate their focused time, which can also connect to Google Calendar.
+                            </p>
                         </div>
                         <div class="prj_key_finding_item_vertical">
                             <div class="index_container_vertical">
-                                <h7 class="prj_finding_title"># 2</h7>
+                                <p class="prj_finding_title"># 2</p>
                                 <p class="prj_caption">Behaviorial outcome</p>
                             </div>
                             <p>User can focus on a task at hand without getting distracted.</p>
                         </div>
                         <div class="prj_key_finding_item_vertical">
                             <div class="index_container_vertical">
-                                <h7 class="prj_finding_title"># 3</h7>
+                                <p class="prj_finding_title"># 3</p>
                                 <p class="prj_caption">Mechanism</p>
                             </div>
-                            <p>Visual indicator, feedback and goal setting can motivate users to stay
-                                focused.</p>
+                            <p>Visual indicator, feedback and goal setting can motivate users to stay focused.
+                            </p>
 
                         </div>
                     </div>
-                    </div>
-                    <div class="prj_content_container_full">
+                </div> -->
+                <div class="prj_content_container_full">
                     <div class="image_100">
                         <a data-lightbox="Causal diagram" data-title="Causal diagram"
                             href="img/prj_focus/causal_diagram_3.png">
@@ -850,7 +899,8 @@
                 </div>
             </div>
             <!---end of main grid-->
-        </div> <!-- end of full_bg -->
+        </div>
+        <!-- end of full_bg -->
 
 
         </div>
@@ -860,28 +910,43 @@
                 <!-- 7 Design -->
                 <div class=" prj_index_container ">
                     <div class="prj_index ">
-                        <h3 id="Design">Design</h3>
+                        <h2 id="Design">Design</h2>
                     </div>
                 </div>
                 <!-- 7 Design -->
 
                 <div class="prj_left_insights_container">
-                    <p class="prj_caption">Interaction & Concept validation</p>
-                    <p>Before sketching, I mapped out the flow of the product based on the selected concept. Then, I developed sketches to test the interaction flow.</p>
+                    <p class="prj_caption">Design Process</p>
                 </div>
-                <div class="prj_right_insights_container image_100">
-                    <img alt="Task flow" src="img/prj_focus/task_flow_2.png" />
+                <div class="prj_content_container_full image_100">
+                    <img alt="Design Process" src="img/prj_focus/Design Process.png" />
+                    <!-- <img alt="Task flow" src="img/prj_focus/task_flow_2.png" /> -->
 
+                </div>
+
+                <div class="innerSection_divider_block"></div>
+
+                <div class="prj_left_title_container">
+                    <p class="prj_caption">Low-fidelity</p>
+                    <p>I digitalized the low-fidelity wireframes and brought it to 4 participants to ask for their
+                        feedback.</p>
                 </div>
                 <div class="prj_content_container_full">
                     <div data-aos="fade-up" class="prj_stack_gif_2 image_100">
+                        <p class="prj_img_caption">Interactive prototype made with Marvel app</p>
                         <img alt="Low fidelity wireframe 1" src="img/prj_focus/gif/SI684_lofi_Events.gif" />
                         <img alt="Low fidelity wireframe 2" src="img/prj_focus/gif/SI684_lofi_Goals.gif" />
                         <img alt="Low fidelity wireframe 3" src="img/prj_focus/gif/SI684_lofi_Focus.gif" />
                         <img alt="Low fidelity wireframe 4" src="img/prj_focus/gif/SI684_lofi_Journey.gif" />
 
                     </div>
-                    <br>
+                </div>
+                <div class="innerTopic_divider_block"></div>
+                <div class="prj_content_container_full">
+                    <div class="image_100">
+                        <p class="prj_img_caption">Card Sorting session with participants</p>
+                        <img data-aos="" alt="Remote card sorting" src="img/prj_focus/card sorting.gif" />
+                    </div>
                     <!-- <img data-aos="fade-up" alt="Low fidelity wireframe" src="img/prj_focus/lofi_paper_whole.jpeg" /> -->
                     <!-- <div class="prj_stack_gif_2">
                             <img data-aos="fade-up" alt="Final Causal diagram" src="img/prj_focus/lofi_paper_3.jpeg" />
@@ -893,74 +958,72 @@
                 </div>
                 <div class="innerSection_divider_block"></div>
 
-                <div class="prj_left_insights_container">
-                    <p class="prj_caption">Findings</p>
-                    <h4 class="prj_sec_title">The design needs to strike a balance between flexible breaks and focus session.</h4>
+                <div class="prj_left_title_container">
+                    <p class="prj_caption">User Validation</p>
+                    <h3 class="prj_sec_title">The design needs to strike a balance between flexible breaks and focus
+                        sessions.
+                    </h3>
 
-                    <p>With the first version of wireframe, I conducted remote usability testing sessions via Zoom
-                        with 3 users plus 1 user for general user feedback.</p>
+                    <p>With the first version of wireframe, I conducted remote usability testing sessions via Zoom with
+                        4 users.</p>
                 </div>
-                <div class="prj_right_insights_container" id="testing_container">
+                <div class="prj_content_container_full">
+                  <div class="image_100">
+                    <img src="img/prj_focus/UserImproves_1.png" alt="User Validation" />
+
+                  </div>
+
+                    
+                </div>
+                <!-- <div class="prj_content_container_full" id="testing_container">
                     <div class="prj_key_finding_container">
                         <div class="prj_key_finding_item">
                             <i class="fa fa-coffee" aria-hidden="true"></i>
-                            <h7 class="prj_finding_title">Tolerance</h7>
+                            <h3 class="prj_finding_title">Time for breaks</h3>
                             <p>User wants some flexibility for a pause or a break.</p>
                         </div>
                         <div class="prj_key_finding_item">
                             <i class="fa  fa-calendar" aria-hidden="true"></i>
-                            <h7 class="prj_finding_title">Calendar</h7>
+                            <h3 class="prj_finding_title">Focus Calendar</h3>
                             <p>They love the feature of turning a calendar event into a focus timer.</p>
                         </div>
                         <div class="prj_key_finding_item">
                             <i class="fa fa-clock-o" aria-hidden="true"></i>
-                            <h7 class="prj_finding_title">Visual</h7>
+                            <h3 class="prj_finding_title">Visual Countdown</h3>
                             <p>Visual indicator is important for counting down.</p>
-                        </div>
-                        <div class="prj_key_finding_item">
+                        </div> -->
+                        <!-- <div class="prj_key_finding_item">
                             <i class="fa fa-hand-o-up" aria-hidden="true"></i>
-                            <h7 class="prj_finding_title">75%</h7>
+                            <h3 class="prj_finding_title">75%</h3>
                             <p>Of users think scrolling is more intuitive for time picker, instead of a slider.</p>
-                        </div>
+                        </div> -->
                         <!-- <div class="prj_key_finding_item">
                             <i class="fa fa-bullseye" aria-hidden="true"></i>
                             <h7 class="prj_finding_title">Goal</h7>
                             <p>(task breaker) is an ambiguous category in terms of information architecture.</p>
                         </div> -->
-                    </div>
-                    <div class="innerTopic_divider_block"></div>
-                    <div class="image_100">
-                        <!-- <a data-lightbox="Remote low fidelity wireframe testing"
-                            data-title="Remote low fidelity wireframe testing" href="img/prj_focus/focus_lo-fi-testing.jpg">
-                            <img data-aos="" alt="Remote low fidelity wireframe testing"
-                                src="img/prj_focus/focus_lo-fi-testing.jpg" />
-                        </a> -->
-                        <a class="prj_resp_imageitem" data-lightbox="Remote card sorting"
-                        data-title="Remote card sorting" href="img/prj_focus/card sorting.gif">
-                        <img data-aos="" alt="Remote card sorting" src="img/prj_focus/card sorting.gif" />
-                    </a>
-                    
-                    </div>
-                </div>
+                    <!-- </div> -->
+
+                <!-- </div> -->
 
                 <div class="innerSection_divider_block"></div>
 
-                <div class="prj_left_insights_container">
-                    <p class="prj_caption">Medium-fidelity wireframe</p5>
-                    <h4 class="prj_sec_title">Users want more focus timer embedded in default settings.</h4>
+                <div class="prj_left_title_container">
+                    <p class="prj_caption">Medium-fidelity User Validation</p5>
+                    <h3 class="prj_sec_title">Users want more focus timer embedded in default calendar settings.</h3>
 
 
-                    <p>With the medium-fidelity mockup, I was able to ask for another round of feedback. To this
-                        point,
-                        the feedback I received is <span class="prj_highlight prj_bold">more specific for a
-                            component of a few features</span>. For example, users
-                        want the <span class="prj_highlight prj_bold">focus timer being turned on when they initiate
+                    <p>With the medium-fidelity mockup, I was able to ask for another round of feedback. To this point,
+                        the feedback I received is <span class=" prj_bold">more specific for a
+                            component of a few features</span>. For example, users want the <span
+                            class="prj_bold">focus timer being turned on when they initiate
                             a calendar event from this app</span>.</p>
                 </div>
-                <div class="prj_right_insights_container image_100">
+                <div class="prj_content_container_full image_100">
+                    <p class="prj_img_caption">Mid-fidelity Wireframes</p>
                     <a data-lightbox="Medium fidelity wireframe" data-title="Medium fidelity wireframe"
-                        href="img/prj_focus/Mid-fi_wireframe.png">
-                        <img src="img/prj_focus/Mid-fi_wireframe.png" alt="Medium fidelity wireframe" />
+                        href="img/prj_focus/Mid-fi_wireframe_2.png">
+                        <img src="img/prj_focus/Mid-fi_wireframe_2.png" alt="Medium fidelity wireframe" />
                     </a>
                 </div>
 
@@ -991,9 +1054,10 @@
                     </a> -->
                 </div>
                 <div class="prj_content_container_full">
-                    <a data-lightbox="HI-fi Mockup" data-title="HI-fi Mockup" href="img/prj_focus/Focus_style guide.jpg">
+                    <!-- <a data-lightbox="HI-fi Mockup" data-title="HI-fi Mockup"
+                        href="img/prj_focus/Focus_style guide.jpg">
                         <img src="img/prj_focus/Focus_style guide.jpg" alt="Style guide" />
-                    </a>
+                    </a> -->
                     <a data-lightbox="HI-fi Mockup" data-title="HI-fi Mockup" href="img/prj_focus/Component.jpg">
                         <img src="img/prj_focus/Component.jpg" alt="Components" />
                     </a>
@@ -1009,41 +1073,34 @@
                 <!-- 8 Social Impact -->
                 <div class=" prj_index_container ">
                     <div class="prj_index ">
-                        <h3 id="Iterations">Iterations</h3>
+                        <h2 id="Testing">Testing</h2>
                     </div>
                 </div>
                 <!-- 8 Content -->
                 <div class="prj_right_insights_container">
 
                 </div>
-                <div class="prj_left_insights_container">
-                    <p class="prj_caption">Usablity testing</p>
-                    <p class="h7">Testing insight</p>
-                    <p>I planned 7 tasks for her and asked her to provide feedback on the experience and product flow after
-                        each task.
+                <div class="prj_left_title_container">
+                    <p class="prj_caption">Unmoderated Testing</p>
+                    <p>I planned 5 tasks and use UseBerry to create an unmoderated testing, and shared it on related
+                        platforms. I could only store 10 responses due to plan limitation.
                     </p>
                 </div>
+                <div class="prj_content_container_full focus_chart">
+                    <div id="chart_div_tasks"></div>
+                    <div id="chart_div_fav"></div>
+                </div>
+
+                <div class="innerTopic_divider_block"></div>
+
+                <!-- <div class="prj_left_insights_container">
+                    <p class="prj_caption">Unmoderated Testing</p>
+                    <p>I planned 5 tasks and use UseBerry to create an unmoderated testing, and shared it on related
+                        platforms. I could only store 10 responses due to plan limitation.
+                    </p>
+                </div>
+
                 <div class="prj_right_insights_container">
-                    <div class="prj_key_finding_container">
-                        <div class="prj_key_finding_item">
-                            <i class="fa fa-gamepad" aria-hidden="true"></i>
-                            <h7 class="prj_finding_title">Gamification</h7>
-                            <p>may be helpful to retain users and motivate users to keep using the app.
-                            </p>
-                        </div>
-                        <div class="prj_key_finding_item">
-                            <span class="mdi mdi-account-group"></span>
-                            <h7 class="prj_finding_title">Community</h7>
-                            <p>feature is also expected by many participants. They want to see how they are compared
-                                in
-                                a community.</p>
-                        </div>
-                        <div class="prj_key_finding_item">
-                            <span class="mdi mdi-av-timer"></span>
-                            <h7 class="prj_finding_title">Adjusting timer</h7>
-                            <p>can be included in the task breaker to suit users' diverse needs.</p>
-                        </div>
-                    </div>
                     <div class="image_100">
                         <a data-lightbox="Usability Testing" data-title="IUsability Testing"
                             href="img/prj_focus/SI684_TESTING.jpg">
@@ -1052,24 +1109,44 @@
                     </div>
                 </div>
 
-                <div class="innerSection_divider_block"></div>
+                <div class="innerTopic_divider_block"></div> -->
+
+                <div class="prj_left_insights_container">
+                    <p class="prj_caption">Future Design Needs</p>
+
+                </div>
+                <div class="prj_right_insights_container">
+
+                    <div class="prj_key_finding_container">
+                        <div class="prj_key_finding_item">
+                            <i class="fa fa-gamepad" aria-hidden="true"></i>
+                            <h4 class="prj_finding_title">Gamification</h4>
+                            <p>may be helpful to retain users and motivate users to keep using the app.
+                            </p>
+                        </div>
+                        <div class="prj_key_finding_item">
+                            <span class="mdi mdi-account-group"></span>
+                            <h4 class="prj_finding_title">Community</h4>
+                            <p>feature is also expected by many participants. They want to see how they are compared in
+                                a community.</p>
+                        </div>
+                        <div class="prj_key_finding_item">
+                            <span class="mdi mdi-av-timer"></span>
+                            <h4 class="prj_finding_title">Adjustible timer</h4>
+                            <p>can be included in the task breaker to suit users' diverse needs.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- <div class="innerSection_divider_block"></div>
 
                 <div class="prj_left_insights_container">
                     <p class="prj_caption">Iterations</p>
                   
                 </div>
-                <!-- <div class="prj_left_insights_container">
-                    <p class="h7">Feature 1: Timer</p>
-                </div>
-
-
-                    <div class="prj_right_insights_container image_100">
-                        <a data-lightbox="Low fidelity wireframe" data-title="Timer Iteration"
-                            href="img/prj_focus/Variation_Timer.jpg">
-                            <img data-aos="" alt="Low fidelity wireframe"
-                                src="img/prj_focus/Variation_Timer.jpg" />
-                        </a>
-                    </div> -->
+             
 
                     <div class="prj_left_insights_container">
                         <p class="h7">Feature 1: Goal (Task breaker)</p>
@@ -1102,9 +1179,11 @@
                             <img data-aos="" alt="Low fidelity wireframe"
                                 src="img/prj_focus/Variation_Events.png" />
                         </a>
-                    </div>
-            </div> <!-- end of main grid -->
-        </div> <!-- end of full bg -->
+                    </div> -->
+            </div>
+            <!-- end of main grid -->
+        </div>
+        <!-- end of full bg -->
 
         <div class="grid_divider_block"></div>
 
@@ -1113,24 +1192,23 @@
                 <!-- 10 Takeaway -->
                 <div class=" prj_index_container ">
                     <div class="prj_index ">
-                        <h3 id="Takeaway">Takeaway</h3>
+                        <h2 id="Takeaway">Takeaway</h2>
                     </div>
 
                 </div>
 
                 <!-- 10 Content -->
                 <div class="prj_content_container">
-                    <div class="prj_statement">
-                        <h4>Nudging people into performing an ideal behavior is also a kind of user-centered design.
-                        </h4>
-                    </div>
+
+                    <h3 class="prj_sec_title">Nudging people into performing an ideal behavior is also a kind of
+                        user-centered design.
+                    </h3>
+
                     <p>My greatest takeaway from the project is the process of <span
                             class="prj_highlight prj_bold">digging
                             up psychological theories and behavior economics and intertwining them into the
-                            design</span>. I
-                        feel a sense of achievement by knowing that this design is based on solid science and it will
-                        very
-                        possibly make a positive impact on users.</p>
+                            design</span>. I feel a sense of achievement by knowing that this design is based on solid
+                        science and it will very possibly make a positive impact on users.</p>
                 </div>
 
                 <hr>
@@ -1153,12 +1231,30 @@
             <!-- prj recommendation -->
             <div class="rec_section">
                 <div class="rec_nav">
-                    <h4>Other Projects</h4>
+                    <h4>More About Me</h4>
 
                 </div>
                 <div class="rec_container">
 
-                    <a href="design_mentorship.html">
+                    <a href="mobdev.html">
+                        <div class="rec_prj">
+                            <div>
+                                <img src="img/prj_thumbnail/SI669_trans.png" />
+                            </div>
+                            <div>
+                                <h4>Designer Café</h4>
+                                <p>Nov - Dec 2020</p>
+                            </div>
+                            <div class="tags_container">
+                                <p>A React Native-based app for designers to connect.</p>
+
+                                <!-- <p class="tags tags_dev">Mobile Development</p>
+                            <p class="tags tags_pd">Product Design</p> -->
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- <a href="design_mentorship.html">
                         <div class="rec_prj">
                             <div>
                                 <img src="img/prj_thumbnail/mentor_trans.png" />
@@ -1168,9 +1264,9 @@
                                 <p>Sep. - Dec. 2019</p>
                                 <p> A design community to help newbie designers to transition better.</p>
                             </div>
-                           
+
                         </div>
-                    </a>
+                    </a> -->
                     <a href="duo.html">
                         <div class="rec_prj">
                             <div>
@@ -1178,7 +1274,7 @@
                             </div>
                             <div>
                                 <h4>Duo Security</h4>
-                                <p>May. - Aug. 2020</p>
+                                <p>May - Aug 2020</p>
                                 <p>Created a B2B demo prototype to make onboarding easier.</p>
                             </div>
                             <!-- <div class="tags_container"> -->
@@ -1196,7 +1292,7 @@
                             </div>
                             <div>
                                 <h4>AI Software Redesign</h4>
-                                <p>Jan. - Jul. 2019</p>
+                                <p>Jan - Jul 2019</p>
                                 <p>I redesigned the UI of an AI dashbord to streamline the modeling process.</p>
 
                             </div>

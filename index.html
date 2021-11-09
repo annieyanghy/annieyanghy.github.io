@@ -7,21 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Hsin-yu Yang | UI/UX Designer | Design Portfolio</title>
-    <meta name="description"
-        content="The portfolio website of Hsin-yu Yang, a user experience designer based in Ann Arbor, Michigan.">
-    <meta name="keywords"
-        content="Hsin-yu, Hsinyu, Annie, Yang, product designer, designer, UX designer, User Experience, UX, portfolio, website, resume">
+    <meta name="description" content="The portfolio website of Hsin-yu Yang, a user experience designer based in Ann Arbor, Michigan.">
+    <meta name="keywords" content="Hsin-yu, Hsinyu, Annie, Yang, product designer, designer, UX designer, User Experience, UX, portfolio, website, resume">
     <!-- social share -->
     <meta property='og:title' content='Hsin-yu Yang | UI/UX Designer' />
     <meta property='og:image' content='https://annieyanghy.com/img/branding/Social_Share.png' />
-    <meta property='og:description'
-        content='Hsin-yu Yang is a Product Designer now studying at University of Michigan. She is a passionate soul to craft humane digital experiences.' />
+    <meta property='og:description' content='Hsin-yu Yang is a Product Designer now studying at University of Michigan. She is a passionate soul to craft humane digital experiences.' />
     <meta property='og:site_name' content='Hsin-yu Yang Portfolio | UI/UX Designer' />
     <meta property='og:url' content='https://annieyanghy.com/' />
     <!-- twitter -->
     <meta name="twitter:title" content="Hsin-yu Yang | UI/UX Designer">
-    <meta name="twitter:description"
-        content="Hsin-yu Yang is a Product Designer now studying at University of Michigan. She is a passionate soul to craft humane digital experiences.">
+    <meta name="twitter:description" content="Hsin-yu Yang is a Product Designer now studying at University of Michigan. She is a passionate soul to craft humane digital experiences.">
     <meta name="twitter:image" content="https://annieyanghy.com/img/branding/Social_Share.png">
     <meta name="twitter:card" content="summary">
 
@@ -29,9 +25,7 @@
     <!-- josefin - display -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap" rel="stylesheet">
     <!-- open sans - text -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- import Table of Contents TOC -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.css">
     <!-- import the webpage's stylesheet -->
@@ -39,6 +33,7 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/tocbot.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- import the webpage's javascript file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -69,7 +64,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-6BM66HGNXK"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
 
         gtag('config', 'G-6BM66HGNXK');
@@ -104,8 +102,7 @@
             <div class="nav_list menu">
                 <ul class="menu-nav">
                     <li class="nav_li nav_underline"><a class=" nav_selected" href="index.html">Work</a></li>
-                    <li class="nav_li  nav_underline"><a id="resume_page"
-                            href="Assets/Hsin-Yu Yang_Resume_2021.pdf">Resume</a></li>
+                    <li class="nav_li  nav_underline"><a id="resume_page" href="Assets/Hsin-Yu Yang_Resume_2021.pdf">Resume</a></li>
                     <li class="nav_li  nav_underline"><a id="about_page" href="h">About</a></li>
                     <li class="nav_li  nav_underline"><a id="blog_page" href="h" target="_blank">Medium</a></li>
                 </ul>
@@ -116,19 +113,36 @@
         <!-- landing -->
         <section class="sec_1">
             <div class="landing_grid" id="index_para">
-                <div class="landing_left">
-                    <h1>Hi I'm Hsin-yu Yang</h1>
-                    <br>
-                    <h6>
-                        Persistent design maker | Inquisitive thinker | Front-end experimenter
+                <div class="landing_left " data-aos="fade-up">
+                    <div class="landing_left_top ">
+                        <h1>I'm Hsin-Yu.</h1>
+                        <h1>I design by understanding
+                            <del>users</del> people.
+                        </h1>
+                    </div>
+                    <div class="landing_left_bottom ">
+                        <ul class="index_3traits">
+                            <li>Front-end Coder (like this website)</li>
+                            <li>/</li>
+                            <li>UX Collective Writer (10 articles)</li>
+                            <li>/</li>
+                            <li>Plants Mom (6 kids)</li>
+                        </ul>
+                    </div>
+                    <!-- <h6>Front-end Coder (like this Website) / UX Collective Writer (10 articles) / Plants Mom
                     </h6>
+                    <h6>Ex Design @ Cisco & 500 Startups-backed MoBagel
+                    </h6> -->
+                    <br>
+                    <!-- <h6>
+                        Persistent design maker | Inquisitive thinker | Front-end experimenter
+                    </h6> -->
 
-                    <p><a target="_blank" href="https://medium.com/@annieyanghy">A writer for UX Collective</a> and a
+                    <!-- <p><a target="_blank" href="https://medium.com/@annieyanghy">A writer for UX Collective</a> and a
                         <a target="_blank" href="https://www.instagram.com/designedbyahy/">sprouting illustrator</a>.
-                        <br>
-                        Ex Product Design Intern @ <a target="_blank" href="https://duo.com/"> Duo Security / Cisco</a>.
-                    </p>
-                    <p>In my free time, I experiment with Front End Code to sharpen my mind, like this website.</p>
+                        <br>Ex Product Design @ <a target="_blank" href="https://duo.com/">Cisco</a> and 500 Startup.
+                    </p> -->
+                    <!-- <p>I experiment with Front End Code to sharpen my mind, like this website.</p> -->
                     <!--                    
                     <div class="social_icons">
                         <a href="https://medium.com/@annieyanghy"><i class="fa fa-medium"></i></a>
@@ -137,7 +151,7 @@
                         <a href="https://www.instagram.com/designedbyahy/"><i class="fa fa-instagram"></i></a>
                     </div> -->
                 </div>
-                <div class="landing_right" data-aos="zoom-in-up">
+                <div class=" " data-aos="zoom-in-up">
                 </div>
             </div>
 
@@ -169,21 +183,19 @@
             <!-- </div> -->
             <div id="prj_filtering_collapse" class="project_collapse_container">
                 <!-- projects -->
-                <h3 class="toc_sectional_title" id="design">Design</h3>
+                <h2 class="toc_sectional_title" id="design">Design</h2>
                 <ul class="project_resp_container">
-                      <!-- 3 SI 684 Focus App -->
-                      <li class="mix flex_item pd proto research class" data-time="2020.12" data-featured="3">
+                    <!-- 3 SI 684 Focus App -->
+                    <li class="mix flex_item pd proto research class" data-time="2020.12" data-featured="3">
                         <a class="prj_grid focus_thumbnail" href="focus.html">
                             <div class="prj_img_container">
-                                <img class="prj_img img_scale" alt="Thumbnail of Focus App"
-                                    src="img/prj_thumbnail/focus_trans.png" />
+                                <img class="prj_img img_scale" alt="Thumbnail of Focus App" src="img/prj_thumbnail/focus_trans.png" />
                             </div>
                             <div class="prj_info ">
-                                <div class="prj_title">
-                                    <h2>Focus App</h2>
-                                    <p>2020 Sep - Dec</p>
-                                    <p>Passion project</p>
-                                </div>
+
+                                <h4>Focus App</h4>
+                                <p>2020 Sep - Dec</p>
+                                <p>Passion project</p>
                             </div>
                         </a>
                     </li>
@@ -191,16 +203,17 @@
                     <li class="mix flex_item pd proto research class" data-time="2021.07" data-featured="1">
                         <a class="prj_grid ecom_thumbnail" href="https://drive.google.com/file/d/1IL8MKjn5EfoL7TPbnIq164kASM4_nU_g/view?usp=sharing">
                             <div class="prj_img_container">
-                                <img class="prj_img img_scale" alt="Ecommerce App on Shopify"
-                                    src="img/prj_thumbnail/ecom_trans_shopify.png" />
+                                <img class="prj_img img_scale" alt="Ecommerce App on Shopify" src="img/prj_thumbnail/ecom_trans_shopify.png" />
                             </div>
 
                             <div class="prj_info ">
-                                <div class="prj_title">
-                                    <h2>Ecommerce App on Shopify</h2>
-                                    <p>2021 Jul - Aug</p>
-                                    <p>Full-time, B2B, Email</p>
-                                </div>
+
+                                <h4><i class="fa  fa-lock" aria-hidden="true"></i> Ecommerce App on Shopify </h4>
+                            
+
+                                <p>2021 Jul - Aug</p>
+                                <p>Full-time, B2B, Email</p>
+
                             </div>
                         </a>
                     </li>
@@ -208,38 +221,36 @@
                     <li class="mix flex_item pd proto research profession" data-time="2020.08" data-featured="2">
                         <a class="prj_grid duo_thumbnail" href="duo.html">
                             <div class="prj_img_container">
-                                <img class="prj_img img_scale" alt="Thumbnail of Duo Security Internship Project"
-                                    src="img/prj_thumbnail/Duo_trans.png" />
+                                <img class="prj_img img_scale" alt="Thumbnail of Duo Security Internship Project" src="img/prj_thumbnail/Duo_trans.png" />
                             </div>
 
                             <div class="prj_info ">
-                                <div class="prj_title">
-                                    <h2>Cisco for Duo Security</h2>
-                                    <p>2020 May - Aug</p>
-                                    <p>Internship, B2B, Customer-facing design</p>
-                                </div>
+
+                                <h4>Cisco for Duo Security</h4>
+                                <p>2020 May - Aug</p>
+                                <p>Internship, B2B, Customer-facing design</p>
+
                             </div>
                         </a>
                     </li>
-                  
-                   
+
+
                     <!-- 5 -->
                     <li class="mix flex_item pd proto research profession" data-time="2019.07" data-featured="6">
                         <a class="prj_grid mobagel_thumbnail" href="mobagel.html">
                             <div class="prj_img_container">
-                                <img class="prj_img img_scale" alt="Thumbnail of AI Data Dashboard"
-                                    src="img/prj_thumbnail/MoBagel_hero_big.png" />
+                                <img class="prj_img img_scale" alt="Thumbnail of AI Data Dashboard" src="img/prj_thumbnail/MoBagel_hero_big.png" />
                             </div>
                             <div class="prj_info ">
                                 <div class="prj_title">
-                                    <h2>AI Data Dashboard</h2>
+                                    <h4>AI Data Dashboard</h4>
                                     <p>2019 Jan - Jul</p>
                                     <p>Full-time, B2B, ML Modeling</p>
                                 </div>
                             </div>
                         </a>
                     </li>
-                    
+
                     <!-- 1 SI 582 Design Mentorship -->
                     <!-- <li class="mix flex_item pd proto research class" data-time="2021.01" data-featured="1">
                         <a class="prj_grid mentor_thumbnail" href="design_mentorship.html">
@@ -382,22 +393,21 @@
         <!-- start of coding section -->
         <section class="main_flex main_flex_coding">
 
-            <h3 class="toc_sectional_title" id="coding">Front-end</h3>
+            <h2 class="toc_sectional_title" id="coding">Front-end</h2>
 
             <ul class="project_resp_container">
                 <!-- 4 SI 669 Designer Café -->
                 <li class="mix flex_item pd dev class " data-time="2020.12" data-featured="4">
                     <a class="prj_grid mob669_thumbnail" href="mobdev.html">
                         <div class="prj_img_container">
-                            <img class="prj_img img_scale" alt="Thumbnail of Designer Café, a self-developed app"
-                                src="img/prj_thumbnail/SI669_bg.png" />
+                            <img class="prj_img img_scale" alt="Thumbnail of Designer Café, a self-developed app" src="img/prj_thumbnail/SI669_bg.png" />
                         </div>
                         <div class="prj_info ">
-                            <div class="prj_title">
-                                <h2>Designer Café</h2>
-                                <p>2020 Nov - Dec</p>
-                                <p>School, React Native, Firebase</p>
-                            </div>
+
+                            <h4>Designer Café</h4>
+                            <p>2020 Nov - Dec</p>
+                            <p>School, React Native, Firebase</p>
+
                         </div>
                     </a>
                 </li>
@@ -406,15 +416,14 @@
                 <li class="mix flex_item pd dev class" data-time="2020.12" data-featured="7">
                     <a class="prj_grid datavis_thumbnail" href="datavis.html">
                         <div class="prj_img_container">
-                            <img class="prj_img img_scale" alt="Thumbnail of Data Visualization"
-                                src="img/prj_thumbnail/SI649_Static_Poster_Trans.png" />
+                            <img class="prj_img img_scale" alt="Thumbnail of Data Visualization" src="img/prj_thumbnail/SI649_Static_Poster_Trans.png" />
                         </div>
                         <div class="prj_info ">
-                            <div class="prj_title">
-                                <h2>Data Visualization</h2>
-                                <p>2020 Nov - Dec</p>
-                                <p>School, Altair & Vega-lite</p>
-                            </div>
+
+                            <h4>Data Visualization</h4>
+                            <p>2020 Nov - Dec</p>
+                            <p>School, Altair & Vega-lite</p>
+
                         </div>
                     </a>
                 </li>
@@ -424,92 +433,80 @@
         <!-- start of Medium section -->
         <section class="main_flex main_flex_medium">
             <div class="UXCollective_title">
-                <h3 class="toc_sectional_title" id="Medium">UX Collective</h3>
-                <img class="prj_img img_scale" alt="Logo of UX Collective" src="img/medium/UXCollective_logomark.jpg" />
+                <h2 class="toc_sectional_title" id="Medium">UX Collective</h2>
+                <!-- <img class="prj_img img_scale" alt="Logo of UX Collective" src="img/medium/UXCollective_logomark.jpg" /> -->
             </div>
-            <p class="UXCollective_subtitle">Selected aritlces I wrote as a contributing writer at UX Collective: growth
-                as a junior UX designer and reading notes.<br><a class="prj_in_text_link"
-                    href="https://medium.com/@annieyanghy" target="_blank">Visit my <i class="fa fa-medium"></i> to read
-                    more articles.</a></p>
 
-            <ul class="project_resp_container">
+
+            <ul class="project_resp_container" data-aos="fade-up">
 
                 <li class="mix flex_item " data-time="2020.09" data-featured="7">
-                    <a class="prj_grid " target="_blank"
-                        href="https://uxdesign.cc/becoming-a-better-designer-learnings-from-a-14-week-internship-2d15e98ab22d?sk=857e4e3105ac2531b53d136f148ae977">
+                    <a class="prj_grid " target="_blank" href="https://uxdesign.cc/becoming-a-better-designer-learnings-from-a-14-week-internship-2d15e98ab22d?sk=857e4e3105ac2531b53d136f148ae977">
                         <div class="prj_img_container">
-                            <img class="prj_img img_scale" alt="Thumbnail of Medium Article Duo's Internship"
-                                src="img/medium/duo.jpg" />
+                            <img class="prj_img img_scale" alt="Thumbnail of Medium Article Duo's Internship" src="img/medium/duo.jpg" />
                         </div>
                         <div class="prj_info ">
-                            <div class="prj_title">
-                                <h2 class="medium_title">Becoming a better designer: learnings from a 14–week internship
-                                </h2>
 
-                                <p class="medium_subtitle">What I learned from my internship at Duo Security.</p>
-                                <p class="medium_time">Sep 4, 2020 | 7 min read</p>
-                            </div>
+                            <h4>Becoming a better designer: learnings from a 14–week internship
+                            </h4>
+
+                            <p class="medium_subtitle">What I learned from my internship at Duo Security.</p>
+                            <p class="medium_time">Sep 4, 2020 | 7 min read</p>
+                        </div>
 
                         </div>
                     </a>
                 </li>
                 <li class="mix flex_item " data-time="2020.03" data-featured="">
-                    <a class="prj_grid " target="_blank"
-                        href="https://uxdesign.cc/rethinking-design-mindset-takeaway-from-the-design-thinking-class-of-michigan-ross-mba-bc928210d74a?sk=7f2e2103c11852dd92f19acd3e9fe387">
+                    <a class="prj_grid " target="_blank" href="https://uxdesign.cc/rethinking-design-mindset-takeaway-from-the-design-thinking-class-of-michigan-ross-mba-bc928210d74a?sk=7f2e2103c11852dd92f19acd3e9fe387">
                         <div class="prj_img_container">
-                            <img class="prj_img img_scale" alt="Thumbnail of Paper Prototyping"
-                                src="img/medium/design_mindset.png" />
+                            <img class="prj_img img_scale" alt="Thumbnail of Paper Prototyping" src="img/medium/design_mindset.png" />
                         </div>
                         <div class="prj_info ">
-                            <div class="prj_title">
-                                <h2 class="medium_title">Rethinking the design mindset</h2>
 
-                                <p class="medium_subtitle">Psychological safety, Wabi-sabi, Bricolage.</p>
-                                <p class="medium_time">May 1, 2020 | 7 min read</p>
-                            </div>
+                            <h4 class="medium_title">Rethinking the design mindset</h4>
+
+                            <p class="medium_subtitle">Psychological safety, Wabi-sabi, Bricolage.</p>
+                            <p class="medium_time">May 1, 2020 | 7 min read</p>
 
                         </div>
                     </a>
                 </li>
                 <li class="mix flex_item " data-time="2020.03" data-featured="">
-                    <a class="prj_grid " target="_blank"
-                        href="https://uxdesign.cc/rethinking-paper-prototyping-how-i-viewed-it-as-a-playground-and-experiment-360e7c39f386?sk=a252ea8c2ccea31d2668bcc19c0698b8">
+                    <a class="prj_grid " target="_blank" href="https://uxdesign.cc/rethinking-paper-prototyping-how-i-viewed-it-as-a-playground-and-experiment-360e7c39f386?sk=a252ea8c2ccea31d2668bcc19c0698b8">
                         <div class="prj_img_container">
-                            <img class="prj_img img_scale"
-                                alt="Thumbnail of Medium Article Rethinking Paper Prototyping"
-                                src="img/medium/paper_prototyping.png" />
+                            <img class="prj_img img_scale" alt="Thumbnail of Medium Article Rethinking Paper Prototyping" src="img/medium/paper_prototyping.png" />
                         </div>
                         <div class="prj_info ">
-                            <div class="prj_title">
-                                <h2 class="medium_title">Rethinking paper prototyping: why, when, and how</h2>
+                            <h4 class="medium_title">Rethinking paper prototyping: why, when, and how</h4>
 
-                                <p class="medium_subtitle">What I learned from making my 1st paper prototypes.</p>
-                                <p class="medium_time">Mar 5, 2020 | 6 min read</p>
-                            </div>
+                            <p class="medium_subtitle">What I learned from making my 1st paper prototypes.</p>
+                            <p class="medium_time">Mar 5, 2020 | 6 min read</p>
 
                         </div>
                     </a>
                 </li>
                 <li class="mix flex_item " data-time="2020.03" data-featured="">
-                    <a class="prj_grid " target="_blank"
-                        href="https://uxdesign.cc/the-irrational-art-of-human-decision-7a5fa4b80821?sk=bb186c2d337e96a8a58b199f79034b84">
+                    <a class="prj_grid " target="_blank" href="https://uxdesign.cc/the-irrational-art-of-human-decision-7a5fa4b80821?sk=bb186c2d337e96a8a58b199f79034b84">
                         <div class="prj_img_container">
-                            <img class="prj_img img_scale"
-                                alt="Thumbnail of Medium Article The Irrational Art of Human Decision"
-                                src="img/medium/rational.jpg" />
+                            <img class="prj_img img_scale" alt="Thumbnail of Medium Article The Irrational Art of Human Decision" src="img/medium/rational.jpg" />
                         </div>
                         <div class="prj_info ">
-                            <div class="prj_title">
-                                <h2 class="medium_title">The irrational art of human decision</h2>
 
-                                <p class="medium_subtitle">Reading notes of Predictably Irrational.</p>
-                                <p class="medium_time">Aug 6, 2020 | 7 min read</p>
-                            </div>
+                            <h4 class="medium_title">The irrational art of human decision</h4>
+
+                            <p class="medium_subtitle">Reading notes of Predictably Irrational.</p>
+                            <p class="medium_time">Aug 6, 2020 | 7 min read</p>
+
 
                         </div>
                     </a>
                 </li>
             </ul>
+            <div class="Medium_view_more">
+                <a class="view_link_button " target="_blank" type="button" href="https://medium.com/@annieyanghy">
+                    View More On Medium</a>
+            </div>
         </section>
         <!-- drawing section -->
         <hr class="divider">
@@ -517,7 +514,7 @@
         <section class="illustration_section">
 
             <div class="collapse_container">
-                <h3 class="toc_sectional_title" id="doodle">Doodle</h3>
+                <h2 class="toc_sectional_title" id="doodle">Doodle</h2>
                 <!-- fleabag -->
                 <div class="illu_col illu_col_1">
                     <a data-lightbox="Fleabag series" data-title="Fleabag series" href="img/drawing/Fleabag 3.PNG">
@@ -530,29 +527,23 @@
                     <a data-lightbox="Fleabag series" data-title="Fleabag series" href="img/drawing/Fleabag Sis 2.PNG">
                         <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/Fleabag Sis 2.PNG" />
                     </a>
-                    <a data-lightbox="Fleabag series" data-title="Fleabag series"
-                        href="img/drawing/Fleabag best woman 2.PNG">
+                    <a data-lightbox="Fleabag series" data-title="Fleabag series" href="img/drawing/Fleabag best woman 2.PNG">
                         <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/Fleabag best woman 2.PNG" />
                     </a>
-                    <a data-lightbox="Fleabag series" data-title="Fleabag series"
-                        href="img/drawing/Fleabag Hot Priest 2.PNG">
+                    <a data-lightbox="Fleabag series" data-title="Fleabag series" href="img/drawing/Fleabag Hot Priest 2.PNG">
                         <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/Fleabag Hot Priest 2.PNG" />
                     </a>
-                    <a data-lightbox="Fleabag series" data-title="Fleabag series"
-                        href="img/drawing/Fleabag priest 2.PNG">
+                    <a data-lightbox="Fleabag series" data-title="Fleabag series" href="img/drawing/Fleabag priest 2.PNG">
                         <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/Fleabag priest 2.PNG" />
                     </a>
 
-                    <a data-lightbox="Fleabag series" data-title="Fleabag series"
-                        href="img/drawing/portrait_Amanda_2.jpg">
+                    <a data-lightbox="Fleabag series" data-title="Fleabag series" href="img/drawing/portrait_Amanda_2.jpg">
                         <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/portrait_Amanda_2.jpg" />
                     </a>
-                    <a data-lightbox="Fleabag series" data-title="Fleabag series"
-                        href="img/drawing/portrait_natalie.jpg">
+                    <a data-lightbox="Fleabag series" data-title="Fleabag series" href="img/drawing/portrait_natalie.jpg">
                         <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/portrait_natalie.jpg" />
                     </a>
-                    <a data-lightbox="Fleabag series" data-title="Fleabag series"
-                        href="img/drawing/portrait_friend_1.jpg">
+                    <a data-lightbox="Fleabag series" data-title="Fleabag series" href="img/drawing/portrait_friend_1.jpg">
                         <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/portrait_friend_1.jpg" />
                     </a>
                     <!-- </div> -->
@@ -561,8 +552,7 @@
                     <a data-lightbox="Fleabag series" data-title="Fleabag series" href="img/drawing/quote_kinder.jpg">
                         <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/quote_kinder.jpg" />
                     </a>
-                    <a data-lightbox="Fleabag series" data-title="Fleabag series"
-                        href="img/drawing/quote_sustainable.jpg">
+                    <a data-lightbox="Fleabag series" data-title="Fleabag series" href="img/drawing/quote_sustainable.jpg">
                         <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/quote_sustainable.jpg" />
                     </a>
                     <a data-lightbox="Fleabag series" data-title="Fleabag series" href="img/drawing/flower_bloom.jpg">
@@ -578,14 +568,11 @@
                     <a data-lightbox="Fleabag series" data-title="Fleabag series" href="img/drawing/Mr. Banaball 2.PNG">
                         <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/Mr. Banaball 2.PNG" />
                     </a>
-                    <a data-lightbox="Fleabag series" data-title="Fleabag series"
-                        href="img/drawing/Mr. Banaball and Banana 2.PNG">
+                    <a data-lightbox="Fleabag series" data-title="Fleabag series" href="img/drawing/Mr. Banaball and Banana 2.PNG">
                         <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/Mr. Banaball and Banana 2.PNG" />
                     </a>
-                    <a data-lightbox="Fleabag series" data-title="Fleabag series"
-                        href="img/drawing/Mr. Banaball and Banana copy 2.PNG">
-                        <img data-aos="fade-up" alt="Fleabag series"
-                            src="img/drawing/Mr. Banaball and Banana copy 2.PNG" />
+                    <a data-lightbox="Fleabag series" data-title="Fleabag series" href="img/drawing/Mr. Banaball and Banana copy 2.PNG">
+                        <img data-aos="fade-up" alt="Fleabag series" src="img/drawing/Mr. Banaball and Banana copy 2.PNG" />
                     </a>
                     <!-- </div> -->
                     <!-- portrait -->
@@ -607,6 +594,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.11.1/tocbot.min.js"></script>
     <script src="js/toc.js"></script>
     <script src="js/tocbot.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        });
+    </script>
 </body>
 <footer>
 
