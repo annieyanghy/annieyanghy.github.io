@@ -1888,13 +1888,14 @@ a.toc-link {
     }
     .prj_logistic {
         width: 100%;
-        margin: 0 var(--margin-icon);
+        margin: var(--margin-item);
     }
     .prj_logistic_container_left,
     .prj_logistic_container_right {
         display: flex;
         flex-direction: column;
         width: 95%;
+        padding:0;
     }
     .prj_landing_left h1 {
         font-size: 60px;
@@ -1935,6 +1936,12 @@ a.toc-link {
         margin: var(--size-xxx-small) 0;
     }
     /* how_it_works */
+    .how_it_works_container {
+        position: relative;
+        display: grid;
+        flex-wrap: wrap;
+        align-items: center;
+    }
     .how_it_works_container .how_it_works:nth-child(2),
     .how_it_works_container .how_it_works:nth-child(4) {
         position: relative;
@@ -1950,7 +1957,7 @@ a.toc-link {
         flex-wrap: wrap;
         align-items: center;
         height: 100%;
-        margin: var(--margin-small) auto;
+        margin: var(--margin-medium) auto;
     }
     .how_it_works_text {
         position: relative;
