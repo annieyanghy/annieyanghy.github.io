@@ -35,7 +35,6 @@
     --contentCaptiongBottomMargin: calc(0.5 * var(--vDistance));
     --pMargin: calc(0.5 * var(--vDistance));
     --imgCaptionBottomMargin: calc(0.2 * var(--vDistance));
-    --h7BottomMargin: calc(5 * var(--vDistance));
     /* font size */
     /* --h1Size:3rem;
      --h2Size:2.5rem;
@@ -43,7 +42,6 @@
      --h4Size:1.8rem;
      --h5Size:1.5rem;
      --h6Size:1.3rem;
-     --h7Size:1.1rem;
      --pSize:0.9rem; */
 }
 
@@ -135,9 +133,6 @@ header {
     color: rgba(var(--color-white), 1);
 }
 
-.full_bg_highlight .prj_left_insights_container .h7 {
-    color: rgba(var(--color-white), 1);
-}
 
 
 /* .full_bg_highlight span{
@@ -539,12 +534,14 @@ header {
 /* info */
 
 .prj_highlight {
-    background-color: rgba(var(--color-primary), 1);
+    /* background-color: rgba(var(--color-primary), 1); */
+    font-weight: 700;
+    color:rgba(var(--color-primary-dark), 1)
 }
 
 .prj_bold {
-    font-weight: 900;
-}
+    font-weight: 700;
+    color:rgba(var(--color-primary-dark), 1)}
 
 .leftContentInFull {
     display: grid;
@@ -1383,19 +1380,7 @@ _center {
     margin-bottom: var(--margin-item);
 }
 
-.prj_img_caption {
-    display: grid;
-    position: relative;
-    width: 100%;
-    text-align: center;
-    font-size: var(--caption3Size);
-    font-weight: 600;
-    font-style: italic;
-    line-height: calc(1.5 * var(--caption3Size));
-    color: rgba(var(--color-dark), .6);
-    margin-bottom: var(--imgCaptionBottomMargin);
-    margin-top: 0;
-}
+
 
 .prj_sec_title {
     padding-bottom: var(--sectionHeadingBottomMargin);
