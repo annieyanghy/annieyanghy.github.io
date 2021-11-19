@@ -52,25 +52,28 @@
 
 .focus_chart{
     position: relative;
-    /* display:flex;
-    flex: column; */
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
     width: 100%;
     margin-bottom: var(--size-medium);
 }
 
 .focus_chart #chart_div_tasks{
     position: relative;
-   
     height:400px;
-    width:100%;
-    overflow:hidden
+    width:45%;
+    overflow:hidden;
+    padding:20px;
+    background-color: #fafafa;
 }
 .focus_chart #chart_div_fav{
     position: relative;
-
     height:400px;
-    width:100%;
-    overflow:hidden
+    width:45%;
+    overflow:hidden;
+    padding:20px;
+    background-color: #fafafa;
 }
 
 @media only screen and (max-width: 900px) {
@@ -119,5 +122,27 @@
         justify-content: center;
         width: fit-content;
         margin-bottom: var(--size-medium);
+    }
+    .focus_chart{
+        position: relative;
+        display:flex;
+        flex-direction: column;
+       
+    }
+    .focus_chart #chart_div_tasks{
+        position: relative;
+        height:400px;
+        width:max-content;
+        overflow:hidden;
+        padding:20px;
+        background-color: #fafafa;
+    }
+    .focus_chart #chart_div_fav{
+        position: relative;
+        height:400px;
+        width:max-content;
+        overflow:hidden;
+        padding:20px;
+        background-color: #fafafa;
     }
     }

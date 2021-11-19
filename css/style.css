@@ -564,6 +564,7 @@ nav ul li a {
   width: fit-content;
   margin-right: 2rem;
   font-size: 1.2rem;
+  color: rgba(var(--color-dark), 1)
 }
 
 .landing_left {
