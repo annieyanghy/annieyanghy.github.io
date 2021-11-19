@@ -1746,6 +1746,15 @@ a.toc-link {
     /* padding-bottom: var(--size-half-xxxx-small); */
 }
 
+/* ------1200px---------*/
+@media only screen and (max-width: 1200px) {
+    .landing_grid{
+        width:95%
+    }
+    .prj_main_grid{
+        width:95%
+    }
+}
 
 /* ------900px---------*/
 
