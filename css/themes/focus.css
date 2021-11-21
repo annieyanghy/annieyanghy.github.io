@@ -5,16 +5,41 @@
     
 }
 
+
 .sec_1{
-    /* height:660px; */
-    overflow:visible
+    height:fit-content;
+    overflow: visible;
+}
+.focus_landing {
+    width:100%;
+    height:fit-content;
+    padding-bottom:0
+    
+}
+.focus_landing img{
+    display:grid;
+    grid-column: 1 /span 12;
+    width:100%
+
 }
 
+.focus_para{
+    position: relative;
+  display: flex;
+ 
+  height: 650px;
+  margin-bottom: var(--size-large);
+  background-image: url("../../img/hero_img/Focus_hero_L.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top 50px left 50%;
+  background-size:contain;
 
-.prj_landing_right img{
+}
+/* .prj_landing_right img{
     width: 120%;
     top: -100px;
-} 
+}  */
 
 
 .finding_section_title{

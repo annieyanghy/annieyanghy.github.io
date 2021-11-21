@@ -4,3 +4,24 @@
     --color-primary-dark:71, 132, 127 ;
     
 }
+
+
+.sec_1{
+    height:fit-content
+}
+.mobdev_landing{
+    width:100%;
+    height:fit-content;
+    height:600px;
+    background-image: url("../../img/hero_img/Mobdev_hero_L.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top 50px left 50%;
+    background-size:contain;
+}
+.mobdev_landing img{
+    display:grid;
+    grid-column: 1 /span 12;
+    width:100%
+
+}

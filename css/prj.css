@@ -254,17 +254,16 @@ header {
 }
 
 .prj_landing_left h1 {
-    /* font-size:64px; */
     color: rgba(var(--color-dark), 1)
 }
 
-.prj_landing_left h4 {
+/* .prj_landing_left h4 {
     font-size: 16px;
     line-height: 24px;
     font-family: var(--typeface-text);
     font-weight: 400;
     margin-bottom: var(--size-small)
-}
+} */
 
 .prj_landing_right {
     position: relative;
@@ -288,6 +287,22 @@ header {
     border-radius: 3em;
 }
 
+
+.prj_landing_title{
+    display:flex;
+    position:relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width:80%;
+    margin:auto;
+    text-align: center;
+  
+}
+
+
+/* ------------------------------------------------------------------------------ */
 .prj_main_grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -472,14 +487,17 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 20px;
+    padding: var(--margin-small);
+    padding-left:0
+
 }
 
 .prj_logistic_container_right {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 20px;
+    padding: var(--margin-small);
+    padding-left:0
 }
 
 .prj_logistic {
@@ -487,11 +505,10 @@ header {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    /* margin-left:  var(--margin-small); */
-    /* padding: 0 var(--margin-item); */
+ 
     margin-right: var(--margin-x-item);
     margin-bottom: var(--margin-item);
-    /* background-color: lightblue; */
+
 }
 
 .prj_logistic_subcate {
@@ -1771,9 +1788,7 @@ a.toc-link {
         display: flex;
         justify-content: flex-start;
         flex-wrap: nowrap;
-        height: 5rem;
-        width: 80%;
-        margin-top: var(--margin-item);
+      
     }
     /* .nav_list {
         display: flex;
@@ -1883,6 +1898,7 @@ a.toc-link {
     .prj_logistic {
         width: 100%;
         margin: var(--margin-item);
+        margin-left:0
     }
     .prj_logistic_container_left,
     .prj_logistic_container_right {
