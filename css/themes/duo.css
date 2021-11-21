@@ -5,8 +5,23 @@
     --color-primary-dark:112, 176, 86;
     
 }
+.sec_1{
+    height:fit-content
+}
+.duo_landing{
+    height:600px;
+    background-image: url("../../img/hero_img/Duo_hero_L.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top 50px left 50%;
+    background-size:contain;
+}
+.duo_landing img{
+    display:grid;
+    grid-column: 1 /span 12;
+    width:100%
 
-
+}
 
 #duo .prj_key_finding_container{
   

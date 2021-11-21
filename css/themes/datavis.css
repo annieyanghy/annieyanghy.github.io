@@ -1,0 +1,22 @@
+
+:root {
+   
+    --color-primary: 170, 227, 223;
+    --color-primary-dark:71, 132, 127 ;
+    
+}
+
+.sec_1{
+    height:fit-content
+}
+.datavis_landing{
+    width:100%;
+    height:fit-content;
+    padding-bottom:0
+}
+.datavis_landing img{
+    display:grid;
+    grid-column: 1 /span 12;
+    width:100%
+
+}
