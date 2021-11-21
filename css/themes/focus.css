@@ -102,6 +102,17 @@
 }
 
 @media only screen and (max-width: 900px) {
+    .focus_para {
+        position: relative;
+        display: flex;
+        height: 500px;
+        margin-bottom: var(--size-large);
+        background-image: url(../../img/hero_img/Focus_hero_L.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top 50% left 50%;
+        background-size: contain;
+    }
    
     .prj_landing_right img{
         width: 100%;
@@ -119,6 +130,15 @@
 
 
 @media only screen and (max-width: 600px) {
+    .focus_para {
+        position: relative;
+        display: flex;
+        height: 400px;
+        margin-bottom: var(--size-large);
+      
+        background-position: center;
+        background-size: contain;
+    }
 
     .prj_landing_right img{
         width: 100%;

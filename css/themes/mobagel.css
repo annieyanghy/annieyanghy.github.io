@@ -95,3 +95,19 @@
     }
 
 }
+
+
+@media only screen and (max-width: 600px) {
+
+.sec_1{
+    min-height: fit-content;
+}
+.mobagel_landing {
+    position: relative;
+    display: flex;
+    height: 400px;
+ 
+}
+
+}
+

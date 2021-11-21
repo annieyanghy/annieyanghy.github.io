@@ -25,3 +25,31 @@
     width:100%
 
 }
+
+@media only screen and (max-width: 900px) {
+
+    
+    .mobdev_landing {
+        position: relative;
+        display: flex;
+        height: 500px;
+        background-position: center;
+     
+    }
+    
+    }
+
+
+@media only screen and (max-width: 600px) {
+
+    
+    .mobdev_landing {
+        position: relative;
+        display: flex;
+        height: 400px;
+        background-position: center;
+     
+    }
+    
+    }
+    
