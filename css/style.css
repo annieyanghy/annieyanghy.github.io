@@ -1355,7 +1355,8 @@ to make it an X */
     background-size: 60%;
   }
   #index_para h1 {
-    font-size: 4.8rem;
+    font-size: 4rem;
+    line-height: 5rem;
    
   }
   #index_para h4 {
