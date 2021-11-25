@@ -14,20 +14,11 @@
   --color-branding-primary-dark: 148, 187, 184;
   --color-dark: 82, 82, 82;
   --color-white: 255, 255, 255;
-  /* --color-primary: 148, 187, 184;
---color-primary-dark: 117, 161, 157;
---color-primary-mono_dark: 110, 133, 132; */
   --color-complementary: 186, 160, 147;
   --color-gray: 247, 247, 247;
-  --color-ivory: 245, 241, 240;
-  --color-camel: 224, 209, 180;
-  --color-camel-dark: 164, 152, 133;
   --color-tone: 228, 247, 244;
   --color-tint: 217, 237, 234;
   --color-grey: 204, 204, 204;
-  --color-secondary: 186, 149, 149;
-  --color-third: 224, 205, 195;
-  --color-fourth: 227, 214, 143;
   --grid-gap: 100px;
   --width-max: 1200px;
   --vDistance: 2rem;
@@ -229,7 +220,6 @@ a {
   display: block;
   margin: var(--size-large) auto var(--margin-small) auto;
   max-width: var(--width-max);
-  /* background-color:'red'; */
   height: 1px;
   border: 0;
   border-top: 2px solid rgba(var(--color-dark), 0);
@@ -937,7 +927,7 @@ nav ul li a {
 }
 /* -------filter -------*/
 
-.button_container {
+/* .button_container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -945,10 +935,9 @@ nav ul li a {
   margin: var(--margin-item) 0;
   justify-content: center;
   align-items: flex-start;
-}
+} */
 
-.filter_button {
-  /* button */
+/* .filter_button {
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -959,12 +948,10 @@ nav ul li a {
   padding: 1.2rem;
   background-color: rgba(var(--color-branding-primary-dark), 0);
   border: var(--border-button);
-  /* text */
   text-decoration: none;
   font-size: 1rem;
   color: rgba(var(--color-dark), 0.7);
   font-weight: 600;
-  /* transition */
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -997,7 +984,6 @@ nav ul li a {
 }
 
 .sorting_button {
-  /* button */
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -1007,12 +993,10 @@ nav ul li a {
   padding: 0.4rem;
   border: solid 3.5px rgba(var(--color-dark), 0);
   background-color: rgba(var(--color-gray), 0.8);
-  /* text */
   text-decoration: none;
   font-size: 14px;
   color: rgba(var(--color-dark), 0.7);
   font-weight: 400;
-  /* transition */
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -1022,7 +1006,7 @@ nav ul li a {
   color: rgba(var(--color-white), 1);
   font-weight: 700;
   background-color: rgba(var(--color-dark), 0.7);
-}
+} */
 /* ------project description ---------*/
 
 .prj_grid {
@@ -1040,37 +1024,31 @@ nav ul li a {
 }
 
 .ecom_thumbnail {
-  /* background-color: rgb(208, 226, 226); */
-  /* background-color: rgba(63,63,63,0.1); */
+
   background-color: rgb(240, 240, 240);
 }
 
 .duo_thumbnail {
   background-color: rgb(229, 243, 245);
-  /* background-color: rgba(63,63,63,0.1); */
-  /* background-color: rgb(39,178,227) */
+
 }
 
 .focus_thumbnail {
   background-color: rgb(208, 222, 238);
-  /* background-color: rgb(86, 119, 209) */
-  /* background-color: rgba(63,63,63,0.1); */
+
 }
 
 .mobagel_thumbnail {
   background-color: rgb(217, 230, 243);
-  /* background-color: rgb(62,95,184) */
-  /* background-color: rgba(63,63,63,0.1); */
+
 }
 
 .mob669_thumbnail {
-  /* background-color: rgb(220, 238, 230) */
   background-color: rgb(192, 226, 221);
 }
 
 .datavis_thumbnail {
-  /* background-color: rgb(186, 221, 221) */
-  /* background-color: rgb(102, 151, 144); */
+
   background-color: rgb(210, 221, 219);
 }
 
@@ -1348,7 +1326,6 @@ to make it an X */
   #index_para {
     height: 100%;
     min-height: 500px;
-    /* background-image: url("../img/branding/Portfolio_Graph.gif"); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 90% 90%;
@@ -1422,11 +1399,7 @@ to make it an X */
   .about_intro_3_col_container .about_intro_content div {
     width: 100%;
   }
-  .red,
-  .black {
-    margin: 24px auto;
-    width: 80%;
-  }
+
   .prj_img {
     width: 100%;
   }
@@ -1434,20 +1407,7 @@ to make it an X */
     line-height: normal;
     color: rgba(var(--color-dark), 1);
   }
-  /* h1 {
-    font-size: 40px;
-  }
-  h2 {
-    font-size: 32px;
-  }
-  h3 {
-    font-size: 24px;
-  }
-  h4 {
-    font-size: 20px;
-    width: 95%;
-    line-height: 36px;
-  } */
+
 }
 /* ------600px---------*/
 
