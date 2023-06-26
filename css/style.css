@@ -230,7 +230,7 @@ a {
   position: absolute;
   text-align: left;
   color: rgba(var(--color-dark), 1);
-  font-size: 4rem;
+  font-size: 2.2rem;
   z-index: 1;
 }
 
@@ -526,6 +526,8 @@ nav ul li a {
   position: relative;
   width: 100%;
   text-transform: none;
+  font-weight:400;
+
 }
 
 #index_para del {
@@ -553,7 +555,7 @@ nav ul li a {
   position: relative;
   width: fit-content;
   margin-right: 2rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: rgba(var(--color-dark), 1)
 }
 
@@ -595,7 +597,7 @@ nav ul li a {
 .main_flex {
   margin: 0 auto;
   max-width: var(--width-max);
-  padding-top: var(--margin-small);
+  padding-top: var(--margin-medium);
 }
 
 .project_resp_container {
@@ -791,6 +793,7 @@ nav ul li a {
 .landing_grid_about_page h2 {
   text-transform: none;
   grid-column: 1 / span 6;
+  
 }
 
 .landing_left_about_page {

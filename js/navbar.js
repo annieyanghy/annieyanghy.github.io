@@ -8,7 +8,7 @@ $(document).ready(function() {
   })
   $('#blog_page').click(function(){
   
-    $('#blog_page').attr("href", "https://medium.com/@annieyanghy");    
+    $('#blog_page').attr("href", "https://medium.com/@hsinyuyang");    
   })
 
   $('#about_page').click(function(){
@@ -24,7 +24,7 @@ $(document).ready(function() {
   $(document).ready(function() {
     $('#social_medium').click(function(){
  
-      $('#social_medium').attr("href", "https://medium.com/@annieyanghy");
+      $('#social_medium').attr("href", "https://medium.com/@hsinyuyang");
       
     })
     $('#social_dribbble').click(function(){
